@@ -12,12 +12,17 @@ function Index(props) {
       <Grid item xs={12}>
         <p>
           For over 20 years, I have been professionaly designing, developing and
-          maintaining software for a multitude of platforms including web based
-          applications as well as native apps for Windows, Android, iOS, Google
-          Cardboard, GearVR and more. The projects listed in my portfolio range
-          from interactive video games and entertainment to business and
-          utilities. I have been active in working on next generation platforms
-          such as virtual reality, drone technology and 3D printing.
+          maintaining software and user interfaces for a multitude of platforms
+          and devices including web based applications as well as native apps
+          for Windows, Android, iOS, Google Cardboard, GearVR and more. The
+          projects listed in my portfolio range from interactive video games and
+          entertainment applications to business and utilities.
+        </p>
+        <p>
+          I am actively working on next generation platforms and immerging
+          technologies including virtual reality experiences for desktop and
+          mobile, drone technology and industrial product design for 3D
+          printing.
         </p>
       </Grid>
     </Grid>
