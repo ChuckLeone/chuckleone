@@ -80,7 +80,7 @@ class AppRouter extends React.Component {
                                   <Link to="/">Home</Link>
                                 </MenuItem>
                                 <MenuItem onClick={this.handleClose}>
-                                  <Link to="/porfolio/">Portfolio</Link>
+                                  <Link to="/portfolio/">Portfolio</Link>
                                 </MenuItem>
                                 <MenuItem onClick={this.handleClose}>
                                   <Link to="/music/">Music</Link>
