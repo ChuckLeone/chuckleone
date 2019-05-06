@@ -47,54 +47,67 @@ class AppRouter extends React.Component {
                   color="default"
                   className="App-header"
                 >
-                  <Toolbar>
-                    <IconButton
-                      color="primary"
-                      aria-label="Open Menu"
-                      onClick={this.handleToggle}
-                    >
-                      <Menu />
-                    </IconButton>
-                    Chuck Leone
-                    <Popper
-                      open={open}
-                      anchorEl={this.anchorEl}
-                      transition
-                      disablePortal
-                    >
-                      {({ TransitionProps, placement }) => (
-                        <Grow
-                          {...TransitionProps}
-                          id="menu-list-grow"
-                          style={{
-                            transformOrigin:
-                              placement === 'bottom'
-                                ? 'center top'
-                                : 'center bottom',
-                          }}
+                  <Grid container>
+                    <Grid item xs={6}>
+                      <Toolbar>
+                        <IconButton
+                          color="primary"
+                          aria-label="Open Menu"
+                          onClick={this.handleToggle}
                         >
-                          <Paper style={Theme.menu}>
-                            <ClickAwayListener onClickAway={this.handleClose}>
-                              <MenuList>
-                                <MenuItem onClick={this.handleClose}>
-                                  <Link to="/">Home</Link>
-                                </MenuItem>
-                                <MenuItem onClick={this.handleClose}>
-                                  <Link to="/portfolio/">Portfolio</Link>
-                                </MenuItem>
-                                <MenuItem onClick={this.handleClose}>
-                                  <Link to="/music/">Music</Link>
-                                </MenuItem>
-                                <MenuItem onClick={this.handleClose}>
-                                  <Link to="/games/">Games</Link>
-                                </MenuItem>
-                              </MenuList>
-                            </ClickAwayListener>
-                          </Paper>
-                        </Grow>
-                      )}
-                    </Popper>
-                  </Toolbar>
+                          <Menu />
+                        </IconButton>
+                        <Typography variant="h1">Chuck Leone</Typography>
+                        <Popper
+                          open={open}
+                          anchorEl={this.anchorEl}
+                          transition
+                          disablePortal
+                        >
+                          {({ TransitionProps, placement }) => (
+                            <Grow
+                              {...TransitionProps}
+                              id="menu-list-grow"
+                              style={{
+                                transformOrigin:
+                                  placement === 'bottom'
+                                    ? 'center top'
+                                    : 'center bottom',
+                              }}
+                            >
+                              <Paper style={Theme.menu}>
+                                <ClickAwayListener
+                                  onClickAway={this.handleClose}
+                                >
+                                  <MenuList>
+                                    <MenuItem onClick={this.handleClose}>
+                                      <Link to="/">Home</Link>
+                                    </MenuItem>
+                                    <MenuItem onClick={this.handleClose}>
+                                      <Link to="/portfolio/">Portfolio</Link>
+                                    </MenuItem>
+                                    <MenuItem onClick={this.handleClose}>
+                                      <Link to="/music/">Music</Link>
+                                    </MenuItem>
+                                    <MenuItem onClick={this.handleClose}>
+                                      <Link to="/games/">Games</Link>
+                                    </MenuItem>
+                                  </MenuList>
+                                </ClickAwayListener>
+                              </Paper>
+                            </Grow>
+                          )}
+                        </Popper>
+                      </Toolbar>
+                    </Grid>
+                    <Grid item xs={6} style={Theme.siteHeaderRight}>
+                      <span style={{ textAlign: 'right' }}>
+                        <Typography variant="h3">
+                          Designer. Developer. Musician.
+                        </Typography>
+                      </span>
+                    </Grid>
+                  </Grid>
                 </AppBar>
               </Grid>
             </Grid>

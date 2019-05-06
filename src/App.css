@@ -3,6 +3,15 @@ body {
   color: #fff;
 }
 
+a {
+  color: #63ccff;
+  text-decoration: solid;
+}
+
+a:hover {
+  color: #c463ff;
+}
+
 .App {
   text-align: center;
 }

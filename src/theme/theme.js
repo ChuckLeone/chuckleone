@@ -3,6 +3,21 @@ import { createMuiTheme } from '@material-ui/core/styles';
 const theme = createMuiTheme({
   typography: {
     useNextVariants: true,
+    h1: {
+      color: '#e1e1e1 !important',
+      fontSize: '1.75rem !important',
+      textTransform: 'uppercase !important',
+    },
+    h2: {
+      color: '#e1e1e1 !important',
+      fontSize: '1.5rem !important',
+      fontWeight: '400 !important',
+    },
+    h3: {
+      color: '#e1e1e1 !important',
+      fontSize: '1rem !important',
+      fontWeight: 600,
+    },
   },
   palette: {
     primary: {
@@ -25,6 +40,11 @@ const theme = createMuiTheme({
   },
   menu: {
     position: 'absolute',
+  },
+  siteHeaderRight: {
+    backgroundColor: '#006494',
+    paddingTop: 20,
+    paddingRight: 5,
   },
   overrides: {
     MuiToolbar: {
