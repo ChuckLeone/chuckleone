@@ -5,18 +5,21 @@ const theme = createMuiTheme({
     useNextVariants: true,
     h1: {
       color: '#e1e1e1 !important',
-      fontSize: '1.75rem !important',
+      fontSize: '2rem !important',
       textTransform: 'uppercase !important',
     },
     h2: {
       color: '#e1e1e1 !important',
-      fontSize: '1.5rem !important',
+      fontSize: '1.75rem !important',
       fontWeight: '400 !important',
     },
     h3: {
       color: '#e1e1e1 !important',
-      fontSize: '1rem !important',
-      fontWeight: 600,
+      fontSize: '1.5rem !important',
+      fontWeight: 400,
+    },
+    body1: {
+      color: '#e1e1e1 !important',
     },
   },
   palette: {

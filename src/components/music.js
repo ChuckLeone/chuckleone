@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import Typography from '@material-ui/core/Typography';
 
 function Music(props) {
   let createAlbumList = () => {
@@ -26,15 +27,29 @@ function Music(props) {
   };
 
   return (
-    <Grid container style={props.theme.container}>
+    <Grid container spacing={24} style={props.theme.container}>
       <Grid item xs={12}>
-        <h2>Music</h2>
+        <Typography variant="h2" gutterBottom>
+          Music
+        </Typography>
       </Grid>
       <Grid item xs={12}>
-        <p>This area will feature music</p>
+        <Typography variant="body1" gutterBottom>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Typography>
       </Grid>
-
-      {createAlbumList()}
+      <Grid item xs={12}>
+        <Typography variant="h3" gutterBottom>
+          Releases
+        </Typography>
+        <Grid container>{createAlbumList()}</Grid>
+      </Grid>
     </Grid>
   );
 }

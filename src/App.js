@@ -48,7 +48,7 @@ class AppRouter extends React.Component {
                   className="App-header"
                 >
                   <Grid container>
-                    <Grid item xs={6}>
+                    <Grid item xs={12}>
                       <Toolbar>
                         <IconButton
                           color="primary"
@@ -99,13 +99,6 @@ class AppRouter extends React.Component {
                           )}
                         </Popper>
                       </Toolbar>
-                    </Grid>
-                    <Grid item xs={6} style={Theme.siteHeaderRight}>
-                      <span style={{ textAlign: 'right' }}>
-                        <Typography variant="h3">
-                          Designer. Developer. Musician.
-                        </Typography>
-                      </span>
                     </Grid>
                   </Grid>
                 </AppBar>
