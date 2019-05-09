@@ -79,7 +79,9 @@ class AppRouter extends React.Component {
                                 <ClickAwayListener
                                   onClickAway={this.handleClose}
                                 >
-                                  <MenuList>
+                                  <MenuList
+                                    style={{ zIndex: '1000 !important' }}
+                                  >
                                     <MenuItem onClick={this.handleClose}>
                                       <Link to="/">Home</Link>
                                     </MenuItem>
