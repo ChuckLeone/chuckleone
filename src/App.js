@@ -26,13 +26,14 @@ const stylesheet = {
     textAlign: 'center',
     padding: 5,
     backgroundColor: '#1f1b1b',
-    color: '#737373',
+    color: '#fff',
     height: '5vh',
     position: 'fixed',
     left: 0,
     bottom: 0,
     width: '100%',
-  }
+    borderTop: '2px solid #90614f',
+  },
 };
 
 export default function App() {
@@ -51,9 +52,7 @@ export default function App() {
                       <Grid item xs={12} style={stylesheet.headerImage} />
                       <Grid item xs={12} sm={8}>
                         <Typography variant="h3">About Me</Typography>
-                        <Typography variant="body1">
                           <Index />
-                        </Typography>
                       </Grid>
                       <Grid item xs={12} sm={4}>
                         <Typography variant="h3">Links</Typography>
