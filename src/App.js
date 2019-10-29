@@ -12,7 +12,7 @@ import Year from './components/year';
 const stylesheet = {
   headerImage: {
     height: '30vh',
-    background: 'right bottom',
+    background: 'center bottom',
     backgroundImage: 'url(img/renders/low-poly-0.png)',
     backgroundSize: 'cover',
   },
