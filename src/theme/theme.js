@@ -6,11 +6,13 @@ const theme = createMuiTheme({
     h1: {
       color: '#e1e1e1 !important',
       fontSize: '2rem !important',
+      padding: 10,
       textTransform: 'uppercase !important',
     },
     h2: {
       color: '#e1e1e1 !important',
       fontSize: '1.75rem !important',
+      padding: 10,
       fontWeight: '400 !important',
     },
     h3: {
@@ -19,6 +21,7 @@ const theme = createMuiTheme({
       fontWeight: 400,
     },
     body1: {
+      padding: 10,
       color: '#e1e1e1 !important',
     },
   },
