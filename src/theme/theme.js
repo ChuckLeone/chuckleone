@@ -16,6 +16,7 @@ const theme = createMuiTheme({
       fontWeight: '400 !important',
       textTransform: 'uppercase',
       textAlign: 'right',
+      lineHeight: 2,
     },
     h3: {
       color: '#e1e1e1 !important',
