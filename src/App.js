@@ -9,16 +9,13 @@ import Index from './components/index';
 
 const stylesheet = {
   headerImage: {
-    height: '20vh',
+    height: '33vh',
     backgroundImage: 'url(img/renders/mecha-scene.jpg)',
     backgroundSize: 'cover',
   }
 }
 
-class AppRouter extends React.Component {
-
-  render() {
-
+export default function App() {
     return (
       <MuiThemeProvider theme={Theme}>
           <div>
@@ -32,19 +29,15 @@ class AppRouter extends React.Component {
                     </Grid>
                     <Grid item xs={12} style={stylesheet.headerImage} />
                     <Grid item xs={12}>
-                      <Typography variant="h2">About</Typography>
+                      <Typography variant="h2">About Me</Typography>
                       <Typography variant="body1">
                         <Index />
                       </Typography>
                     </Grid>
                   </Grid>
-
               </Grid>
             </Grid>
           </div>
       </MuiThemeProvider>
     );
-  }
-}
-
-export default AppRouter;
+};

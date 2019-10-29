@@ -14,11 +14,13 @@ const theme = createMuiTheme({
       fontSize: '1.75rem !important',
       padding: 10,
       fontWeight: '400 !important',
+      textTransform: 'uppercase',
     },
     h3: {
       color: '#e1e1e1 !important',
       fontSize: '1.5rem !important',
       fontWeight: 400,
+      textTransform: 'uppercase',
     },
     body1: {
       padding: 10,
