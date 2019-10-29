@@ -4,13 +4,13 @@ const theme = createMuiTheme({
   typography: {
     useNextVariants: true,
     h1: {
-      color: '#e1e1e1 !important',
+      color: '#d5d5d5 !important',
       fontSize: '2rem !important',
       padding: 10,
       textTransform: 'uppercase !important',
     },
     h2: {
-      color: '#e1e1e1 !important',
+      color: '#d5d5d5 !important',
       fontSize: '1.25rem !important',
       padding: 10,
       fontWeight: '400 !important',
@@ -19,7 +19,7 @@ const theme = createMuiTheme({
       lineHeight: 2,
     },
     h3: {
-      color: '#e1e1e1 !important',
+      color: '#d5d5d5 !important',
       fontSize: '1.15rem !important',
       padding: 10,
       fontWeight: 400,
@@ -27,7 +27,7 @@ const theme = createMuiTheme({
     },
     body1: {
       padding: 10,
-      color: '#e1e1e1 !important',
+      color: '#d5d5d5 !important',
     },
   },
   palette: {

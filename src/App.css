@@ -1,15 +1,15 @@
 body {
   background-color: #382e2d;
-  color: #fff;
+  color: #d6d5d5;
 }
 
 a {
-  color: #63ccff;
+  color: #fd8f58;
   text-decoration: solid;
 }
 
 a:hover {
-  color: #c463ff;
+  color: #80c680;
 }
 
 .App {
