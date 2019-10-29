@@ -9,8 +9,8 @@ import Index from './components/index';
 
 const stylesheet = {
   headerImage: {
-    height: '33vh',
-    backgroundImage: 'url(img/renders/mecha-scene.jpg)',
+    height: '10vh',
+    backgroundImage: 'url(img/2d/abstract_glass_phobos.jpg)',
     backgroundSize: 'cover',
   },
 };
