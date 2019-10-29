@@ -13,7 +13,7 @@ const stylesheet = {
   headerImage: {
     height: '30vh',
     background: 'right bottom',
-    backgroundImage: 'url(img/renders/low-poly-4.png)',
+    backgroundImage: 'url(img/renders/low-poly-0.png)',
     backgroundSize: 'cover',
   },
   headerLeft: {
