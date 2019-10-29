@@ -12,8 +12,8 @@ const stylesheet = {
     height: '33vh',
     backgroundImage: 'url(img/renders/mecha-scene.jpg)',
     backgroundSize: 'cover',
-  }
-}
+  },
+};
 
 export default function App() {
     return (
@@ -22,18 +22,19 @@ export default function App() {
             <Grid container spacing={24}>
               <Grid item xs={12}>
                   <Grid container>
-                    <Grid item xs={12}>
-                      <Toolbar>
-                        <Typography variant="h1">Chuck Leone</Typography>
-                      </Toolbar>
-                    </Grid>
-                    <Grid item xs={12} style={stylesheet.headerImage} />
-                    <Grid item xs={12}>
-                      <Typography variant="h2">About Me</Typography>
-                      <Typography variant="body1">
-                        <Index />
-                      </Typography>
-                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                      <Typography variant="h1">Chuck Leone</Typography>
+                      </Grid>
+                      <Grid item xs={12} sm={6}>
+                      <Typography variant="h2">Art | Design | Development</Typography>
+                      </Grid>
+                      <Grid item xs={12} style={stylesheet.headerImage} />
+                      <Grid item xs={12}>
+                        <Typography variant="h3">About Me</Typography>
+                        <Typography variant="body1">
+                          <Index />
+                        </Typography>
+                      </Grid>
                   </Grid>
               </Grid>
             </Grid>

@@ -11,14 +11,16 @@ const theme = createMuiTheme({
     },
     h2: {
       color: '#e1e1e1 !important',
-      fontSize: '1.75rem !important',
+      fontSize: '1.25rem !important',
       padding: 10,
       fontWeight: '400 !important',
       textTransform: 'uppercase',
+      textAlign: 'right',
     },
     h3: {
       color: '#e1e1e1 !important',
-      fontSize: '1.5rem !important',
+      fontSize: '1.15rem !important',
+      padding: 10,
       fontWeight: 400,
       textTransform: 'uppercase',
     },
