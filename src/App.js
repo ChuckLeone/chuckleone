@@ -1,7 +1,6 @@
 import React from 'react';
 import { MuiThemeProvider } from '@material-ui/core/styles';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+import { Button, Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import './App.css';
 import Theme from '../src/theme/theme';
@@ -15,6 +14,8 @@ const stylesheet = {
     background: 'center bottom',
     backgroundImage: 'url(img/renders/low-poly-0.png)',
     backgroundSize: 'cover',
+    padding: '20% 0',
+    textAlign: 'center',
   },
   headerLeft: {
     backgroundColor: '#040303',
@@ -34,6 +35,9 @@ const stylesheet = {
     width: '100%',
     borderTop: '2px solid #90614f',
   },
+  button: {
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+  }
 };
 
 export default function App() {
@@ -49,7 +53,9 @@ export default function App() {
                       <Grid item xs={12} sm={6} style={stylesheet.headerRight}>
                       <Typography variant="h2">Art | Design | Development</Typography>
                       </Grid>
-                      <Grid item xs={12} style={stylesheet.headerImage} />
+                      <Grid item xs={12} style={stylesheet.headerImage}>
+                      <Button href="/garden360/" variant="outlined" color="primary" size="large" style={stylesheet.button}>Enter the VR garden</Button>
+                      </Grid>
                       <Grid item xs={12} sm={8}>
                         <Typography variant="h3">About Me</Typography>
                           <Index />
