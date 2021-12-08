@@ -4,9 +4,9 @@ import {
     Route,
     Link
   } from "react-router-dom";
-import Home from "./pages/home";
-import Music from "./pages/music";
-import Portfolio from "./pages/portfolio";
+import Home from "./pages/Home";
+import Music from "./pages/Music";
+import Portfolio from "./pages/Portfolio";
 import Xr from "./pages/xr";
 import './App.css';
 
