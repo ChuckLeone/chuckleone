@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 
-const home = () => {
+const Home = () => {
     return (
         <Grid container spacing={2}>
             <Grid item sm={12}></Grid>
@@ -10,4 +10,4 @@ const home = () => {
     )
 };
 
-export default home;
+export default Home;
