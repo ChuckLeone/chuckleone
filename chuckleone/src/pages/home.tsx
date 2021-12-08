@@ -1,12 +1,12 @@
 import React from 'react';
 import { Grid } from '@mui/material';
+import SiteBanner from '../shared-components/SiteBanner';
 
 const Home = () => {
     return (
-        <Grid container spacing={2}>
-            <Grid item sm={12}></Grid>
-            <Grid item sm={12}></Grid>
-        </Grid>
+        <>
+        <SiteBanner />
+        </>
     )
 };
 
