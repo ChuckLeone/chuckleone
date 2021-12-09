@@ -1,16 +1,39 @@
-import React from "react";
-import { Box, Grid, IconButton, Pagination, PaginationItem, Stack, Typography } from '@mui/material';
-import { grey } from '@mui/material/colors'
+import React, { useState } from "react";
+import { Box, Grid, Pagination, PaginationItem, Stack, Typography } from '@mui/material';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import VaporCanyon from '../assets/vr-vapor-canyon.jpg';
+import VaporCanyon from '../assets/vapor-canyon.jpg';
+import LightwingHunter from '../assets/lightwing-hunter.jpg';
+import MechaScene from '../assets/mecha-scene.jpg';
 import Navigation from "./Navigation";
 
 const SiteBanner = () => {
-    const liteColor = grey['A100'];
-
+    const backgrounds = [
+        {
+            id: 0,
+            file: VaporCanyon,
+            title: 'Vapor Canyon',
+            description: 'Custom Unity 3D scene',
+        },
+        {
+            id: 1,
+            file: MechaScene,
+            title: 'Samurai',
+            description: 'Medium by Adobe scuplt',
+        },
+        {
+            id: 2,
+            file: LightwingHunter,
+            title: 'Lightwing Hunter',
+            description: 'Medium by Adobe scuplt',
+        },
+    ]; 
+    const [background, setBackground] = useState(backgrounds[0]);
+    const handleChange = () => {
+        return backgrounds.findIndex;
+    }
     return(
-        <div style={{ backgroundImage: `url(${VaporCanyon})`, backgroundRepeat: 'no-repeat', minHeight: '100vh', width: '100%', backgroundColor: '#000', backgroundPosition: 'center', backgroundSize: 'cover'}}>
+        <div style={{ backgroundImage: `url(${background.file})`, backgroundRepeat: 'no-repeat', minHeight: '100vh', width: '100%', backgroundColor: '#000', backgroundPosition: 'center', backgroundSize: 'cover'}}>
             <div style={{ backgroundColor: 'rgba(0,0,0,0.3', color: 'white', minHeight: '100vh', width: '100%', padding: '8px'}}>
                 <Box sx={{ minHeight: '60vh'}}>
                     <Grid container>   
@@ -22,18 +45,18 @@ const SiteBanner = () => {
                 <Box>
                     <Grid container spacing={2}>
                         <Grid item sm={12} sx={{ marginLeft: '20px'}}>
-                            <Typography variant="h1" component="h1" >CHV.CK LEONE</Typography>
-                            <Typography variant="h6" component="h2">Developer | Designer | Artist</Typography>
+                            <Typography variant="h1" component="h1" sx={{marginLeft: 0}}>CHV.CK LEONE</Typography>
+                            <Typography variant="h6" component="h2" sx={{marginLeft: '4px'}}>Developer | Designer | Artist</Typography>
                         </Grid>
-                        <Grid item sm={12} sx={{textAlign: 'center', marginRight: '40px', marginTop: '180px'}}>
-                            <Typography variant="h5" sx={{color: 'rgba(255,255,255,0.6)'}}>Vapor Canyon</Typography>
-                            <Typography variant="body1" sx={{color: 'rgba(255,255,255,0.6)'}}>Custom Unity 3D shader</Typography>
+                        <Grid item sm={12} sx={{textAlign: 'center', marginTop: '180px'}}>
+                            <Typography variant="h5" sx={{color: 'rgba(255,255,255,0.6)'}}>{background.title}</Typography>
+                            <Typography variant="body1" sx={{color: 'rgba(255,255,255,0.6)'}}>{background.description}</Typography>
                         </Grid>
-                        <Grid item sm={12} sx={{ textAlign: 'center'}}>
+                        <Grid item sm={12} sx={{textAlign: 'center', marginLeft: '12px'}}>
                             <Stack spacing={2}>
-                                <Pagination count={3} color="secondary" renderItem={(item) => (
+                                <Pagination count={3} color="secondary" onChange={handleChange} renderItem={(item) => (
                                     <PaginationItem sx={{color: '#fff'}}
-                                    components={{ previous: ArrowBackIosIcon, next: ArrowForwardIosIcon }}
+                                        components={{ previous: ArrowBackIosIcon, next: ArrowForwardIosIcon }}
                                     {...item} 
                                     />)} />
                             </Stack>
