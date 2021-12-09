@@ -1,11 +1,13 @@
 // @ts-nocheck 
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Box, Grid, Pagination, PaginationItem, Stack, Typography } from '@mui/material';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import VaporCanyon from '../assets/vapor-canyon.jpg';
 import LightwingHunter from '../assets/lightwing-hunter.jpg';
 import MechaScene from '../assets/mecha-scene.jpg';
+import TacticalAssassin from '../assets/tactical-assassin-droid.png';
+import UAV from '../assets/UAV-HUV01-UrbanCamoEdition.png';
 import Navigation from "./Navigation";
 
 const SiteBanner = () => {
@@ -27,6 +29,18 @@ const SiteBanner = () => {
             file: LightwingHunter,
             title: 'Lightwing Hunter',
             description: 'Medium by Adobe scuplt',
+        },
+        {
+            id: 4,
+            file: TacticalAssassin,
+            title: 'Tactical Assassin Droid',
+            description: 'SculptVR scuplt',
+        },
+        {
+            id: 5,
+            file: UAV,
+            title: 'UAV/HUV 01 - Urban Camo Edition',
+            description: 'SculptVR scuplt',
         },
     ]; 
     const [page, setPage] = useState(1);
@@ -61,7 +75,7 @@ const SiteBanner = () => {
                         </Grid>
                         <Grid item sm={12} sx={{textAlign: 'center', marginLeft: '12px'}}>
                             <Stack spacing={2}>
-                                <Pagination count={3} color="secondary" page={page} onChange={handleChange} renderItem={(item) => (
+                                <Pagination count={backgrounds.length} color="secondary" page={page} onChange={handleChange} renderItem={(item) => (
                                     <PaginationItem sx={{color: '#fff'}}
                                         components={{ previous: ArrowBackIosIcon, next: ArrowForwardIosIcon }}
                                     {...item} 
@@ -70,7 +84,6 @@ const SiteBanner = () => {
                         </Grid>
                     </Grid>
                 </Box>
-                
             </div>
         </div>
     );
