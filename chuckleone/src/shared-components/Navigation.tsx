@@ -18,7 +18,7 @@ const Navigation = () => {
             <Link to='/portfolio' style={{ textDecoration: 'none'}}><Button variant="text" style={{ color: '#fff'}}>Portfolio</Button></Link>
             <Link to='/music' style={{ textDecoration: 'none'}}><Button variant="text" style={{  color: '#fff'}}>Music</Button></Link>
             <Box sx={{ flexGrow: 1 }} />
-            <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+            <Box sx={{ display: 'flex' }}>
                 <IconButton size="large" aria-label="email me" color="inherit">
                     <a href="mailto:chuckleone@gmail.com">
                         <MailIcon sx={{ color: iconColor }} />

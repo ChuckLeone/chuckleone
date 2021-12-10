@@ -1,6 +1,7 @@
 import { Box, Card, CardMedia, Grid, Typography } from "@mui/material";
 import Navigation from "../shared-components/Navigation";
-import BeneathTheSand from "../assets/bts-cover.png";
+import BeneathTheSand from "../assets/cover-bts-thumb.jpg";
+import MonstersAndMachines from "../assets/mam-thumb.jpg";
 
 const MediaCards = () => {
     const itemData = [
@@ -8,17 +9,24 @@ const MediaCards = () => {
           img: BeneathTheSand,
           title: 'Beneath the Sand',
           details: 'Book cover/jacket design for the novel by Katherin L. Bichler',
+          link: 'https://katherinebichler.com/',
+        },
+        {
+            img: MonstersAndMachines,
+            title: 'Monsters and Machines',
+            details: 'Logo and brand identity for my original line of 3D printed products',
+            link: 'http://monstersandmachines.com'
         },
     ];
 
     return (
         <>
       {itemData.map((item) => (
-        <Grid item md={4}>
-            <Card key={item.img} sx={{maxWidth: 345}}>
+        <Grid item md={3}>
+            <Card key={item.img} sx={{maxWidth: 400, marginBottom: '8px'}}>
                 <CardMedia
                     component="img"
-                    height="400"
+                    height="300"
                     image={`${item.img}?w=248&fit=crop&auto=format`}
                     alt={item.title}
                 />
@@ -29,6 +37,9 @@ const MediaCards = () => {
             <Typography variant="body2" color="text.secondary" sx={{color: 'white'}}>
                 {item.details}
             </Typography>
+            <Typography variant="body2" color="text.secondary" sx={{color: 'white'}}>
+                <a href={`${item.link}`} target="new">More info</a>
+            </Typography>
         </Grid>
       ))}
     </>
@@ -36,7 +47,7 @@ const MediaCards = () => {
 }
 const Portfolio = () => {
     return (
-        <div style={{backgroundColor: '#4b4640', minHeight: '100vh', minWidth: '100%'}}>
+        <div style={{backgroundColor: '#171B27', minHeight: '100vh', minWidth: '100%'}}>
                 <Box sx={{minHeight: '10vh'}}>
                     <Grid container>   
                         <Grid item sm={12}>
@@ -45,7 +56,7 @@ const Portfolio = () => {
                     </Grid>
                 </Box>
                 <Box>
-                    <Grid container spacing={2} sx={{ marginLeft: '16px', maxWidth: '80%'}}>
+                    <Grid container spacing={2} sx={{ marginLeft: '16px', maxWidth: '70%'}}>
                         <Grid item sm={12}>
                             <Typography variant="h4" component="h1" sx={{color: 'white', marginLeft: 0}}>CHUCK LEONE</Typography>
                             <Typography variant="h6" component="h2" sx={{color: 'white', marginLeft: '4px'}}>Developer | Designer | Artist</Typography>

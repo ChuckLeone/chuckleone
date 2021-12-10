@@ -1,10 +1,10 @@
 import React from 'react';
-import SiteBanner from '../shared-components/SiteBanner';
+import SplashBanner from '../shared-components/SplashBanner';
 
 const Home = () => {
     return (
         <>
-        <SiteBanner />
+        <SplashBanner />
         </>
     )
 };
