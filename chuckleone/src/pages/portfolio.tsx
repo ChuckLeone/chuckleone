@@ -1,7 +1,6 @@
-import { Box, Card, CardActions, CardContent, CardMedia, Grid, ImageList, ImageListItem, ImageListItemBar, Pagination, PaginationItem, Stack, Typography } from "@mui/material";
+import { Box, Card, CardMedia, Grid, Typography } from "@mui/material";
 import Navigation from "../shared-components/Navigation";
 import BeneathTheSand from "../assets/bts-cover.png";
-import React from "react";
 
 const MediaCards = () => {
     const itemData = [

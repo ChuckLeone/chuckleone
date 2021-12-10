@@ -1,6 +1,6 @@
 // @ts-nocheck 
 import React, { useState } from "react";
-import { Box, Grid, Pagination, PaginationItem, Stack, Typography } from '@mui/material';
+import { Grid, Pagination, PaginationItem, Stack, Typography } from '@mui/material';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import VaporCanyon from '../assets/vapor-canyon.jpg';
