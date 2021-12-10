@@ -1,5 +1,5 @@
 import Navigation from "../shared-components/Navigation";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import MediaCard from "../shared-components/MediaCard";
 import Obscurity from "../assets/album-cover-obscurity.jpg"
 import TheReceptive from "../assets/album-cover-the-receptive.jpg";
@@ -43,6 +43,7 @@ const Music = () => {
     ]
     return (
         <div style={{backgroundColor: '#171B27', minHeight: '100vh', minWidth: '100%'}}>
+            <Container>
             <Box sx={{minHeight: '60px'}}>
                     <Grid container>   
                         <Grid item sm={12}>
@@ -66,29 +67,44 @@ const Music = () => {
                             </Typography>
                             
                         </Grid>
-                        <Grid item sm={12} sx={{maxWidth: '70%'}}>
-                        <Typography variant="h6" sx={{color: 'white'}} gutterBottom>Generative Modular Synth</Typography>
-                            <iframe
-                                // width="560" 
-                                // height="315" 
-                                width="70%"
-                                height="315"
-                                src="https://www.youtube.com/embed/FG2HMPdyRzw?controls=0" 
-                                title="YouTube video player" 
-                                frameBorder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                allowFullScreen>
-                            </iframe>
+                        <Grid item sm={12}>
+                            <Typography variant="h6" sx={{color: 'white'}} gutterBottom>Generative Modular Synth</Typography>
+                            <div style={{
+                                position: 'relative',
+                                width: '100%', 
+                                paddingBottom: '56.25%',
+                                height: '0',
+                               // maxWidth: '70%'
+                            }}>
+                                <iframe
+                                    // width="560" 
+                                    // height="315" 
+                                    style={{
+                                        position: 'absolute',
+                                        top: '0',
+                                        left: '0',
+                                        width: '100%',
+                                        height: '100%',
+                                    }}
+                                    width="100%"
+                                    height="100%"
+                                    src="https://www.youtube.com/embed/FG2HMPdyRzw?controls=0" 
+                                    title="YouTube video player" 
+                                    frameBorder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowFullScreen>
+                                </iframe>
+                            </div>
                         </Grid>
                         <Grid item sm={12} sx={{ marginTop: '10px', paddingRight: '30px'}}>
                             <Typography variant="h6" component="h6" sx={{color: 'white'}} gutterBottom>Available Releases</Typography>
                             <Grid container spacing={3}>
-                            <MediaCard albums={albums} />
+                                <MediaCard albums={albums} />
                             </Grid>
                         </Grid>
                     </Grid>
-                    
                 </Box>
+            </Container>
         </div>
     )
 };

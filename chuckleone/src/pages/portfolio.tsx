@@ -1,5 +1,6 @@
-import { Box, Card, CardMedia, Grid, Typography } from "@mui/material";
+import { Box, Card, CardMedia, Container, Grid, Typography } from "@mui/material";
 import Navigation from "../shared-components/Navigation";
+import Footer from '../shared-components/Footer';
 import BeneathTheSand from "../assets/cover-bts-thumb.jpg";
 import MonstersAndMachines from "../assets/mam-thumb.jpg";
 
@@ -22,8 +23,8 @@ const MediaCards = () => {
     return (
         <>
       {itemData.map((item) => (
-        <Grid item md={3}>
-            <Card key={item.img} sx={{maxWidth: 400, marginBottom: '8px'}}>
+        <Grid item key={item.img}>
+            <Card sx={{maxWidth: 400, marginBottom: '8px'}}>
                 <CardMedia
                     component="img"
                     height="300"
@@ -38,9 +39,9 @@ const MediaCards = () => {
                 {item.details}
             </Typography>
             <Typography variant="body2" color="text.secondary" sx={{color: 'white'}}>
-                <a href={`${item.link}`} target="new">More info</a>
+                <a href={`${item.link}`} target="new" style={{ textDecoration: 'none', color: 'cornflowerblue'}}>More info</a>
             </Typography>
-        </Grid>
+            </Grid>
       ))}
     </>
     )
@@ -48,6 +49,7 @@ const MediaCards = () => {
 const Portfolio = () => {
     return (
         <div style={{backgroundColor: '#171B27', minHeight: '100vh', minWidth: '100%'}}>
+            <Container>
                 <Box sx={{minHeight: '10vh'}}>
                     <Grid container>   
                         <Grid item sm={12}>
@@ -82,12 +84,20 @@ const Portfolio = () => {
                         <Grid item sm={12} sx={{ marginTop: '10px', paddingRight: '30px'}}>
                             <Typography variant="h6" component="h6" sx={{color: 'white'}}>Latest Work</Typography>
                             <Grid container spacing={3} sx={{marginTop: '16px'}}>
-                            <MediaCards />
+                                <MediaCards />
                             </Grid>
                         </Grid>
                         
                     </Grid>
                 </Box>
+                <Box>
+                    <Grid container>   
+                        <Grid item sm={12}>
+                            <Footer />
+                        </Grid>
+                    </Grid>
+                </Box>
+            </Container>
         </div>
     )
 };
