@@ -18,10 +18,7 @@ const Footer = () => {
                 Developer | Designer | Artist
                 </Typography>
             </Grid>
-            
-            
         </Grid>
-        
     );
 };
 

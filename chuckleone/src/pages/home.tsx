@@ -71,8 +71,8 @@ const Home = () => {
                             <Typography variant="h5" sx={{color: 'rgba(255,255,255,0.6)'}}>{background.title}</Typography>
                             <Typography variant="body2" sx={{color: 'rgba(255,255,255,0.6)'}}>{background.description}</Typography>
                         </Grid>
-                        <Grid item sm={12} md={12} lg={12} sx={{ marginLeft: '12px'}}>
-                            <Stack spacing={2}>
+                        <Grid item sm={12} md={12} lg={12} sx={{textAlign: 'center', alignItems: 'center'}}>
+                            <Stack spacing={2} direction="column" sx={{ display: 'flex'}}>
                                 <Pagination count={backgrounds.length} color="secondary" page={page} onChange={handleChange} renderItem={(item) => (
                                     <PaginationItem sx={{color: '#fff'}}
                                         components={{ previous: ArrowBackIosIcon, next: ArrowForwardIosIcon }}
