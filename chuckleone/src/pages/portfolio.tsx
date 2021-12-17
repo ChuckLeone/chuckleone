@@ -16,6 +16,7 @@ import Footer from "../shared-components/Footer";
 import BeneathTheSand from "../assets/cover-bts-thumb.jpg";
 import MonstersAndMachines from "../assets/mam-thumb.jpg";
 import CyborgEve from "../assets/cyborg-eve.jpg";
+import TargetEarth from "../assets/target-earth.jpg";
 
 const MediaCards = () => {
   const itemData = [
@@ -36,7 +37,13 @@ const MediaCards = () => {
       img: CyborgEve,
       title: "Cyborg - WIP",
       details: "3D model sculpted in Medium by Adobe",
-      link: "http://chuckleone.com/3d/cyborg-eve/",
+      link: "http://chuckleone.com/3d/cyborg-eve/index.html",
+    },
+    {
+      img: TargetEarth,
+      title: "Target Earth",
+      details: "Canvas game written in JavaScript",
+      link: "https://chuckleone.com/html5/games/target-earth/",
     },
   ];
 
