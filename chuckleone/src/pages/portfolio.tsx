@@ -15,6 +15,7 @@ import Navigation from "../shared-components/Navigation";
 import Footer from "../shared-components/Footer";
 import BeneathTheSand from "../assets/cover-bts-thumb.jpg";
 import MonstersAndMachines from "../assets/mam-thumb.jpg";
+import CyborgEve from "../assets/cyborg-eve.jpg";
 
 const MediaCards = () => {
   const itemData = [
@@ -30,6 +31,12 @@ const MediaCards = () => {
       details:
         "Logo/brand identity and webiste for a line of original 3D printed products",
       link: "http://monstersandmachines.com",
+    },
+    {
+      img: CyborgEve,
+      title: "Cyborg - WIP",
+      details: "3D model sculpted in Medium by Adobe",
+      link: "http://chuckleone.com/3d/cyborg-eve/",
     },
   ];
 
