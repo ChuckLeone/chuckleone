@@ -8,7 +8,6 @@ import {
   Chip,
   Container,
   Grid,
-  Stack,
   Typography,
 } from "@mui/material";
 import Navigation from "../shared-components/Navigation";
@@ -37,7 +36,7 @@ const MediaCards = () => {
       img: CyborgEve,
       title: "Cyborg - WIP",
       details: "3D model sculpted in Medium by Adobe",
-      link: "http://chuckleone.com/3d/cyborg-eve/index.html",
+      link: "http://chuckleone.com/3d/eve/",
     },
     {
       img: TargetEarth,

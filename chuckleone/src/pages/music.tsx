@@ -122,7 +122,12 @@ const Music = () => {
             </Grid>
             <Grid item sm={12}>
               <Typography variant="h6" sx={{ color: "white" }} gutterBottom>
-                Generative Modular Synth
+                Soundscapes - "Voices From the Ether"
+              </Typography>
+              <Typography variant="body1" sx={{ color: "white" }} gutterBottom>
+                The second piece in a series of generative modular synthesizer
+                soundscapes. This series features custom patches that are
+                self-playing and evolve over time.
               </Typography>
               <div
                 style={{
