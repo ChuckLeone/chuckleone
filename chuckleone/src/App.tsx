@@ -1,25 +1,27 @@
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-  } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home";
 import Music from "./pages/music";
 import Portfolio from "./pages/portfolio";
 import Xr from "./pages/xr";
-import './App.css';
+import "./App.css";
 import { createTheme, ThemeProvider } from "@mui/material";
 
-const darkTheme = createTheme({
+const theme = createTheme({
   palette: {
-    mode: 'dark',
+    mode: "dark",
+  },
+  typography: {
+    fontSize: 16,
+    h1: {
+      fontSize: "4rem",
+    },
   },
 });
 
 function App() {
-    return ( 
-      <>
-      <ThemeProvider theme={darkTheme}>
+  return (
+    <>
+      <ThemeProvider theme={theme}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -29,8 +31,8 @@ function App() {
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
-      </>
-    );
+    </>
+  );
 }
 
 export default App;

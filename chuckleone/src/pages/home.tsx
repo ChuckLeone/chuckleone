@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React, { useState } from "react";
 import {
   Container,
@@ -16,6 +15,11 @@ import Samurai from "../assets/3d-samurai.jpg";
 import MonstersAndMachines from "../assets/banner-lg-mam.jpg";
 import Voices from "../assets/soundscape-voices-from-the-ether-screenshot.jpg";
 import Navigation from "../shared-components/Navigation";
+
+// interface IHome {
+//   e: Event;
+//   value: number;
+// }
 
 const Home = () => {
   const backgrounds = [
@@ -54,7 +58,8 @@ const Home = () => {
   const [page, setPage] = useState(1);
   const [background, setBackground] = useState(backgrounds[0]);
 
-  const handleChange = (event, value) => {
+  const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
+    console.log(value);
     setPage(value);
     const arrayIndex = value - 1;
     setBackground(backgrounds[arrayIndex]);
@@ -81,7 +86,7 @@ const Home = () => {
         }}
       >
         <Container>
-          <Grid container sx={{ minHeight: "65vh" }}>
+          <Grid container sx={{ minHeight: "60vh" }}>
             <Grid item sm={12}>
               <Navigation />
             </Grid>

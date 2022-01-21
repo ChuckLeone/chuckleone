@@ -50,7 +50,7 @@ const MediaCards = () => {
     <>
       {itemData.map((item) => (
         <Grid item key={item.img}>
-          <Card sx={{ maxWidth: 400, marginBottom: "8px" }}>
+          <Card sx={{ maxWidth: 300, marginBottom: "8px" }}>
             <CardMedia
               component="img"
               height="300"
@@ -91,11 +91,11 @@ const Portfolio = () => {
       style={{
         backgroundColor: "#171B27",
         minHeight: "100vh",
-        minWidth: "100%",
+        width: "100%",
       }}
     >
       <Container>
-        <Box sx={{ minHeight: "60px" }}>
+        <Box sx={{ minHeight: "60px", marginTop: "16px" }}>
           <Grid container>
             <Grid item sm={12} md={12}>
               <Navigation />
@@ -103,7 +103,7 @@ const Portfolio = () => {
           </Grid>
         </Box>
         <Box>
-          <Grid container spacing={2} sx={{ marginLeft: "16px" }}>
+          <Grid container spacing={2}>
             <Grid item xs={12}>
               <Typography
                 variant="h4"

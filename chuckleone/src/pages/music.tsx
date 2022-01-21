@@ -51,7 +51,7 @@ const Music = () => {
       }}
     >
       <Container>
-        <Box sx={{ minHeight: "60px" }}>
+        <Box sx={{ minHeight: "60px", marginTop: "16px" }}>
           <Grid container>
             <Grid item sm={12}>
               <Navigation />
@@ -59,7 +59,7 @@ const Music = () => {
           </Grid>
         </Box>
         <Box>
-          <Grid container spacing={2} sx={{ marginLeft: "16px" }}>
+          <Grid container spacing={2}>
             <Grid item sm={12}>
               <Typography
                 variant="h4"

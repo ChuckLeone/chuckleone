@@ -1,5 +1,5 @@
-import { Grid, Divider, Typography } from "@mui/material";
 import React from "react";
+import { Grid, Divider, Typography } from "@mui/material";
 
 const Footer = () => {
   const getDate = () => {
@@ -15,6 +15,27 @@ const Footer = () => {
         <Divider />
       </Grid>
       <Grid item sm={12}>
+        <a
+          href="mailto:chuckleone@gmail.com"
+          style={{
+            textDecoration: "none",
+            color: "#fff",
+            paddingRight: "16px",
+          }}
+        >
+          <Typography variant="caption">Email</Typography>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/chuckleone/"
+          target="new"
+          style={{
+            textDecoration: "none",
+            color: "#fff",
+            paddingRight: "16px",
+          }}
+        >
+          <Typography variant="caption">LinkedIn</Typography>
+        </a>
         <a
           href="https://github.com/ChuckLeone"
           target="new"
@@ -37,8 +58,9 @@ const Footer = () => {
         >
           <Typography variant="caption">Sketchfab</Typography>
         </a>
+
         <a
-          href="https://www.linkedin.com/in/chuckleone/"
+          href="https://www.artstation.com/chuckleone"
           target="new"
           style={{
             textDecoration: "none",
@@ -46,9 +68,10 @@ const Footer = () => {
             paddingRight: "16px",
           }}
         >
-          <Typography variant="caption">LinkedIn</Typography>
+          <Typography variant="caption">Artstation</Typography>
         </a>
       </Grid>
+
       <Grid item sm={6}>
         <Typography variant="caption" sx={{ color: "#a7a7a7" }}>
           Copyright © {getDate()} Chuck Leone{" "}
