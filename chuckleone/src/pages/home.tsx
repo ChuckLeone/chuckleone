@@ -16,11 +16,6 @@ import MonstersAndMachines from "../assets/banner-lg-mam.jpg";
 import Voices from "../assets/soundscape-voices-from-the-ether-screenshot.jpg";
 import Navigation from "../shared-components/Navigation";
 
-// interface IHome {
-//   e: Event;
-//   value: number;
-// }
-
 const Home = () => {
   const backgrounds = [
     {
