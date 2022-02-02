@@ -135,12 +135,9 @@ const Music = () => {
                   width: "100%",
                   paddingBottom: "56.25%",
                   height: "0",
-                  // maxWidth: '70%'
                 }}
               >
                 <iframe
-                  // width="560"
-                  // height="315"
                   style={{
                     position: "absolute",
                     top: "0",

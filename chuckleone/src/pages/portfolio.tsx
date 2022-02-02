@@ -16,6 +16,9 @@ import BeneathTheSand from "../assets/cover-bts-thumb.jpg";
 import MonstersAndMachines from "../assets/mam-thumb.jpg";
 import CyborgEve from "../assets/cyborg-eve.jpg";
 import TargetEarth from "../assets/target-earth.jpg";
+import LightWingHunter from "../assets/3d-lightwing-hunter.jpg";
+import GalleryModal from "../shared-components/Modal";
+import { useState } from "react";
 
 const MediaCards = () => {
   const itemData = [
@@ -24,6 +27,8 @@ const MediaCards = () => {
       title: "Beneath the Sand",
       details: "Book cover/jacket design for the novel by Katherin L. Bichler",
       link: "https://katherinebichler.com/",
+      tags: [{ id: 0, title: "photoshop" }],
+      buttonText: "More Info",
     },
     {
       img: MonstersAndMachines,
@@ -31,21 +36,51 @@ const MediaCards = () => {
       details:
         "Logo/brand identity and webiste for a line of original 3D printed products",
       link: "http://monstersandmachines.com",
+      tags: [
+        { id: 0, title: "reactjs" },
+        { id: 1, title: "materialui" },
+        { id: 3, title: "javascript" },
+      ],
+      buttonText: "Visit Website",
     },
     {
       img: CyborgEve,
       title: "Cyborg - WIP",
       details: "3D model sculpted in Medium by Adobe",
       link: "http://chuckleone.com/3d/eve/",
+      tags: [{ id: 0, title: "3dmodeling" }],
+      buttonText: "View Model",
+    },
+    {
+      img: LightWingHunter,
+      title: "Light Wing Hunter",
+      details: "3D model sculpted in Medium by Adobe",
+      link: "https://chuckleone.com/html5/games/target-earth/",
+      tags: [{ id: 0, title: "3D Modeling" }],
+      buttonText: "View Render",
+      gallery: true,
     },
     {
       img: TargetEarth,
       title: "Target Earth",
       details: "Canvas game written in JavaScript",
       link: "https://chuckleone.com/html5/games/target-earth/",
+      tags: [
+        { id: 0, title: "photoshop" },
+        { id: 1, title: "javascript" },
+      ],
+      buttonText: "Play Now",
     },
   ];
 
+  const [open, setOpen] = useState(false);
+  const [galleryItem, setGalleryItem] = useState([]);
+  const handleClose = () => setOpen(false);
+
+  const handleClick = (item: any) => {
+    setOpen(true);
+    setGalleryItem(item);
+  };
   return (
     <>
       {itemData.map((item) => (
@@ -73,18 +108,32 @@ const MediaCards = () => {
               >
                 {item.details}
               </Typography>
+              <div style={{ paddingTop: "16px", margin: "0" }}>
+                {item.tags.map((tag) => (
+                  <Chip key={tag.id} label={tag.title} sx={{ margin: "8px" }} />
+                ))}
+              </div>
             </CardContent>
             <CardActions>
-              <Button variant="text" href={`${item.link}`}>
-                More info
-              </Button>
+              {!item.gallery && (
+                <Button variant="text" href={`${item.link}`}>
+                  {item.buttonText}
+                </Button>
+              )}
+              {item.gallery && (
+                <Button variant="text" onClick={() => handleClick(item)}>
+                  View Larger Image
+                </Button>
+              )}
             </CardActions>
           </Card>
         </Grid>
       ))}
+      <GalleryModal open={open} onClose={handleClose} props={galleryItem} />
     </>
   );
 };
+
 const Portfolio = () => {
   return (
     <div

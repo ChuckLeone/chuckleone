@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { Grid, Card, CardMedia, Typography } from "@mui/material";
+import { Grid, Card, CardMedia } from "@mui/material";
 import React from "react";
 
 const MediaCard = (props) => {
@@ -14,6 +14,7 @@ const MediaCard = (props) => {
                 height="300"
                 image={`${album.image}?w=248&fit=crop&auto=format`}
                 alt={album.title}
+                tags={album.tags}
               />
             </Card>
           </a>
