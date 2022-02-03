@@ -19,6 +19,11 @@ import TargetEarth from "../assets/target-earth.jpg";
 import LightWingHunter from "../assets/3d-lightwing-hunter.jpg";
 import GalleryModal from "../shared-components/Modal";
 import VaporCanyon from "../assets/world-0/vapor-canyon.jpg";
+import SwampBlue1 from "../assets/world-0/swamp-blue-1.jpg";
+import SwampBlue3 from "../assets/world-0/swamp-blue-3.jpg";
+import TheOldOnes from "../assets/TheOldOnes-sm.jpg";
+import Samurai from "../assets/3d-samurai.jpg";
+
 import { useState } from "react";
 
 const MediaCards = () => {
@@ -26,35 +31,39 @@ const MediaCards = () => {
     {
       img: BeneathTheSand,
       title: "Beneath the Sand",
+      description: "Book Jacket designed in Adobe Photoshop",
       details: "Book cover/jacket design for the novel by Katherin L. Bichler",
       link: "https://katherinebichler.com/",
-      tags: [{ id: 0, title: "photoshop" }],
+      tags: [{ id: 0, title: "Photoshop" }],
       buttonText: "More Info",
     },
     {
       img: MonstersAndMachines,
       title: "Monsters and Machines",
+      description: "ReactJS Web App",
       details:
         "Logo/brand identity and webiste for a line of original 3D printed products",
       link: "http://monstersandmachines.com",
       tags: [
-        { id: 0, title: "reactjs" },
-        { id: 1, title: "materialui" },
-        { id: 3, title: "javascript" },
+        { id: 0, title: "ReactJS" },
+        { id: 1, title: "Material UI" },
+        { id: 3, title: "JavaScript" },
       ],
       buttonText: "Visit Website",
     },
     {
       img: CyborgEve,
       title: "Cyborg - WIP",
+      description: "3D Model sculpted in Medium by Adobe",
       details: "3D model sculpted in Medium by Adobe",
       link: "http://chuckleone.com/3d/eve/",
-      tags: [{ id: 0, title: "3dmodeling" }],
+      tags: [{ id: 0, title: "3D Modeling" }],
       buttonText: "View Model",
     },
     {
       img: LightWingHunter,
       title: "Light Wing Hunter",
+      description: "3D Model sculpted in Medium by Adobe",
       details: "3D model sculpted in Medium by Adobe",
       tags: [{ id: 0, title: "3D Modeling" }],
       buttonText: "View Render",
@@ -63,8 +72,9 @@ const MediaCards = () => {
     {
       img: VaporCanyon,
       title: "Vapor Canyon",
+      description: "Screenshot from VR experience",
       details:
-        "Screenshot from World 0, a Unity 3D VR experience. This environment was built using terrain data from terrain.party and applied to Unity terrain object. Project also consists of custom skybox shaders and textures.",
+        "Level screenshot from Unity VR experience.  This environment was built using terrain data from terrain.party and applied to Unity terrain object. Project also consists of custom skybox shaders and textures.",
       tags: [
         { id: 0, title: "Unity 3D" },
         { id: 1, title: "Photoshop" },
@@ -73,13 +83,58 @@ const MediaCards = () => {
       gallery: true,
     },
     {
+      img: SwampBlue1,
+      title: "Blue Swamp #1",
+      description: "Screenshot from VR experience",
+      details:
+        "Level screenshot from Unity VR experience. This environment was built using terrain data from terrain.party and applied to Unity terrain object. Project also consists of custom skybox shaders and textures.",
+      tags: [
+        { id: 0, title: "Unity 3D" },
+        { id: 1, title: "Photoshop" },
+      ],
+      buttonText: "View Larger Image",
+      gallery: true,
+    },
+    {
+      img: Samurai,
+      title: "Samurai",
+      description: "3D Model | Medium by Adobe",
+      details: "3D Model sculpted and rendered in Medium by Adobe",
+      tags: [{ id: 0, title: "3D Modeling" }],
+      buttonText: "View Larger Image",
+      gallery: true,
+    },
+    {
+      img: SwampBlue3,
+      title: "Blue Swamp #3",
+      description: "Screenshot from VR experience",
+      details:
+        "Level screenshot from Unity VR experience. This environment was built using terrain data from terrain.party and applied to Unity terrain object. Project also consists of custom skybox shaders and textures.",
+      tags: [
+        { id: 0, title: "Unity 3D" },
+        { id: 1, title: "Photoshop" },
+      ],
+      buttonText: "View Larger Image",
+      gallery: true,
+    },
+    {
+      img: TheOldOnes,
+      title: "The Old Ones",
+      description: "Digital Painting Done in Autodesk Sketchbook",
+      details: "Digital painting inspired by the works of HP Lovecraft.",
+      tags: [{ id: 0, title: "Autodesk Sketchbook" }],
+      buttonText: "View Larger Image",
+      gallery: true,
+    },
+    {
       img: TargetEarth,
       title: "Target Earth",
+      description: "HTML 5 Canvas Game",
       details: "Canvas game written in JavaScript",
       link: "https://chuckleone.com/html5/games/target-earth/",
       tags: [
-        { id: 0, title: "photoshop" },
-        { id: 1, title: "javascript" },
+        { id: 0, title: "Photoshop" },
+        { id: 1, title: "JavaScript" },
       ],
       buttonText: "Play Now",
     },
@@ -118,7 +173,7 @@ const MediaCards = () => {
                 color="text.secondary"
                 sx={{ color: "white" }}
               >
-                {item.details}
+                {item.description}
               </Typography>
               <div style={{ paddingTop: "16px", margin: "0" }}>
                 {item.tags.map((tag) => (
