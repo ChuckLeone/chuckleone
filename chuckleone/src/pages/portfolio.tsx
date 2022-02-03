@@ -17,6 +17,7 @@ import MonstersAndMachines from "../assets/mam-thumb.jpg";
 import CyborgEve from "../assets/cyborg-eve.jpg";
 import TargetEarth from "../assets/target-earth.jpg";
 import LightWingHunter from "../assets/3d-lightwing-hunter.jpg";
+import VaporCanyon from "../assets/vapor-canyon.jpg";
 import GalleryModal from "../shared-components/Modal";
 import { useState } from "react";
 
@@ -55,9 +56,20 @@ const MediaCards = () => {
       img: LightWingHunter,
       title: "Light Wing Hunter",
       details: "3D model sculpted in Medium by Adobe",
-      link: "https://chuckleone.com/html5/games/target-earth/",
       tags: [{ id: 0, title: "3D Modeling" }],
       buttonText: "View Render",
+      gallery: true,
+    },
+    {
+      img: VaporCanyon,
+      title: "Vapor Canyon",
+      details:
+        "Unity 3D environment derived from data from terrain.party and applied to Unity terrain object.",
+      tags: [
+        { id: 0, title: "Unity 3D" },
+        { id: 1, title: "Photoshop" },
+      ],
+      buttonText: "View Larger Image",
       gallery: true,
     },
     {
