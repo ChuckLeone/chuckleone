@@ -1,35 +1,40 @@
 // @ts-ignore
-import { Box, Modal, Typography } from "@mui/material";
+import { Box, Dialog, IconButton, Typography } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 
 const GalleryModal = (props: any) => {
   return (
-    <Modal
+    <Dialog
       {...props}
       aria-labelledby="gallery-modal"
       aria-describedby="gallery-modal-desicription"
+      fullWidth
+      PaperProps={{ maxWidth: "70%" }}
     >
-      <Box sx={{ marginTop: "48px", textAlign: "center" }}>
-        <div style={{ backgroundColor: "#000", padding: "16px" }}>
-          <Typography
-            id="gallery-modal-title"
-            variant="h5"
-            component="h3"
-            sx={{ color: "#fff" }}
-          >
-            {props.props.title}
-          </Typography>
-          <Typography
-            id="gallery-modal-desicription"
-            component="h4"
-            sx={{ color: "#fff" }}
-          >
-            {props.props.details}
-          </Typography>
-        </div>
-
-        <img src={props.props.img} alt={props.props.title} />
+      <Box sx={{ margin: "8px", textAlign: "center" }}>
+        <Typography
+          id="gallery-modal-title"
+          variant="h5"
+          component="h3"
+          sx={{ color: "#fff", margin: "16px" }}
+        >
+          {props.item.title}
+        </Typography>
+        <img
+          src={props.item.img}
+          alt={props.item.title}
+          width="70%"
+          height="70%"
+        />
+        <Typography
+          id="gallery-modal-desicription"
+          component="h4"
+          sx={{ color: "#fff", margin: "16px" }}
+        >
+          {props.item.details}
+        </Typography>
       </Box>
-    </Modal>
+    </Dialog>
   );
 };
 

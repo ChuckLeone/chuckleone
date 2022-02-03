@@ -54,7 +54,6 @@ const Home = () => {
   const [background, setBackground] = useState(backgrounds[0]);
 
   const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
-    console.log(value);
     setPage(value);
     const arrayIndex = value - 1;
     setBackground(backgrounds[arrayIndex]);

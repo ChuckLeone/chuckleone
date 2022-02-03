@@ -17,8 +17,8 @@ import MonstersAndMachines from "../assets/mam-thumb.jpg";
 import CyborgEve from "../assets/cyborg-eve.jpg";
 import TargetEarth from "../assets/target-earth.jpg";
 import LightWingHunter from "../assets/3d-lightwing-hunter.jpg";
-import VaporCanyon from "../assets/vapor-canyon.jpg";
 import GalleryModal from "../shared-components/Modal";
+import VaporCanyon from "../assets/world-0/vapor-canyon.jpg";
 import { useState } from "react";
 
 const MediaCards = () => {
@@ -64,7 +64,7 @@ const MediaCards = () => {
       img: VaporCanyon,
       title: "Vapor Canyon",
       details:
-        "Unity 3D environment derived from data from terrain.party and applied to Unity terrain object.",
+        "Screenshot from World 0, a Unity 3D VR experience. This environment was built using terrain data from terrain.party and applied to Unity terrain object. Project also consists of custom skybox shaders and textures.",
       tags: [
         { id: 0, title: "Unity 3D" },
         { id: 1, title: "Photoshop" },
@@ -141,7 +141,7 @@ const MediaCards = () => {
           </Card>
         </Grid>
       ))}
-      <GalleryModal open={open} onClose={handleClose} props={galleryItem} />
+      <GalleryModal open={open} onClose={handleClose} item={galleryItem} />
     </>
   );
 };
