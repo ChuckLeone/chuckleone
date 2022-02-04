@@ -13,6 +13,7 @@ import VaporCanyon from "../assets/vapor-canyon.jpg";
 import BeneathTheSand from "../assets/beneath-the-sand-jacket.jpg";
 import Samurai from "../assets/3d-samurai.jpg";
 import MonstersAndMachines from "../assets/banner-lg-mam.jpg";
+import SwampBlue3 from "../assets/world-0/swamp-blue-3.jpg";
 import Voices from "../assets/soundscape-voices-from-the-ether-screenshot.jpg";
 import Navigation from "../shared-components/Navigation";
 
@@ -45,6 +46,12 @@ const Home = () => {
     },
     {
       id: 5,
+      file: SwampBlue3,
+      title: "Blue Swamp",
+      description: "VR Experience | Adobe Photoshop + Unity 3D",
+    },
+    {
+      id: 6,
       file: Voices,
       title: "Voices from the Ether",
       description: "Sound Desgin | Modular Synthesizer",

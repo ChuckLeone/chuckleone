@@ -21,7 +21,6 @@ import GalleryModal from "../shared-components/Modal";
 import VaporCanyon from "../assets/world-0/vapor-canyon.jpg";
 import SwampBlue1 from "../assets/world-0/swamp-blue-1.jpg";
 import SwampBlue3 from "../assets/world-0/swamp-blue-3.jpg";
-import TheOldOnes from "../assets/TheOldOnes-sm.jpg";
 import Samurai from "../assets/3d-samurai.jpg";
 
 import { useState } from "react";
@@ -114,15 +113,6 @@ const MediaCards = () => {
         { id: 0, title: "Unity 3D" },
         { id: 1, title: "Photoshop" },
       ],
-      buttonText: "View Larger Image",
-      gallery: true,
-    },
-    {
-      img: TheOldOnes,
-      title: "The Old Ones",
-      description: "Digital Painting Done in Autodesk Sketchbook",
-      details: "Digital painting inspired by the works of HP Lovecraft.",
-      tags: [{ id: 0, title: "Autodesk Sketchbook" }],
       buttonText: "View Larger Image",
       gallery: true,
     },
