@@ -9,124 +9,148 @@ import {
   Container,
   Grid,
   Typography,
-} from "@mui/material";
-import Navigation from "../shared-components/Navigation";
-import Footer from "../shared-components/Footer";
-import BeneathTheSand from "../assets/cover-bts-thumb.jpg";
-import MonstersAndMachines from "../assets/mam-thumb.jpg";
-import CyborgEve from "../assets/cyborg-eve.jpg";
-import TargetEarth from "../assets/target-earth.jpg";
-import LightWingHunter from "../assets/3d-lightwing-hunter.jpg";
-import GalleryModal from "../shared-components/Modal";
-import VaporCanyon from "../assets/world-0/vapor-canyon.jpg";
-import SwampBlue1 from "../assets/world-0/swamp-blue-1.jpg";
-import SwampBlue3 from "../assets/world-0/swamp-blue-3.jpg";
-import Samurai from "../assets/3d-samurai.jpg";
-
-import { useState } from "react";
+} from '@mui/material';
+import Navigation from '../shared-components/Navigation';
+import Footer from '../shared-components/Footer';
+import BeneathTheSand from '../assets/cover-bts-thumb.jpg';
+import MonstersAndMachines from '../assets/mam-thumb.jpg';
+import Eve from '../assets/eve.jpg';
+import HPS from '../assets/hps-thumb.jpg';
+import DataViz1 from '../assets/data-viz1.jpg';
+import TargetEarth from '../assets/target-earth.jpg';
+import LightWingHunter from '../assets/3d-lightwing-hunter.jpg';
+import GalleryModal from '../shared-components/Modal';
+import VaporCanyon from '../assets/world-0/vapor-canyon.jpg';
+import SwampBlue1 from '../assets/world-0/swamp-blue-1.jpg';
+import SwampBlue3 from '../assets/world-0/swamp-blue-3.jpg';
+import Samurai from '../assets/3d-samurai.jpg';
+import { useState } from 'react';
 
 const MediaCards = () => {
   const itemData = [
     {
       img: BeneathTheSand,
-      title: "Beneath the Sand",
-      description: "Book Jacket designed in Adobe Photoshop",
-      details: "Book cover/jacket design for the novel by Katherin L. Bichler",
-      link: "https://katherinebichler.com/",
-      tags: [{ id: 0, title: "Photoshop" }],
-      buttonText: "More Info",
+      title: 'Beneath the Sand',
+      description: 'Book Jacket designed in Adobe Photoshop',
+      details: 'Book cover/jacket design for the novel by Katherin L. Bichler',
+      link: 'https://katherinebichler.com/',
+      tags: [{ id: 0, title: 'Photoshop' }],
+      buttonText: 'More Info',
     },
     {
       img: MonstersAndMachines,
-      title: "Monsters and Machines",
-      description: "ReactJS Web App",
+      title: 'Monsters and Machines',
+      description: 'ReactJS Web App',
       details:
-        "Logo/brand identity and webiste for a line of original 3D printed products",
-      link: "http://monstersandmachines.com",
+        'Logo/brand identity and website for a line of original 3D printed products',
+      link: 'http://monstersandmachines.com',
       tags: [
-        { id: 0, title: "ReactJS" },
-        { id: 1, title: "Material UI" },
-        { id: 3, title: "JavaScript" },
+        { id: 0, title: 'ReactJS' },
+        { id: 1, title: 'Material UI' },
+        { id: 3, title: 'JavaScript' },
       ],
-      buttonText: "Visit Website",
+      buttonText: 'Visit Website',
     },
     {
-      img: CyborgEve,
-      title: "Cyborg - WIP",
-      description: "3D Model sculpted in Medium by Adobe",
-      details: "3D model sculpted in Medium by Adobe",
-      link: "http://chuckleone.com/3d/eve/",
-      tags: [{ id: 0, title: "3D Modeling" }],
-      buttonText: "View Model",
+      img: HPS,
+      title: 'Harris Print Solutions',
+      description: 'Web Site',
+      details:
+        'Logo/brand identity and web site for Harris Print Solutions - a division of Harris Computer',
+      link: '/portfolio/details/hps',
+      tags: [
+        { id: 0, title: 'HTML' },
+        { id: 1, title: 'CSS' },
+        { id: 3, title: 'JavaScript' },
+      ],
+      buttonText: 'View More',
+    },
+    {
+      img: DataViz1,
+      title: '3D Data Visualization',
+      description: 'Displaying data with ThreeJS and React Three Fiber',
+      details: 'Displaying data with ThreeJS and React Three Fiber',
+      link: 'http://chuckleone.com/3d/data1/',
+      tags: [{ id: 0, title: 'ReactJS' }],
+      buttonText: 'View Data',
+    },
+    {
+      img: Eve,
+      title: 'Cyborg - WIP',
+      description: '3D Model sculpted in Medium by Adobe',
+      details: '3D model sculpted in Medium by Adobe',
+      link: 'http://chuckleone.com/3d/eve/',
+      tags: [{ id: 0, title: '3D Modeling' }],
+      buttonText: 'View Model',
     },
     {
       img: LightWingHunter,
-      title: "Light Wing Hunter",
-      description: "3D Model sculpted in Medium by Adobe",
-      details: "3D model sculpted in Medium by Adobe",
-      tags: [{ id: 0, title: "3D Modeling" }],
-      buttonText: "View Render",
+      title: 'Light Wing Hunter',
+      description: '3D Model sculpted in Medium by Adobe',
+      details: '3D model sculpted in Medium by Adobe',
+      tags: [{ id: 0, title: '3D Modeling' }],
+      buttonText: 'View Render',
       gallery: true,
     },
     {
       img: VaporCanyon,
-      title: "Vapor Canyon",
-      description: "Screenshot from VR experience",
+      title: 'Vapor Canyon',
+      description: 'Screenshot from VR experience',
       details:
-        "Level screenshot from Unity VR experience.  This environment was built using terrain data from terrain.party and applied to Unity terrain object. Project also consists of custom skybox shaders and textures.",
+        'Level screenshot from Unity VR experience.  This environment was built using terrain data from terrain.party and applied to Unity terrain object. Project also consists of custom skybox shaders and textures.',
       tags: [
-        { id: 0, title: "Unity 3D" },
-        { id: 1, title: "Photoshop" },
+        { id: 0, title: 'Unity 3D' },
+        { id: 1, title: 'Photoshop' },
       ],
-      buttonText: "View Larger Image",
+      buttonText: 'View Larger Image',
       gallery: true,
     },
     {
       img: SwampBlue1,
-      title: "Blue Swamp #1",
-      description: "Screenshot from VR experience",
+      title: 'Blue Swamp #1',
+      description: 'Screenshot from VR experience',
       details:
-        "Level screenshot from Unity VR experience. This environment was built using terrain data from terrain.party and applied to Unity terrain object. Project also consists of custom skybox shaders and textures.",
+        'Level screenshot from Unity VR experience. This environment was built using terrain data from terrain.party and applied to Unity terrain object. Project also consists of custom skybox shaders and textures.',
       tags: [
-        { id: 0, title: "Unity 3D" },
-        { id: 1, title: "Photoshop" },
+        { id: 0, title: 'Unity 3D' },
+        { id: 1, title: 'Photoshop' },
       ],
-      buttonText: "View Larger Image",
+      buttonText: 'View Larger Image',
       gallery: true,
     },
     {
       img: Samurai,
-      title: "Samurai",
-      description: "3D Model | Medium by Adobe",
-      details: "3D Model sculpted and rendered in Medium by Adobe",
-      tags: [{ id: 0, title: "3D Modeling" }],
-      buttonText: "View Larger Image",
+      title: 'Samurai',
+      description: '3D Model | Medium by Adobe',
+      details: '3D Model sculpted and rendered in Medium by Adobe',
+      tags: [{ id: 0, title: '3D Modeling' }],
+      buttonText: 'View Larger Image',
       gallery: true,
     },
     {
       img: SwampBlue3,
-      title: "Blue Swamp #3",
-      description: "Screenshot from VR experience",
+      title: 'Blue Swamp #3',
+      description: 'Screenshot from VR experience',
       details:
-        "Level screenshot from Unity VR experience. This environment was built using terrain data from terrain.party and applied to Unity terrain object. Project also consists of custom skybox shaders and textures.",
+        'Level screenshot from Unity VR experience. This environment was built using terrain data from terrain.party and applied to Unity terrain object. Project also consists of custom skybox shaders and textures.',
       tags: [
-        { id: 0, title: "Unity 3D" },
-        { id: 1, title: "Photoshop" },
+        { id: 0, title: 'Unity 3D' },
+        { id: 1, title: 'Photoshop' },
       ],
-      buttonText: "View Larger Image",
+      buttonText: 'View Larger Image',
       gallery: true,
     },
     {
       img: TargetEarth,
-      title: "Target Earth",
-      description: "HTML 5 Canvas Game",
-      details: "Canvas game written in JavaScript",
-      link: "https://chuckleone.com/html5/games/target-earth/",
+      title: 'Target Earth',
+      description: 'HTML 5 Canvas Game',
+      details: 'Canvas game written in JavaScript',
+      link: 'https://chuckleone.com/html5/games/target-earth/',
       tags: [
-        { id: 0, title: "Photoshop" },
-        { id: 1, title: "JavaScript" },
+        { id: 0, title: 'Photoshop' },
+        { id: 1, title: 'JavaScript' },
       ],
-      buttonText: "Play Now",
+      buttonText: 'Play Now',
     },
   ];
 
@@ -142,43 +166,43 @@ const MediaCards = () => {
     <>
       {itemData.map((item) => (
         <Grid item key={item.img}>
-          <Card sx={{ maxWidth: 300, marginBottom: "8px" }}>
+          <Card sx={{ maxWidth: 300, marginBottom: '8px' }}>
             <CardMedia
-              component="img"
-              height="300"
+              component='img'
+              height='300'
               image={`${item.img}?w=248&fit=crop&auto=format`}
               alt={item.title}
             />
             <CardContent>
               <Typography
                 gutterBottom
-                variant="h6"
-                component="div"
-                sx={{ color: "white" }}
+                variant='h6'
+                component='div'
+                sx={{ color: 'white' }}
               >
                 {item.title}
               </Typography>
               <Typography
-                variant="body2"
-                color="text.secondary"
-                sx={{ color: "white" }}
+                variant='body2'
+                color='text.secondary'
+                sx={{ color: 'white' }}
               >
                 {item.description}
               </Typography>
-              <div style={{ paddingTop: "16px", margin: "0" }}>
+              <div style={{ paddingTop: '16px', margin: '0' }}>
                 {item.tags.map((tag) => (
-                  <Chip key={tag.id} label={tag.title} sx={{ margin: "8px" }} />
+                  <Chip key={tag.id} label={tag.title} sx={{ margin: '8px' }} />
                 ))}
               </div>
             </CardContent>
             <CardActions>
               {!item.gallery && (
-                <Button variant="text" href={`${item.link}`}>
+                <Button variant='text' href={`${item.link}`}>
                   {item.buttonText}
                 </Button>
               )}
               {item.gallery && (
-                <Button variant="text" onClick={() => handleClick(item)}>
+                <Button variant='text' onClick={() => handleClick(item)}>
                   View Larger Image
                 </Button>
               )}
@@ -195,13 +219,13 @@ const Portfolio = () => {
   return (
     <div
       style={{
-        backgroundColor: "#171B27",
-        minHeight: "100vh",
-        width: "100%",
+        backgroundColor: '#171B27',
+        minHeight: '100vh',
+        width: '100%',
       }}
     >
       <Container>
-        <Box sx={{ minHeight: "60px", marginTop: "16px" }}>
+        <Box sx={{ minHeight: '60px', marginTop: '16px' }}>
           <Grid container>
             <Grid item sm={12} md={12}>
               <Navigation />
@@ -212,27 +236,27 @@ const Portfolio = () => {
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <Typography
-                variant="h4"
-                component="h1"
-                sx={{ color: "white", marginLeft: 0 }}
+                variant='h4'
+                component='h1'
+                sx={{ color: 'white', marginLeft: 0 }}
               >
                 CHUCK LEONE
               </Typography>
               <Typography
-                variant="h6"
-                component="h2"
-                sx={{ color: "white", marginLeft: "4px" }}
+                variant='h6'
+                component='h2'
+                sx={{ color: 'white', marginLeft: '4px' }}
               >
                 Developer | Designer | Artist
               </Typography>
             </Grid>
-            <Grid item xs={12} sx={{ marginTop: "10px", marginRight: "30px" }}>
-              <Typography variant="h6" component="h6" sx={{ color: "white" }}>
+            <Grid item xs={12} sx={{ marginTop: '10px', marginRight: '30px' }}>
+              <Typography variant='h6' component='h6' sx={{ color: 'white' }}>
                 Summary
               </Typography>
               <Typography
-                variant="body1"
-                sx={{ color: "white", marginBottom: "20px" }}
+                variant='body1'
+                sx={{ color: 'white', marginBottom: '20px' }}
               >
                 Over two decades of experience designing and developing engaging
                 and innovative cross-platform software products that push the
@@ -242,7 +266,7 @@ const Portfolio = () => {
                 design, development, emerging technologies, art and music.
               </Typography>
 
-              <Typography variant="body1" sx={{ color: "white" }}>
+              <Typography variant='body1' sx={{ color: 'white' }}>
                 Highly proficient in ADA compliant web app development using
                 ReactJS, TypeScript, Node.JS, npm, Material UI and other
                 technologies. Expert level skills using the Adobe Creative Suite
@@ -262,33 +286,33 @@ const Portfolio = () => {
                 and Google Blocks.
               </Typography>
             </Grid>
-            <Grid item xs={12} sx={{ marginTop: "10px", marginRight: "30px" }}>
+            <Grid item xs={12} sx={{ marginTop: '10px', marginRight: '30px' }}>
               <Typography
-                variant="h6"
-                component="h6"
-                sx={{ color: "white" }}
+                variant='h6'
+                component='h6'
+                sx={{ color: 'white' }}
                 gutterBottom
               >
                 Skills
               </Typography>
               <div>
-                <Chip label="ReactJS" sx={{ margin: "8px" }} />
-                <Chip label="TypeScript" sx={{ margin: "8px" }} />
-                <Chip label="JavaScript" sx={{ margin: "8px" }} />
-                <Chip label="Material UI" sx={{ margin: "8px" }} />
-                <Chip label=".net" sx={{ margin: "8px" }} />
-                <Chip label="Adobe Creative Suite" sx={{ margin: "8px" }} />
-                <Chip label="Unity 3D" sx={{ margin: "8px" }} />
-                <Chip label="Blender" sx={{ margin: "8px" }} />
-                <Chip label="Autodesk Fusion 360" sx={{ margin: "8px" }} />
+                <Chip label='ReactJS' sx={{ margin: '8px' }} />
+                <Chip label='TypeScript' sx={{ margin: '8px' }} />
+                <Chip label='JavaScript' sx={{ margin: '8px' }} />
+                <Chip label='Material UI' sx={{ margin: '8px' }} />
+                <Chip label='.net' sx={{ margin: '8px' }} />
+                <Chip label='Adobe Creative Suite' sx={{ margin: '8px' }} />
+                <Chip label='Unity 3D' sx={{ margin: '8px' }} />
+                <Chip label='Blender' sx={{ margin: '8px' }} />
+                <Chip label='Autodesk Fusion 360' sx={{ margin: '8px' }} />
               </div>
             </Grid>
 
-            <Grid item xs={12} sx={{ marginTop: "10px" }}>
-              <Typography variant="h6" component="h6" sx={{ color: "white" }}>
+            <Grid item xs={12} sx={{ marginTop: '10px' }}>
+              <Typography variant='h6' component='h6' sx={{ color: 'white' }}>
                 Latest Work
               </Typography>
-              <Grid container spacing={3} sx={{ marginTop: "16px" }}>
+              <Grid container spacing={3} sx={{ marginTop: '16px' }}>
                 <MediaCards />
               </Grid>
             </Grid>
