@@ -37,9 +37,14 @@ const DetailsPage = () => {
             </Grid>
           </Grid>
         </Box>
-
         <Grid container spacing={2}>
           <Grid item xs={12}>
+            <Typography
+              variant='body1'
+              sx={{ color: 'white', marginLeft: 0, marginBottom: '16px' }}
+            >
+              Portfolio Details:
+            </Typography>
             <Typography
               variant='h4'
               component='h1'
@@ -53,6 +58,12 @@ const DetailsPage = () => {
               sx={{ color: 'white', marginLeft: '4px' }}
             >
               {portfolioItem.description}
+            </Typography>
+            <Typography
+              variant='body1'
+              sx={{ color: 'white', marginLeft: '4px' }}
+            >
+              {portfolioItem.details}
             </Typography>
           </Grid>
         </Grid>
