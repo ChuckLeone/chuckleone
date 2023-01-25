@@ -1,14 +1,20 @@
 [
   {
-    "id": "bts",
-    "title": "Beneath the Sand",
-    "description": "Book Jacket designed in Adobe Photoshop",
-    "details": "Book cover/jacket design for the novel by Katherin L. Bichler"
+    "id": "mr",
+    "title": "Cadence Chat Export",
+    "description": "Export feature built in React",
+    "details": "This feature was designed to allow users of Cadence, a chat management tool to setup both manual and automated exports of chat leads and activity reports. The UI was built in React and connected to an API to toggle nightly automated exports on and off. In addition, a manaul export feature allowed the user to request an export which was emailed to them immediately."
   },
   {
     "id": "hps",
     "title": "Harris Print Solutions Web Site",
     "description": " Web Site Development",
     "details": "Harris Print Solutions, a division of Harris Computer needed a completely new design for their web site. I was tasked with designing and developing an entirely new web site with new layouts, forms and embedded multimedia files."
+  },
+  {
+    "id": "gathr",
+    "title": "Mobile App Design",
+    "description": "Logo/brand identity and mobile app design",
+    "details": "gathR was a mobile app concept that revolved around social connections. The product owner need a logo/brand identity and mobile app designs. I started with developing mood boards and concepts, finally delivering design guides to aid the mobile app developer."
   }
 ]

@@ -20,21 +20,24 @@ import DataViz1 from '../assets/data-viz1.jpg';
 import TargetEarth from '../assets/target-earth.jpg';
 import LightWingHunter from '../assets/3d-lightwing-hunter.jpg';
 import GalleryModal from '../shared-components/Modal';
-import VaporCanyon from '../assets/world-0/vapor-canyon.jpg';
-import SwampBlue1 from '../assets/world-0/swamp-blue-1.jpg';
-import SwampBlue3 from '../assets/world-0/swamp-blue-3.jpg';
+import Gathr from '../assets/gathr-thumb.jpg';
+import CadenceChatExport from '../assets/cadence-chat-thumb.jpg';
 import Samurai from '../assets/3d-samurai.jpg';
 import { useState } from 'react';
 
 const MediaCards = () => {
   const itemData = [
     {
-      img: BeneathTheSand,
-      title: 'Beneath the Sand',
-      description: 'Book Jacket designed in Adobe Photoshop',
-      details: 'Book cover/jacket design for the novel by Katherin L. Bichler',
-      link: 'https://katherinebichler.com/',
-      tags: [{ id: 0, title: 'Photoshop' }],
+      img: CadenceChatExport,
+      title: 'Candence Chat Export UI',
+      description: 'React Web App',
+      details: 'Chat export feature built in React',
+      link: '/portfolio/details/mr',
+      tags: [
+        { id: 0, title: 'React' },
+        { id: 1, title: 'Bootstrap' },
+        { id: 3, title: 'JavaScript' },
+      ],
       buttonText: 'More Info',
     },
     {
@@ -66,13 +69,40 @@ const MediaCards = () => {
       buttonText: 'View More',
     },
     {
+      img: Gathr,
+      title: 'Gathr App',
+      description: 'Mobile App Design',
+      details: 'Logo/brand identity and mobile app design',
+      link: '/portfolio/details/gathr',
+      tags: [
+        { id: 0, title: 'DESIGN GUIDE' },
+        { id: 1, title: 'LOGO' },
+        { id: 3, title: 'APP DESIGN' },
+        { id: 3, title: 'MOOD BOARDS' },
+      ],
+      buttonText: 'View More',
+    },
+    {
       img: DataViz1,
       title: '3D Data Visualization',
       description: 'Displaying data with ThreeJS and React Three Fiber',
       details: 'Displaying data with ThreeJS and React Three Fiber',
       link: 'http://chuckleone.com/3d/data1/',
-      tags: [{ id: 0, title: 'ReactJS' }],
+      tags: [
+        { id: 0, title: 'ReactJS' },
+        { id: 1, title: 'Three' },
+        { id: 2, title: 'JavaScript' },
+      ],
       buttonText: 'View Data',
+    },
+    {
+      img: BeneathTheSand,
+      title: 'Beneath the Sand',
+      description: 'Book Jacket designed in Adobe Photoshop',
+      details: 'Book cover/jacket design for the novel by Katherin L. Bichler',
+      link: 'https://katherinebichler.com/',
+      tags: [{ id: 0, title: 'Photoshop' }],
+      buttonText: 'More Info',
     },
     {
       img: Eve,
@@ -93,50 +123,11 @@ const MediaCards = () => {
       gallery: true,
     },
     {
-      img: VaporCanyon,
-      title: 'Vapor Canyon',
-      description: 'Screenshot from VR experience',
-      details:
-        'Level screenshot from Unity VR experience.  This environment was built using terrain data from terrain.party and applied to Unity terrain object. Project also consists of custom skybox shaders and textures.',
-      tags: [
-        { id: 0, title: 'Unity 3D' },
-        { id: 1, title: 'Photoshop' },
-      ],
-      buttonText: 'View Larger Image',
-      gallery: true,
-    },
-    {
-      img: SwampBlue1,
-      title: 'Blue Swamp #1',
-      description: 'Screenshot from VR experience',
-      details:
-        'Level screenshot from Unity VR experience. This environment was built using terrain data from terrain.party and applied to Unity terrain object. Project also consists of custom skybox shaders and textures.',
-      tags: [
-        { id: 0, title: 'Unity 3D' },
-        { id: 1, title: 'Photoshop' },
-      ],
-      buttonText: 'View Larger Image',
-      gallery: true,
-    },
-    {
       img: Samurai,
       title: 'Samurai',
       description: '3D Model | Medium by Adobe',
       details: '3D Model sculpted and rendered in Medium by Adobe',
       tags: [{ id: 0, title: '3D Modeling' }],
-      buttonText: 'View Larger Image',
-      gallery: true,
-    },
-    {
-      img: SwampBlue3,
-      title: 'Blue Swamp #3',
-      description: 'Screenshot from VR experience',
-      details:
-        'Level screenshot from Unity VR experience. This environment was built using terrain data from terrain.party and applied to Unity terrain object. Project also consists of custom skybox shaders and textures.',
-      tags: [
-        { id: 0, title: 'Unity 3D' },
-        { id: 1, title: 'Photoshop' },
-      ],
       buttonText: 'View Larger Image',
       gallery: true,
     },
