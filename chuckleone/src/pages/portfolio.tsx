@@ -66,7 +66,7 @@ const MediaCards = () => {
         { id: 1, title: 'CSS' },
         { id: 3, title: 'JavaScript' },
       ],
-      buttonText: 'View More',
+      buttonText: 'More Info',
     },
     {
       img: Gathr,
@@ -80,7 +80,7 @@ const MediaCards = () => {
         { id: 3, title: 'APP DESIGN' },
         { id: 3, title: 'MOOD BOARDS' },
       ],
-      buttonText: 'View More',
+      buttonText: 'More Info',
     },
     {
       img: DataViz1,
@@ -102,7 +102,7 @@ const MediaCards = () => {
       details: 'Book cover/jacket design for the novel by Katherin L. Bichler',
       link: 'https://katherinebichler.com/',
       tags: [{ id: 0, title: 'Photoshop' }],
-      buttonText: 'More Info',
+      buttonText: 'Visit KatherineBichler.com',
     },
     {
       img: Eve,
@@ -119,7 +119,7 @@ const MediaCards = () => {
       description: '3D Model sculpted in Medium by Adobe',
       details: '3D model sculpted in Medium by Adobe',
       tags: [{ id: 0, title: '3D Modeling' }],
-      buttonText: 'View Render',
+      buttonText: 'View Larger Image',
       gallery: true,
     },
     {
