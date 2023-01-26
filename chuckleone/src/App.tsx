@@ -12,7 +12,7 @@ const theme = createTheme({
     mode: 'dark',
   },
   typography: {
-    fontSize: 16,
+    fontSize: 14,
     h1: {
       fontSize: '4rem',
     },
