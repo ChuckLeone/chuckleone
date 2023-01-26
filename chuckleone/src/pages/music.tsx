@@ -44,7 +44,7 @@ const Music = () => {
   return (
     <div
       style={{
-        backgroundColor: '#171B27',
+        backgroundColor: '#1f1f1f',
         minHeight: '100vh',
         minWidth: '100%',
       }}
