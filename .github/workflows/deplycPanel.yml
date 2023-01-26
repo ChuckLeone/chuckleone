@@ -2,13 +2,13 @@ name: Publish Website to godaddy cPanel
 on: 
   push:
     branches:
-      - main
+      - master
 jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2.1.0
+    - uses: actions/checkout@v3.3.0
       with:
         fetch-depth: 2
     - uses: actions/setup-node@v1
