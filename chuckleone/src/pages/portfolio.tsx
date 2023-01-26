@@ -17,7 +17,7 @@ import MonstersAndMachines from '../assets/mam-thumb.jpg';
 import Eve from '../assets/eve.jpg';
 import HPS from '../assets/hps-thumb.jpg';
 import DataViz1 from '../assets/data-viz1.jpg';
-import TargetEarth from '../assets/target-earth.jpg';
+import TargetEarth from '../assets/te-thumb.jpg';
 import LightWingHunter from '../assets/3d-lightwing-hunter.jpg';
 import GalleryModal from '../shared-components/Modal';
 import Gathr from '../assets/gathr-thumb.jpg';
