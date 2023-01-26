@@ -3,18 +3,30 @@
     "id": "mr",
     "title": "Cadence Chat Export",
     "description": "Export feature built in React",
-    "details": "This feature was designed to allow users of Cadence, a chat management tool to setup both manual and automated exports of chat leads and activity reports. The UI was built in React and connected to an API to toggle nightly automated exports on and off. In addition, a manaul export feature allowed the user to request an export which was emailed to them immediately."
+    "details": "This feature was designed to allow users of Cadence, a chat management tool to setup both manual and automated exports of chat leads and activity reports. The UI was built in React and connected to an API to toggle nightly automated exports on and off. In addition, a manaul export feature allowed the user to request an export which was emailed to them immediately.",
+    "img1": "http://chuckleone.com/static/media/mr/Cadence-Chat-Export.png",
+    "img2": "http://chuckleone.com/static/media/mr/Cadence-Chat-Export-modal1.png",
+    "img3": "http://chuckleone.com/static/media/mr/Cadence-Chat-Export-modal2.png",
+    "imgAlt": "screenshot of Cadence exports page"
   },
   {
     "id": "hps",
     "title": "Harris Print Solutions Web Site",
     "description": " Web Site Development",
-    "details": "Harris Print Solutions, a division of Harris Computer needed a completely new design for their web site. I was tasked with designing and developing an entirely new web site with new layouts, forms and embedded multimedia files."
+    "details": "Harris Print Solutions, a division of Harris Computer needed a completely new design for their web site. I was tasked with designing and developing an entirely new web site with new layouts, forms and embedded multimedia files.",
+    "img1": "http://chuckleone.com/static/media/hps/harrisprintsolutions.png",
+    "img2": "http://chuckleone.com/static/media/hps/harrisprintsolutions-print.png",
+    "img3": "http://chuckleone.com/static/media/hps/harrisprintsolutions-forms.png",
+    "imgAlt": "screenshot of Harris Print Solutions page"
   },
   {
     "id": "gathr",
     "title": "Mobile App Design",
     "description": "Logo/brand identity and mobile app design",
-    "details": "gathR was a mobile app concept that revolved around social connections. The product owner need a logo/brand identity and mobile app designs. I started with developing mood boards and concepts, finally delivering design guides to aid the mobile app developer."
+    "details": "gathR was a mobile app concept that revolved around social connections. The product owner need a logo/brand identity and mobile app designs. I started with developing mood boards and concepts, finally delivering design guides to aid the mobile app developer.",
+    "img1": "http://chuckleone.com/static/media/gathr/gathr-destiny.png",
+    "img2": "http://chuckleone.com/static/media/gathr/design-guide-analog.png",
+    "img3": "http://chuckleone.com/static/media/gathr/gathr-new-dawn.png",
+    "imgAlt": "screenshot of gathR mobile app"
   }
 ]

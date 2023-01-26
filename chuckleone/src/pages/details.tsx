@@ -67,7 +67,27 @@ const DetailsPage = () => {
             </Typography>
           </Grid>
         </Grid>
-
+        <Grid item sm={12} md={12} sx={{ padding: '16px' }}>
+          <img
+            src={portfolioItem.img1}
+            alt={portfolioItem.imgAlt}
+            style={{ width: '100%' }}
+          />
+        </Grid>
+        <Grid item sm={12} md={12} sx={{ padding: '16px' }}>
+          <img
+            src={portfolioItem.img2}
+            alt={portfolioItem.imgAlt}
+            style={{ width: '100%' }}
+          />
+        </Grid>
+        <Grid item sm={12} md={12} sx={{ padding: '16px' }}>
+          <img
+            src={portfolioItem.img3}
+            alt={portfolioItem.imgAlt}
+            style={{ width: '100%' }}
+          />
+        </Grid>
         <Box>
           <Grid container spacing={2}>
             <Grid item sm={12}>
