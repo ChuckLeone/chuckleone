@@ -15,7 +15,7 @@ jobs:
       with:
         node-version: 16
     - name: setup npm and build
-      working-directory: /chuckleone/
+      working-directory: chuckleone/chuckleone/
       run: |  
         npm ci
         npm test
