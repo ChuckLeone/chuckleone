@@ -13,7 +13,7 @@ jobs:
       with:
         node-version: '16'
     - name: 🔨 Build Project
-      working-directory: ./src
+      working-directory: /src
       run: |
         npm install
         npm run build
