@@ -10,6 +10,7 @@ import {
   Grid,
   Typography,
 } from '@mui/material';
+import TopBar from '../shared-components/TopBar';
 import Navigation from '../shared-components/Navigation';
 import Footer from '../shared-components/Footer';
 import BeneathTheSand from '../assets/cover-bts-thumb.jpg';
@@ -215,34 +216,17 @@ const Portfolio = () => {
         width: '100%',
       }}
     >
+      <TopBar />
       <Container>
-        <Box sx={{ minHeight: '60px', marginTop: '16px' }}>
+        <Box sx={{ minHeight: '60px' }}>
           <Grid container>
-            <Grid item sm={12} md={12}>
-              <Navigation />
-            </Grid>
+            <Grid item sm={12} md={12}></Grid>
           </Grid>
         </Box>
         <Box>
           <Grid container spacing={2}>
-            <Grid item xs={12}>
-              <Typography
-                variant='h4'
-                component='h1'
-                sx={{ color: 'white', marginLeft: 0 }}
-              >
-                CHUCK LEONE
-              </Typography>
-              <Typography
-                variant='h6'
-                component='h2'
-                sx={{ color: 'white', marginLeft: '4px' }}
-              >
-                Developer | Designer | Artist
-              </Typography>
-            </Grid>
             <Grid item xs={12} sx={{ marginTop: '10px', marginRight: '30px' }}>
-              <Typography variant='h6' component='h6' sx={{ color: 'white' }}>
+              <Typography variant='h3' component='h3' sx={{ color: 'white' }}>
                 Summary
               </Typography>
               <Typography

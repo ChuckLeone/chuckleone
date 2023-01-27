@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Box, Container, Grid, Typography } from '@mui/material';
+import TopBar from '../shared-components/TopBar';
 import Navigation from '../shared-components/Navigation';
 import Footer from '../shared-components/Footer';
 import Data from '../data/portfolio.json';
@@ -29,14 +30,8 @@ const DetailsPage = () => {
         width: '100%',
       }}
     >
+      <TopBar />
       <Container>
-        <Box sx={{ minHeight: '60px', marginTop: '16px' }}>
-          <Grid container>
-            <Grid item sm={12} md={12}>
-              <Navigation />
-            </Grid>
-          </Grid>
-        </Box>
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <Typography

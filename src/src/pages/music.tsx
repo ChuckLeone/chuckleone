@@ -1,3 +1,4 @@
+import TopBar from '../shared-components/TopBar';
 import Navigation from '../shared-components/Navigation';
 import { Box, Container, Grid, Typography } from '@mui/material';
 import MediaCard from '../shared-components/MediaCard';
@@ -49,32 +50,10 @@ const Music = () => {
         minWidth: '100%',
       }}
     >
+      <TopBar />
       <Container>
-        <Box sx={{ minHeight: '60px', marginTop: '16px' }}>
-          <Grid container>
-            <Grid item sm={12}>
-              <Navigation />
-            </Grid>
-          </Grid>
-        </Box>
         <Box>
           <Grid container spacing={2}>
-            <Grid item sm={12}>
-              <Typography
-                variant='h4'
-                component='h1'
-                sx={{ color: 'white', marginLeft: 0 }}
-              >
-                CHUCK LEONE
-              </Typography>
-              <Typography
-                variant='h6'
-                component='h2'
-                sx={{ color: 'white', marginLeft: '4px' }}
-              >
-                Developer | Designer | Artist
-              </Typography>
-            </Grid>
             <Grid item sm={12} sx={{ marginTop: '10px' }}>
               <Typography
                 variant='body1'

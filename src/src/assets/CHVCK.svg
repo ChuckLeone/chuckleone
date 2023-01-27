@@ -1,0 +1,11 @@
+<svg id="Solid" xmlns="http://www.w3.org/2000/svg" width="2760" height="436" viewBox="0 0 2760 436">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="CHVCK" class="cls-1" d="M62.188,83.346h413v65h-298v134.5h298v65.5h-413v-265Zm515,0h114.5v99h191v-99h114.5v265h-114.5v-100.5h-191v100.5h-114.5v-265Zm884.5,185,0.5-185h114v265h-153.5l-336-265h140.5Zm216.5-185h413v65h-298v134.5h298v65.5h-413v-265Zm630,0v99h31l143-99h139l-139,99h118v166h-114.5v-100.5h-177.5v100.5h-115v-265h115Z"/>
+</svg>
