@@ -105,8 +105,30 @@ const Home = () => {
               </Typography>
             </Grid>
           </Grid>
-
-          <Grid item sm={12} md={6} lg={6}>
+          <Grid item lg={6}>
+            <Grid
+              item
+              lg={12}
+              md={12}
+              sm={12}
+              sx={{
+                textAlign: 'left',
+                marginTop: '10px',
+                marginBottom: '24px',
+              }}
+            >
+              <Typography variant='h5' sx={{ color: 'rgba(255,255,255,0.6)' }}>
+                {background.title}
+              </Typography>
+              <Typography
+                variant='body2'
+                sx={{ color: 'rgba(255,255,255,0.6)' }}
+              >
+                {background.description}
+              </Typography>
+            </Grid>
+          </Grid>
+          <Grid item sm={12} md={12} lg={12}>
             <Stack spacing={2} direction='column' sx={{ display: 'flex' }}>
               <Pagination
                 count={backgrounds.length}
@@ -125,25 +147,7 @@ const Home = () => {
                 )}
               />
             </Stack>
-            <Grid
-              item
-              lg={6}
-              md={6}
-              sm={12}
-              sx={{ textAlign: 'left', marginTop: '10px' }}
-            >
-              <Typography variant='h5' sx={{ color: 'rgba(255,255,255,0.6)' }}>
-                {background.title}
-              </Typography>
-              <Typography
-                variant='body2'
-                sx={{ color: 'rgba(255,255,255,0.6)' }}
-              >
-                {background.description}
-              </Typography>
-            </Grid>
           </Grid>
-
           <Grid item>
             <Footer />
           </Grid>
