@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Box, Container, Grid, Typography } from '@mui/material';
 import TopBar from '../shared-components/TopBar';
-import Navigation from '../shared-components/Navigation';
 import Footer from '../shared-components/Footer';
 import Data from '../data/portfolio.json';
 

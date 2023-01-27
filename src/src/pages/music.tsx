@@ -1,5 +1,4 @@
 import TopBar from '../shared-components/TopBar';
-import Navigation from '../shared-components/Navigation';
 import { Box, Container, Grid, Typography } from '@mui/material';
 import MediaCard from '../shared-components/MediaCard';
 import Obscurity from '../assets/album-cover-obscurity.jpg';

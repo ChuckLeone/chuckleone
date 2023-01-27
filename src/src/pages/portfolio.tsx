@@ -11,7 +11,6 @@ import {
   Typography,
 } from '@mui/material';
 import TopBar from '../shared-components/TopBar';
-import Navigation from '../shared-components/Navigation';
 import Footer from '../shared-components/Footer';
 import BeneathTheSand from '../assets/cover-bts-thumb.jpg';
 import MonstersAndMachines from '../assets/mam-thumb.jpg';
