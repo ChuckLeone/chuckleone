@@ -98,6 +98,11 @@ const Home = () => {
                 Welcome
               </Typography>
               <Typography variant='body1'>Take a look around</Typography>
+              <Typography variant='caption'>
+                I'm Chuck, a Designer, Developer and Musician from Buffalo, NY
+                specializing in Frontend Development using React, Material UI,
+                Vue and more.
+              </Typography>
             </Grid>
           </Grid>
 
