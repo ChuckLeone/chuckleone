@@ -15,6 +15,7 @@ jobs:
       with:
         node-version: "12.x"
     - name: setup npm and build
+      working-directory: ../
       run: | 
         npm ci 
         npm run build
