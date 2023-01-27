@@ -15,10 +15,10 @@ jobs:
       with:
         node-version: 16
     - name: setup npm and build
-      working-directory: chuckleone/chuckleone/
+      working-directory: ./src/
       run: |  
         npm ci
-        npm test
+        npm run build
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
