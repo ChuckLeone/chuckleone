@@ -17,7 +17,7 @@ jobs:
         npm ci
         npm test
     - name: FTP-Deploy-Action
-    - uses: SamKirkland/FTP-Deploy-Action@4.3.3
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         local-dir: ./src/build/
         server: ${{ secrets.FTP_SERVER }}
