@@ -1,29 +1,33 @@
-name: 🚀 Deploy website to godaddy cPanel on push
+name: Publish Website to godaddy cPanel
 on: 
   push:
     branches:
-    - main
+      - main
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2.1.0
       with:
-        persist-credentials: false
         fetch-depth: 2
-    - uses: actions/setup-node@v3
+    - uses: actions/setup-node@v1
       with:
-        node-version: 16
+        node-version: "12.x"
     - name: setup npm and build
-      working-directory: ./
-      run: |
-        npm i
+      working-directory: ./src/
+      run: | 
+        npm ci 
         npm run build
-    - name: 📂 Sync files
+    - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        local-dir: ./src/build
+        local-dir: ./src/build/
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/src**
