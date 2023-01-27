@@ -8,8 +8,10 @@ jobs:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code, install dependencies and build
+    - name: 🚚 Get latest code
     - uses: actions/checkout@v3
+    
+    - name: install dependencies and build
     - uses: actions/setup-node@v3
       with:
         node-version: 16
