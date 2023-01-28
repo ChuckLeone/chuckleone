@@ -13,7 +13,6 @@ import VaporCanyon from '../assets/vapor-canyon.jpg';
 import BeneathTheSand from '../assets/beneath-the-sand-jacket.jpg';
 import Samurai from '../assets/3d-samurai.jpg';
 import CodeFallSulfur from '../assets/CodeFall-Sulfur.jpg';
-import SwampBlue3 from '../assets/world-0/swamp-blue-3.jpg';
 import Inception from '../assets/inception.jpg';
 import TopBar from '../shared-components/TopBar';
 import Footer from '../shared-components/Footer';
@@ -29,7 +28,7 @@ const Home = () => {
     {
       id: 1,
       file: VaporCanyon,
-      title: 'Vapor Canyon',
+      title: 'Canyon',
       description: 'VR Experience | Adobe Photoshop + Unity 3D',
     },
     {
