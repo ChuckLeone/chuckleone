@@ -50,12 +50,6 @@ const Home = () => {
       title: 'Code Fall Sulfur',
       description: 'Poster/T-shirt design | Adobe Photoshop',
     },
-    {
-      id: 5,
-      file: SwampBlue3,
-      title: 'Blue Swamp',
-      description: 'VR Experience | Adobe Photoshop + Unity 3D',
-    },
   ];
   const [page, setPage] = useState(1);
   const [background, setBackground] = useState(backgrounds[0]);
@@ -89,21 +83,7 @@ const Home = () => {
         <TopBar />
         <Container>
           <Grid container sx={{ minHeight: '65vh' }}>
-            <Grid item sm={12} lg={12}>
-              <Typography
-                variant='h4'
-                component='h2'
-                sx={{ marginTop: '16px' }}
-              >
-                Welcome
-              </Typography>
-              <Typography variant='body1'>Take a look around</Typography>
-              <Typography variant='caption'>
-                I'm Chuck, a Designer, Developer and Musician from Buffalo, NY
-                specializing in Frontend Development using React, Material UI,
-                Vue and more.
-              </Typography>
-            </Grid>
+            <Grid item sm={12} lg={12}></Grid>
           </Grid>
           <Grid item lg={6}>
             <Grid

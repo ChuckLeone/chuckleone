@@ -33,9 +33,6 @@ const TopBar = () => {
               CHUCK LEONE{' '}
             </Typography>
           </div>
-          <Typography variant='caption' sx={{ marginLeft: '8px' }}>
-            Designer | Developer | Musician
-          </Typography>
         </Grid>
         <Grid item sm={6} md={6} lg={6} sx={{ textAlign: 'right' }}>
           <Navigation />
