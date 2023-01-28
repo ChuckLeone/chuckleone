@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Logo from '../assets/CHVCK.svg';
 import Navigation from './Navigation';
 
@@ -6,16 +6,20 @@ const MyLogo = Logo;
 const TopBar = () => {
   return (
     <>
-      <Grid
-        container
+      <Box
         sx={{
+          display: 'flex',
+          flexDirection: 'row',
           height: '80px',
           backgroundColor: 'transparent',
           padding: '16px',
           color: '#fff',
         }}
       >
-        <Grid item sm={6} md={6} lg={6}>
+        <Box sx={{ textAlign: 'left', flex: 'auto', maxWidth: '48px' }}>
+          <Navigation />
+        </Box>
+        <Box sx={{ textAlign: 'left', flex: 'auto' }}>
           <div
             style={{
               backgroundImage: `url(${MyLogo})`,
@@ -33,11 +37,8 @@ const TopBar = () => {
               CHUCK LEONE{' '}
             </Typography>
           </div>
-        </Grid>
-        <Grid item sm={6} md={6} lg={6} sx={{ textAlign: 'right' }}>
-          <Navigation />
-        </Grid>
-      </Grid>
+        </Box>
+      </Box>
     </>
   );
 };
