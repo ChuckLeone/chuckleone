@@ -81,7 +81,7 @@ const Home = () => {
       >
         <TopBar />
         <Container>
-          <Grid container sx={{ minHeight: '65vh' }}>
+          <Grid container sx={{ minHeight: '55vh' }}>
             <Grid item sm={12} lg={12}></Grid>
           </Grid>
           <Grid item lg={6}>
