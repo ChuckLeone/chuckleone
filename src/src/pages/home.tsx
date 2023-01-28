@@ -46,7 +46,7 @@ const Home = () => {
     {
       id: 4,
       file: CodeFallSulfur,
-      title: 'Code Fall Sulfur',
+      title: 'Code Fall',
       description: 'Poster/T-shirt design | Adobe Photoshop',
     },
   ];
