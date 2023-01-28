@@ -217,15 +217,14 @@ const Portfolio = () => {
     >
       <TopBar />
       <Container>
-        <Box sx={{ minHeight: '60px' }}>
-          <Grid container>
-            <Grid item sm={12} md={12}></Grid>
-          </Grid>
-        </Box>
         <Box>
           <Grid container spacing={2}>
-            <Grid item xs={12} sx={{ marginTop: '10px', marginRight: '30px' }}>
-              <Typography variant='h3' component='h3' sx={{ color: 'white' }}>
+            <Grid item xs={12} sx={{ marginRight: '30px' }}>
+              <Typography
+                variant='h4'
+                component='h3'
+                sx={{ color: 'white', marginBottom: '16px' }}
+              >
                 Summary
               </Typography>
               <Typography
@@ -282,11 +281,15 @@ const Portfolio = () => {
               </div>
             </Grid>
 
-            <Grid item xs={12} sx={{ marginTop: '10px' }}>
-              <Typography variant='h6' component='h6' sx={{ color: 'white' }}>
+            <Grid item xs={12} sx={{ marginTop: '30px' }}>
+              <Typography variant='h4' component='h4' sx={{ color: 'white' }}>
                 Latest Work
               </Typography>
-              <Grid container spacing={3} sx={{ marginTop: '16px' }}>
+              <Grid
+                container
+                spacing={3}
+                sx={{ marginTop: '16px', margin: 'auto' }}
+              >
                 <MediaCards />
               </Grid>
             </Grid>

@@ -10,7 +10,7 @@ const TopBar = () => {
         sx={{
           display: 'flex',
           flexDirection: 'row',
-          height: '80px',
+          height: '48px',
           backgroundColor: 'transparent',
           padding: '16px',
           color: '#fff',
