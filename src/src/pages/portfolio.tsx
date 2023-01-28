@@ -164,7 +164,7 @@ const MediaCards = () => {
               image={`${item.img}?w=248&fit=crop&auto=format`}
               alt={item.title}
             />
-            <CardContent>
+            <CardContent style={{ background: '#333' }}>
               <Typography
                 gutterBottom
                 variant='h6'
