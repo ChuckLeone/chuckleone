@@ -1,5 +1,5 @@
 import TopBar from '../shared-components/TopBar';
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 import MediaCard from '../shared-components/MediaCard';
 import Obscurity from '../assets/album-cover-obscurity.jpg';
 import TheReceptive from '../assets/album-cover-the-receptive.jpg';
