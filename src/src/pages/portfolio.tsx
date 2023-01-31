@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import {
   Box,
   Button,
@@ -148,6 +149,10 @@ const MediaCards = () => {
   const [open, setOpen] = useState(false);
   const [galleryItem, setGalleryItem] = useState([]);
   const handleClose = () => setOpen(false);
+
+  useEffect(() => {
+    document.title = 'Portfolio';
+  }, []);
 
   const handleClick = (item: any) => {
     setOpen(true);

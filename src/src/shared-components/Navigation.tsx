@@ -9,6 +9,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import HomeIcon from '@mui/icons-material/Home';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import PianoIcon from '@mui/icons-material/Piano';
+import BandcampIcon from './BandcampIcon';
 
 const Navigation = () => {
   const iconColor = grey['A100'];
@@ -171,6 +172,25 @@ const Navigation = () => {
                 sx={{ color: iconColor, paddingRight: '8px' }}
               />
               GitHub
+            </ListItemIcon>
+          </a>
+        </MenuItem>
+        <MenuItem onClick={handleClose}>
+          <a
+            href='https://chuckleone.bandcamp.com/'
+            target='new'
+            style={{
+              color: '#fff',
+              textDecoration: 'none',
+              fontSize: '0.75em',
+            }}
+          >
+            <ListItemIcon>
+              <BandcampIcon
+                fontSize='20px'
+                sx={{ color: iconColor, paddingRight: '8px' }}
+              />
+              Bandcamp
             </ListItemIcon>
           </a>
         </MenuItem>

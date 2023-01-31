@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import TopBar from '../shared-components/TopBar';
 import { Container, Grid, Typography } from '@mui/material';
 import MediaCard from '../shared-components/MediaCard';
@@ -42,6 +43,11 @@ const Music = () => {
       link: 'https://chuckleone.bandcamp.com/album/dreamstatic',
     },
   ];
+
+  useEffect(() => {
+    document.title = 'Music';
+  }, []);
+
   return (
     <div
       style={{
