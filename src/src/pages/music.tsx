@@ -76,6 +76,12 @@ function BioPanel() {
           </Typography>
         </Grid>
         <Grid item sm={12} sx={{ marginTop: '10px' }}>
+          <Typography variant='body1' style={{ color: '#fff' }}>
+            <a href='mailto:chuckleone@gmail.com'>Email me</a> for booking or
+            more information
+          </Typography>
+        </Grid>
+        <Grid item sm={12} sx={{ marginTop: '10px' }}>
           <Typography
             variant='body1'
             sx={{ color: 'white', marginBottom: '16px' }}
