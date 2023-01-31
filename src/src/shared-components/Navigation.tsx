@@ -1,5 +1,11 @@
 import React from 'react';
-import { IconButton, ListItemIcon, Menu, MenuItem } from '@mui/material';
+import {
+  Divider,
+  IconButton,
+  ListItemIcon,
+  Menu,
+  MenuItem,
+} from '@mui/material';
 import { grey } from '@mui/material/colors';
 import MenuIcon from '@mui/icons-material/Menu';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -99,6 +105,7 @@ const Navigation = () => {
             </ListItemIcon>
           </a>
         </MenuItem>
+        <Divider />
         <MenuItem onClick={handleClose}>
           <a
             href='http://www.instagram.com/chvck.leone/'

@@ -14,6 +14,7 @@ const TopBar = () => {
           backgroundColor: 'transparent',
           padding: '16px',
           color: '#fff',
+          alignItems: 'center',
         }}
       >
         <Box sx={{ textAlign: 'left', flex: 'auto', maxWidth: '48px' }}>

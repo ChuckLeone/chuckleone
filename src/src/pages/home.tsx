@@ -21,33 +21,33 @@ const Home = () => {
   const backgrounds = [
     {
       id: 0,
+      file: CodeFallSulfur,
+      title: 'Code Fall',
+      description: 'Poster/T-shirt design | Adobe Photoshop',
+    },
+    {
+      id: 1,
       file: Inception,
       title: 'Inception',
       description: 'Mandlebulb Fractal | Mandlebulb 3D + Adobe Photoshop',
     },
     {
-      id: 1,
+      id: 2,
       file: VaporCanyon,
       title: 'Canyon',
       description: 'VR Experience | Adobe Photoshop + Unity 3D',
     },
     {
-      id: 2,
+      id: 3,
       file: Samurai,
       title: 'Samurai',
       description: '3D Model | Medium by Adobe',
     },
     {
-      id: 3,
+      id: 4,
       file: BeneathTheSand,
       title: 'Beneath the Sand',
       description: 'Book Cover/Dust Jack | Adobe Photoshop',
-    },
-    {
-      id: 4,
-      file: CodeFallSulfur,
-      title: 'Code Fall',
-      description: 'Poster/T-shirt design | Adobe Photoshop',
     },
   ];
   const [page, setPage] = useState(1);
