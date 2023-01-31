@@ -17,7 +17,7 @@ jobs:
     - name: setup npm and build
       working-directory: ./src/
       run: |  
-        npm ci
+        npm i
         npm run build
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
