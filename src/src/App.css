@@ -63,11 +63,29 @@ a:link {
   fill: #fff;
 }
 
-.navigation-item a {
+.navigation-item a,
+.drawer-item {
   color: inherit;
   -webkit-tap-highlight-color: #fff;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.drawer {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.drawer li {
+  padding: 0;
+}
+
+.drawer li a {
+  color: #fff;
+}
+
+.drawer-item {
+  font-size: 0.75em;
 }
 
 .social-navigation {
