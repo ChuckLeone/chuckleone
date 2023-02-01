@@ -40,6 +40,53 @@ a:link {
   color: cornflowerblue;
 }
 
+.navigation {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  position: relative;
+  z-index: 2;
+}
+
+.navigation-item {
+  margin-right: 48px;
+  list-style: none;
+}
+
+.navigation-item li {
+  position: relative;
+  align-items: center;
+  color: #fff;
+  fill: #fff;
+}
+
+.navigation-item a {
+  color: inherit;
+  -webkit-tap-highlight-color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.social-navigation {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  line-height: normal;
+}
+
+.social-navigation > li {
+  margin-right: 18px;
+  margin-top: 8px;
+  list-style: none;
+}
+
+a:hover {
+  color: #90caf9;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

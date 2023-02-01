@@ -191,9 +191,9 @@ const MediaCards = () => {
                 ))}
               </div>
             </CardContent>
-            <CardActions>
+            <CardActions style={{ background: '#333' }}>
               {!item.gallery && (
-                <Button variant='text' href={`${item.link}`}>
+                <Button variant='outlined' href={`${item.link}`}>
                   {item.buttonText}
                 </Button>
               )}

@@ -3,7 +3,6 @@ import Home from './pages/home';
 import Music from './pages/music';
 import Portfolio from './pages/portfolio';
 import DetailsPage from './pages/details';
-import Xr from './pages/xr';
 import './App.css';
 import { createTheme, ThemeProvider } from '@mui/material';
 
@@ -29,7 +28,6 @@ function App() {
             <Route path='music/*' element={<Music />} />
             <Route path='portfolio/*' element={<Portfolio />} />
             <Route path='portfolio/details/:id' element={<DetailsPage />} />
-            <Route path='xr/*' element={<Xr />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>

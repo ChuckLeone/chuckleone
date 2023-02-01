@@ -1,207 +1,130 @@
-import React from 'react';
-import {
-  Divider,
-  IconButton,
-  ListItemIcon,
-  Menu,
-  MenuItem,
-} from '@mui/material';
+import { Box, ListItemIcon } from '@mui/material';
 import { grey } from '@mui/material/colors';
-import MenuIcon from '@mui/icons-material/Menu';
+import BandcampIcon from './BandcampIcon';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import HomeIcon from '@mui/icons-material/Home';
-import ColorLensIcon from '@mui/icons-material/ColorLens';
-import PianoIcon from '@mui/icons-material/Piano';
-import BandcampIcon from './BandcampIcon';
 
 const Navigation = () => {
-  const iconColor = grey['A100'];
-
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-  const open = Boolean(anchorEl);
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(event.currentTarget);
-  };
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
+  const iconColor = grey['A400'];
   return (
     <>
-      <IconButton
-        size='small'
-        aria-label='social-link-icon'
-        aria-controls={open ? 'basic-menu' : undefined}
-        aria-haspopup='true'
-        aria-expanded={open ? 'true' : undefined}
-        color='inherit'
-        onClick={handleClick}
-      >
-        <MenuIcon sx={{ color: iconColor }} />
-      </IconButton>
-      <Menu
-        id='social-link-menu'
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-        MenuListProps={{
-          'aria-labelledby': 'social-link-icon',
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: 'row',
+          height: '48px',
+          backgroundColor: 'transparent',
+          padding: '16px',
+          color: '#fff',
+          alignItems: 'center',
         }}
       >
-        <MenuItem onClick={handleClose}>
-          <a
-            href='/'
-            style={{
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '0.75em',
-            }}
-          >
-            <ListItemIcon>
-              <HomeIcon
-                fontSize='small'
-                sx={{ color: iconColor, paddingRight: '8px' }}
-              />
-              Home
-            </ListItemIcon>
-          </a>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <a
-            href='/portfolio'
-            style={{
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '0.75em',
-            }}
-          >
-            <ListItemIcon>
-              <ColorLensIcon
-                fontSize='small'
-                sx={{ color: iconColor, paddingRight: '8px' }}
-              />
-              Portfolio
-            </ListItemIcon>
-          </a>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <a
-            href='/music'
-            style={{
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '0.75em',
-            }}
-          >
-            <ListItemIcon>
-              <PianoIcon
-                fontSize='small'
-                sx={{ color: iconColor, paddingRight: '8px' }}
-              />
-              Music
-            </ListItemIcon>
-          </a>
-        </MenuItem>
-        <Divider />
-        <MenuItem onClick={handleClose}>
-          <a
-            href='http://www.instagram.com/chvck.leone/'
-            target='new'
-            style={{
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '0.75em',
-            }}
-          >
-            <ListItemIcon>
-              <InstagramIcon
-                fontSize='small'
-                sx={{ color: iconColor, paddingRight: '8px' }}
-              />
-              Instagram
-            </ListItemIcon>
-          </a>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <a
-            href='https://www.youtube.com/channel/UCT4tYnr6SjSunE3EWC5y5QA'
-            target='new'
-            style={{
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '0.75em',
-            }}
-          >
-            <ListItemIcon>
-              <YouTubeIcon
-                fontSize='small'
-                sx={{ color: iconColor, paddingRight: '8px' }}
-              />
-              YouTube
-            </ListItemIcon>
-          </a>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <a
-            href='http://www.twitter.com/chuckleone/'
-            target='new'
-            style={{
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '0.75em',
-            }}
-          >
-            <ListItemIcon>
-              <TwitterIcon
-                fontSize='small'
-                sx={{ color: iconColor, paddingRight: '8px' }}
-              />
-              Twitter
-            </ListItemIcon>
-          </a>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <a
-            href='https://github.com/chuckleone'
-            target='new'
-            style={{
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '0.75em',
-            }}
-          >
-            <ListItemIcon>
-              <GitHubIcon
-                fontSize='small'
-                sx={{ color: iconColor, paddingRight: '8px' }}
-              />
-              GitHub
-            </ListItemIcon>
-          </a>
-        </MenuItem>
-        <MenuItem onClick={handleClose}>
-          <a
-            href='https://chuckleone.bandcamp.com/'
-            target='new'
-            style={{
-              color: '#fff',
-              textDecoration: 'none',
-              fontSize: '0.75em',
-            }}
-          >
-            <ListItemIcon>
-              <BandcampIcon
-                fontSize='20px'
-                sx={{ color: iconColor, paddingRight: '8px' }}
-              />
-              Bandcamp
-            </ListItemIcon>
-          </a>
-        </MenuItem>
-      </Menu>
+        <Box sx={{ textAlign: 'right', alignItems: 'center' }}>
+          <ul className='navigation'>
+            <li className='navigation-item'>
+              <a href='/'>Home</a>
+            </li>
+            <li className='navigation-item'>
+              <a href='/portfolio'>Portfolio</a>
+            </li>
+            <li className='navigation-item'>
+              <a href='/music'>Music</a>
+            </li>
+            <li>|</li>
+          </ul>
+        </Box>
+        <Box>
+          <ul className='social-navigation'>
+            <li>
+              <a
+                href='http://www.instagram.com/chvck.leone/'
+                target='new'
+                style={{
+                  color: '#fff',
+                  textDecoration: 'none',
+                  fontSize: '0.75em',
+                }}
+              >
+                <InstagramIcon
+                  fontSize='small'
+                  sx={{ color: iconColor, paddingRight: '8px' }}
+                />
+                <span className='sr-only'>Instagram</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href='https://www.youtube.com/channel/UCT4tYnr6SjSunE3EWC5y5QA'
+                target='new'
+                style={{
+                  color: '#fff',
+                  textDecoration: 'none',
+                  fontSize: '0.75em',
+                }}
+              >
+                <YouTubeIcon
+                  fontSize='small'
+                  sx={{ color: iconColor, paddingRight: '8px' }}
+                />
+                <span className='sr-only'>YouTube</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href='http://www.twitter.com/chuckleone/'
+                target='new'
+                style={{
+                  color: '#fff',
+                  textDecoration: 'none',
+                  fontSize: '0.75em',
+                }}
+              >
+                <TwitterIcon
+                  fontSize='small'
+                  sx={{ color: iconColor, paddingRight: '8px' }}
+                />
+                <span className='sr-only'>Twitter</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href='https://github.com/chuckleone'
+                target='new'
+                style={{
+                  color: '#fff',
+                  textDecoration: 'none',
+                  fontSize: '0.75em',
+                }}
+              >
+                <GitHubIcon
+                  fontSize='small'
+                  sx={{ color: iconColor, paddingRight: '8px' }}
+                />
+                <span className='sr-only'>Github</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href='https://chuckleone.bandcamp.com/'
+                target='new'
+                style={{
+                  color: '#fff',
+                  textDecoration: 'none',
+                  fontSize: '0.75em',
+                }}
+              >
+                <BandcampIcon
+                  fontSize='20px'
+                  sx={{ color: iconColor, paddingRight: '8px' }}
+                />
+                <span className='sr-only'>Bandcamp</span>
+              </a>
+            </li>
+          </ul>
+        </Box>
+      </Box>
     </>
   );
 };
