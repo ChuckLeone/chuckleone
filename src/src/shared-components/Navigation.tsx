@@ -1,4 +1,4 @@
-import { Box, ListItemIcon } from '@mui/material';
+import { Box } from '@mui/material';
 import { grey } from '@mui/material/colors';
 import BandcampIcon from './BandcampIcon';
 import TwitterIcon from '@mui/icons-material/Twitter';
