@@ -45,8 +45,9 @@ function BioPanel() {
             recording and performing. I starting playing guitar at the age of 10
             and by the time I was 16 years old, I was experimenting with tape
             looping, overdubbing and building weird soundtracks consisting of
-            layers of live music, sound sources such as AM/FM/shortwave radio,
-            TV and movie sound bytes, outdoor and indoor room ambience and more.
+            layers of live music, found sounds from sources such as
+            AM/FM/shortwave radio, TV and movie sound bytes, outdoor and indoor
+            room ambience and more.
           </Typography>
           <Typography
             variant='body1'
@@ -64,15 +65,20 @@ function BioPanel() {
             >
               Organic Synthesis
             </a>
-            . I've recorded and produced 2 full albums, 3 EPs and have had my
-            work featured in video games. The experience I have gathered over
-            the decades playing with other artist, designing live music rigs and
-            visualizations reflects in my work as a solo artist, sound designer
-            and performer.
+            . Since 2017 I've recorded and produced 2 full albums, 3 EPs and
+            have had my work featured in independent video games. The experience
+            I have gathered over the decades playing with other musicians,
+            designing live music rigs and experimenting with visualizations
+            reflects in my work as a solo artist, producer, sound designer and
+            performer.
           </Typography>
           <Typography variant='body1' style={{ color: '#fff' }}>
-            I take great care crafting a unique and memorable live experience
-            based on the original music I put that same level of detail into.
+            I control the entire creative process - writing, recording,
+            mastering and releasing all my tracks; designing and developing all
+            branding, album art, merchandise and online presence. I take great
+            care in crafting not only my music but all of these elements in
+            order to deliver a high quality, unique and memorable experience for
+            the listener.
           </Typography>
         </Grid>
         <Grid item sm={12} sx={{ marginTop: '10px' }}>
@@ -297,7 +303,7 @@ const Music = () => {
               sx={{ color: 'white' }}
               gutterBottom
             >
-              Traversing the realms of industrial, IDM, Darkwave and Ambient.
+              Traversing the realms of Industrial, IDM, Darkwave and Ambient.
             </Typography>
 
             <Typography

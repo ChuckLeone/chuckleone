@@ -11,7 +11,7 @@ import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import VaporCanyon from '../assets/vapor-canyon.jpg';
 import BeneathTheSand from '../assets/beneath-the-sand-jacket.jpg';
-import Samurai from '../assets/3d-samurai.jpg';
+import Samurai from '../assets/samurai.jpg';
 import CodeFallSulfur from '../assets/CodeFall-Sulfur.jpg';
 import Inception from '../assets/inception.jpg';
 import TopBar from '../shared-components/TopBar';
@@ -81,7 +81,7 @@ const Home = () => {
       >
         <TopBar />
         <Container>
-          <Grid container sx={{ minHeight: '55vh' }}>
+          <Grid container sx={{ minHeight: '65vh' }}>
             <Grid item sm={12} lg={12}></Grid>
           </Grid>
           <Grid item lg={6}>
@@ -100,7 +100,7 @@ const Home = () => {
                 {background.title}
               </Typography>
               <Typography
-                variant='body2'
+                variant='caption'
                 sx={{ color: 'rgba(255,255,255,0.6)' }}
               >
                 {background.description}
@@ -131,7 +131,6 @@ const Home = () => {
             <Footer />
           </Grid>
         </Container>
-        <div style={{ margin: '16px' }}></div>
       </div>
     </div>
   );
