@@ -73,12 +73,12 @@ function BioPanel() {
             performer.
           </Typography>
           <Typography variant='body1' style={{ color: '#fff' }}>
-            I control the entire creative process - writing, recording,
-            mastering and releasing all my tracks; designing and developing all
-            branding, album art, merchandise and online presence. I take great
-            care in crafting not only my music but all of these elements in
-            order to deliver a high quality, unique and memorable experience for
-            the listener.
+            I focus equally on all aspects of the entire creative process -
+            writing, recording, mastering and releasing all my tracks; designing
+            and developing all branding, album art, merchandise and online
+            presence. I take great care in crafting not only my music but all of
+            these elements in order to deliver a high quality, unique and
+            memorable experience for the listener.
           </Typography>
         </Grid>
         <Grid item sm={12} sx={{ marginTop: '10px' }}>
