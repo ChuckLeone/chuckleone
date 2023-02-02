@@ -53,7 +53,6 @@ const TopBar = () => {
             textAlign: 'right',
             flex: 'auto',
             maxWidth: '48px',
-            display: { lg: 'none', sm: 'block', xs: 'block' },
           }}
         >
           <DrawerNavigation />

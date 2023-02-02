@@ -35,7 +35,7 @@ const Navigation = () => {
             <li>|</li>
           </ul>
         </Box>
-        <Box>
+        <Box sx={{ display: { lg: 'none', sm: 'block', xs: 'block' } }}>
           <ul className='social-navigation'>
             <li>
               <a
