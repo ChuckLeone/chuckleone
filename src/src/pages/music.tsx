@@ -282,7 +282,7 @@ function PressKitTabs() {
 
 const Music = () => {
   useEffect(() => {
-    document.title = 'Music';
+    document.title = 'Chuck Leone | Music';
   }, []);
 
   return (

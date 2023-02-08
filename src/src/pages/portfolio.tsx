@@ -23,6 +23,7 @@ import LightWingHunter from '../assets/3d-lightwing-hunter.jpg';
 import GalleryModal from '../shared-components/Modal';
 import Gathr from '../assets/gathr-thumb.jpg';
 import CadenceChatExport from '../assets/cadence-chat-thumb.jpg';
+import MSH from '../assets/msh-thumb.jpg';
 import Samurai from '../assets/samurai.jpg';
 import { useState } from 'react';
 
@@ -106,6 +107,20 @@ const MediaCards = () => {
       buttonText: 'Visit KatherineBichler.com',
     },
     {
+      img: MSH,
+      title: 'Material Supply Hub',
+      description: 'Logo, branding and Ionic Framework prototype',
+      details: '',
+      link: '/portfolio/details/msh',
+      tags: [
+        { id: 0, title: 'Photoshop' },
+        { id: 1, title: 'Logo' },
+        { id: 2, title: 'Branding' },
+        { id: 3, title: 'Mood Board' },
+      ],
+      buttonText: 'More Info',
+    },
+    {
       img: Eve,
       title: 'Cyborg - WIP',
       description: '3D Model sculpted in Medium by Adobe',
@@ -151,7 +166,7 @@ const MediaCards = () => {
   const handleClose = () => setOpen(false);
 
   useEffect(() => {
-    document.title = 'Portfolio';
+    document.title = 'Chuck Leone | Portfolio';
   }, []);
 
   const handleClick = (item: any) => {
@@ -198,7 +213,7 @@ const MediaCards = () => {
                 </Button>
               )}
               {item.gallery && (
-                <Button variant='text' onClick={() => handleClick(item)}>
+                <Button variant='outlined' onClick={() => handleClick(item)}>
                   View Larger Image
                 </Button>
               )}

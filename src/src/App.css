@@ -109,6 +109,18 @@ a:hover {
   color: #90caf9;
 }
 
+.video-container {
+  height: 65vh;
+  position: relative;
+}
+
+.video-container video {
+  max-width: 1280px;
+  position: relative;
+  object-fit: cover;
+  z-index: 0;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
