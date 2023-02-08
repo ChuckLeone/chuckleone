@@ -161,8 +161,25 @@ const Home = () => {
                 sm={12}
                 md={12}
                 lg={12}
-                sx={{ minHeight: '65vh' }}
-              ></Grid>
+                sx={{ minHeight: '65vh', position: 'relative' }}
+              >
+                {background.type === 'video' && (
+                  <>
+                    <span
+                      style={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%, -50%)',
+                      }}
+                    >
+                      <Button onClick={handleClick} endIcon={<PlayArrowIcon />}>
+                        Watch Video
+                      </Button>
+                    </span>
+                  </>
+                )}
+              </Grid>
 
               <Grid
                 item
@@ -177,15 +194,6 @@ const Home = () => {
                   sx={{ color: 'rgba(255,255,255,0.6)' }}
                 >
                   {background.title}
-                  {background.type === 'video' && (
-                    <>
-                      {' '}
-                      |
-                      <Button onClick={handleClick} endIcon={<PlayArrowIcon />}>
-                        Watch Video
-                      </Button>
-                    </>
-                  )}
                 </Typography>
                 <Typography
                   variant='caption'
