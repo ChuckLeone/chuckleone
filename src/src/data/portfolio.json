@@ -28,5 +28,15 @@
     "img2": "http://chuckleone.com/static/media/gathr/design-guide-analog.png",
     "img3": "http://chuckleone.com/static/media/gathr/gathr-new-dawn.png",
     "imgAlt": "screenshot of gathR mobile app"
+  },
+  {
+    "id": "msh",
+    "title": "Logo Design, Mood Board and Prototype",
+    "description": "Logo/brand identity and progressive app prototype",
+    "details": "Mood board, logo design and interactive prototype written in Ionic Framework/Angular JS",
+    "img1": "http://chuckleone.com/static/media/gathr/gathr-destiny.png",
+    "img2": "http://chuckleone.com/static/media/gathr/design-guide-analog.png",
+    "img3": "http://chuckleone.com/static/media/gathr/gathr-new-dawn.png",
+    "imgAlt": "screenshot of gathR mobile app"
   }
 ]
