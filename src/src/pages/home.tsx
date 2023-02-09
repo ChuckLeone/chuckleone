@@ -14,7 +14,7 @@ import {
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import CloseIcon from '@mui/icons-material/Close';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import VaporCanyon from '../assets/vapor-canyon.jpg';
 import BeneathTheSand from '../assets/beneath-the-sand-jacket.jpg';
 import Samurai from '../assets/samurai.jpg';
@@ -173,7 +173,12 @@ const Home = () => {
                         transform: 'translate(-50%, -50%)',
                       }}
                     >
-                      <Button onClick={handleClick} endIcon={<PlayArrowIcon />}>
+                      <Button
+                        variant='outlined'
+                        sx={{ height: '64px', width: '200px' }}
+                        onClick={handleClick}
+                        endIcon={<PlayCircleOutlineIcon />}
+                      >
                         Watch Video
                       </Button>
                     </span>
