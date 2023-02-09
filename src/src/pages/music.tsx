@@ -3,12 +3,15 @@ import TopBar from '../shared-components/TopBar';
 import {
   Box,
   Container,
+  Dialog,
   Divider,
   Grid,
+  IconButton,
   Tab,
   Tabs,
   Typography,
 } from '@mui/material';
+import CloseIcon from '@mui/icons-material/Close';
 import MediaCard from '../shared-components/MediaCard';
 import Obscurity from '../assets/album-cover-obscurity.jpg';
 import TheReceptive from '../assets/album-cover-the-receptive.jpg';
@@ -18,6 +21,7 @@ import Dreamstatic from '../assets/album-cover-dreamstatic.jpg';
 import PsyclonNine from '../assets/Poster-Psyclon-Nine.jpg';
 import BioPicture from '../assets/press-kit/profile.jpg';
 import Footer from '../shared-components/Footer';
+import Folding from '../assets/infinite-folding.gif';
 import VideoPlayer from '../shared-components/VideoPlayer';
 
 interface TabPanelProps {
@@ -196,13 +200,72 @@ function LivePanel() {
 }
 
 function VideoPanel() {
+  const [open, setOpen] = useState(false);
+  const [video, setVideo] = useState('');
+
+  const handleClose = () => setOpen(false);
+  const handleClick = (item: any) => {
+    setOpen(true);
+    setVideo('http://chuckleone.com/video/folding.mp4');
+  };
+
   return (
     <>
       <Grid container spacing={2}>
         <Grid item sm={12}>
-          <VideoPlayer />
+          <Typography
+            variant='h6'
+            component='h4'
+            sx={{ color: '#fff' }}
+            gutterBottom
+          >
+            Infinite Folding
+          </Typography>
+          <img
+            src={Folding}
+            alt='video thumbnail'
+            width='350'
+            onClick={handleClick}
+          />
         </Grid>
       </Grid>
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby='gallery-modal'
+        aria-describedby='gallery-modal-desicription'
+        maxWidth='xl'
+        PaperProps={{ sx: { background: 'none ' } }}
+      >
+        <Box
+          sx={{
+            margin: '8px',
+            textAlign: 'center',
+            top: '50%',
+            left: '50%',
+          }}
+        >
+          <Typography
+            id='gallery-modal-title'
+            variant='h5'
+            component='h3'
+            sx={{ color: '#fff', margin: '16px' }}
+          >
+            <span className='sr-only'>Video Player</span>
+          </Typography>
+          <div style={{ textAlign: 'right' }}>
+            <IconButton
+              edge='start'
+              color='inherit'
+              onClick={handleClose}
+              aria-label='close'
+            >
+              <CloseIcon />
+            </IconButton>
+          </div>
+          <VideoPlayer video={video} />
+        </Box>
+      </Dialog>
     </>
   );
 }

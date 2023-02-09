@@ -23,7 +23,6 @@ import LightWingHunter from '../assets/3d-lightwing-hunter.jpg';
 import GalleryModal from '../shared-components/Modal';
 import Gathr from '../assets/gathr-thumb.jpg';
 import CadenceChatExport from '../assets/cadence-chat-thumb.jpg';
-import MSH from '../assets/msh-thumb.jpg';
 import Samurai from '../assets/samurai.jpg';
 import { useState } from 'react';
 

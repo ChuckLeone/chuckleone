@@ -1,25 +1,19 @@
 import { useEffect, useState } from 'react';
-import { Container } from '@mui/material';
 
 interface Size {
   width: number | undefined;
   height: number | undefined;
 }
 
-const VideoPlayer = () => {
+const VideoPlayer = (props: any) => {
   const size = useWindowResize();
   return (
     <>
-      <Container>
-        <div className='video-container'>
-          <video controls id='myVideo' width={size.width + 'px'}>
-            <source
-              src='http://chuckleone.com/video/folding.mp4'
-              type='video/mp4'
-            />
-          </video>
-        </div>
-      </Container>
+      <div className='video-container'>
+        <video controls id='myVideo' width={size.width + 'px'}>
+          <source src={props.video} type='video/mp4' />
+        </video>
+      </div>
     </>
   );
 };
