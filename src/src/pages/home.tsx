@@ -18,7 +18,7 @@ import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import VaporCanyon from '../assets/vapor-canyon.jpg';
 import BeneathTheSand from '../assets/beneath-the-sand-jacket.jpg';
 import Samurai from '../assets/samurai.jpg';
-import CodeFallSulfur from '../assets/CodeFall-Sulfur.jpg';
+import CodeFall from '../assets/CodeFall.jpg';
 import Inception from '../assets/inception.jpg';
 import Folding from '../assets/infinite-folding.gif';
 import TopBar from '../shared-components/TopBar';
@@ -77,7 +77,7 @@ const Home = () => {
     },
     {
       id: 1,
-      file: CodeFallSulfur,
+      file: CodeFall,
       title: 'Code Fall',
       description: 'Poster/T-shirt design | Adobe Photoshop',
       type: 'image',
