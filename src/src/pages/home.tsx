@@ -79,7 +79,7 @@ const Home = () => {
       id: 1,
       file: CodeFall,
       title: 'Code Fall',
-      description: 'Poster/T-shirt design | Adobe Photoshop',
+      description: 'Poster/T-shirt/Desktop Wallpaper | Adobe Photoshop',
       type: 'image',
     },
     {
