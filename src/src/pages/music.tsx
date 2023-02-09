@@ -18,6 +18,7 @@ import Dreamstatic from '../assets/album-cover-dreamstatic.jpg';
 import PsyclonNine from '../assets/Poster-Psyclon-Nine.jpg';
 import BioPicture from '../assets/press-kit/profile.jpg';
 import Footer from '../shared-components/Footer';
+import VideoPlayer from '../shared-components/VideoPlayer';
 
 interface TabPanelProps {
   children?: ReactNode;
@@ -193,6 +194,18 @@ function LivePanel() {
     </Grid>
   );
 }
+
+function VideoPanel() {
+  return (
+    <>
+      <Grid container spacing={2}>
+        <Grid item sm={12}>
+          <VideoPlayer />
+        </Grid>
+      </Grid>
+    </>
+  );
+}
 function TabPanel(props: TabPanelProps) {
   const { children, value, index, ...other } = props;
 
@@ -263,6 +276,7 @@ function PressKitTabs() {
           <Tab label='Bio' {...a11yProps(0)} />
           <Tab label='Discography' {...a11yProps(1)} />
           <Tab label='Live' {...a11yProps(2)} />
+          <Tab label='Video' {...a11yProps(3)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -275,6 +289,9 @@ function PressKitTabs() {
       </TabPanel>
       <TabPanel value={value} index={2}>
         <LivePanel />
+      </TabPanel>
+      <TabPanel value={value} index={3}>
+        <VideoPanel />
       </TabPanel>
     </Box>
   );
