@@ -20,6 +20,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
 
 type Anchor = 'right';
 const iconColor = grey['A100'];
@@ -97,6 +98,17 @@ const DrawerNavigation = () => {
                   />
                 </ListItemIcon>
                 <ListItemText primary='Music' className='drawer-item' />
+              </ListItemButton>
+            </ListItem>
+            <ListItem>
+              <ListItemButton component='a' href='mailto:chuckleone@gmail.com'>
+                <ListItemIcon>
+                  <EmailIcon
+                    fontSize='small'
+                    sx={{ color: iconColor, paddingRight: '8px' }}
+                  />
+                </ListItemIcon>
+                <ListItemText primary='Email' className='drawer-item' />
               </ListItemButton>
             </ListItem>
           </List>

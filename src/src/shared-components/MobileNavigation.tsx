@@ -16,6 +16,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
 
 const MobileNavigation = () => {
   const iconColor = grey['A100'];
@@ -102,6 +103,25 @@ const MobileNavigation = () => {
                 sx={{ color: iconColor, paddingRight: '8px' }}
               />
               Music
+            </ListItemIcon>
+          </a>
+        </MenuItem>
+        <Divider />
+        <MenuItem onClick={handleClose}>
+          <a
+            href='mailto:chuckleone@gmail.com'
+            style={{
+              color: '#fff',
+              textDecoration: 'none',
+              fontSize: '0.75em',
+            }}
+          >
+            <ListItemIcon>
+              <EmailIcon
+                fontSize='small'
+                sx={{ color: iconColor, paddingRight: '8px' }}
+              />
+              Email
             </ListItemIcon>
           </a>
         </MenuItem>
