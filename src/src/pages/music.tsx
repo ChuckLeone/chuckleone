@@ -12,6 +12,7 @@ import {
   Typography,
 } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
+import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import MediaCard from '../shared-components/MediaCard';
 import Obscurity from '../assets/album-cover-obscurity.jpg';
 import TheReceptive from '../assets/album-cover-the-receptive.jpg';
@@ -221,12 +222,24 @@ function VideoPanel() {
           >
             Infinite Folding
           </Typography>
-          <img
-            src={Folding}
-            alt='video thumbnail'
-            width='350'
-            onClick={handleClick}
-          />
+          <div
+            style={{
+              backgroundImage: `url(${Folding})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              width: '350px',
+              height: '250px',
+              position: 'relative',
+            }}
+          >
+            <div className='play-button'>
+              <IconButton size='large' onClick={handleClick}>
+                <PlayCircleOutlineIcon fontSize='large' />
+                <span className='sr-only'>Play Video</span>
+              </IconButton>
+            </div>
+          </div>
         </Grid>
       </Grid>
       <Dialog
@@ -333,9 +346,23 @@ function PressKitTabs() {
   ];
 
   return (
-    <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label='press kit tabs'>
+    <Box>
+      <Box
+        sx={{
+          flexGrow: 1,
+          maxWidth: { xs: 320, sm: 480 },
+          borderBottom: 1,
+          borderColor: 'divider',
+        }}
+      >
+        <Tabs
+          variant='scrollable'
+          scrollButtons
+          allowScrollButtonsMobile
+          value={value}
+          onChange={handleChange}
+          aria-label='press kit tabs'
+        >
           <Tab label='Bio' {...a11yProps(0)} />
           <Tab label='Discography' {...a11yProps(1)} />
           <Tab label='Live' {...a11yProps(2)} />
