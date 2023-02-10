@@ -131,11 +131,31 @@ a:hover {
   z-index: 0;
 }
 
+.video-thumb {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 350px;
+  min-height: 250px;
+  max-width: 480px;
+  max-height: 320px;
+  position: relative;
+}
+
 .play-button {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -25px 0 0 -25px;
+  margin: -48px 0 0 -48px;
+}
+
+@media (max-width: 440px) and (orientation: portrait) {
+  .video-thumb {
+    min-width: 280px;
+    min-height: 180px;
+    max-width: 300px;
+    max-height: 120px;
+  }
 }
 
 @keyframes App-logo-spin {

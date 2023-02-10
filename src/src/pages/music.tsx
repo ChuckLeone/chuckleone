@@ -225,17 +225,14 @@ function VideoPanel() {
           <div
             style={{
               backgroundImage: `url(${Folding})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              width: '350px',
-              height: '250px',
-              position: 'relative',
             }}
+            className='video-thumb'
           >
             <div className='play-button'>
               <IconButton size='large' onClick={handleClick}>
-                <PlayCircleOutlineIcon fontSize='large' />
+                <PlayCircleOutlineIcon
+                  style={{ width: '64px', height: '64px' }}
+                />
                 <span className='sr-only'>Play Video</span>
               </IconButton>
             </div>
