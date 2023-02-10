@@ -350,14 +350,14 @@ function PressKitTabs() {
       <Box
         sx={{
           flexGrow: 1,
-          maxWidth: { xs: 320, sm: 480 },
+          maxWidth: { xs: 320, sm: 640 },
           borderBottom: 1,
           borderColor: 'divider',
         }}
       >
         <Tabs
           variant='scrollable'
-          scrollButtons
+          scrollButtons='auto'
           allowScrollButtonsMobile
           value={value}
           onChange={handleChange}
