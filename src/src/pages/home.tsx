@@ -167,7 +167,10 @@ const Home = () => {
                   sm={12}
                   md={12}
                   lg={12}
-                  sx={{ minHeight: '60vh', position: 'relative' }}
+                  sx={{
+                    minHeight: { xs: '55vh', sm: '65vh', md: '75vh' },
+                    position: 'relative',
+                  }}
                 >
                   {background.type === 'video' && (
                     <>
