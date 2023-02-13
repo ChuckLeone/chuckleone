@@ -167,7 +167,7 @@ const Home = () => {
                   sm={12}
                   md={12}
                   lg={12}
-                  sx={{ minHeight: '65vh', position: 'relative' }}
+                  sx={{ minHeight: '60vh', position: 'relative' }}
                 >
                   {background.type === 'video' && (
                     <>
@@ -200,15 +200,12 @@ const Home = () => {
                   lg={6}
                   sx={{ textAlign: 'left' }}
                 >
-                  <Typography
-                    variant='h3'
-                    sx={{ color: 'rgba(255,255,255,0.6)' }}
-                  >
+                  <Typography variant='h3' sx={{ color: 'rgb(255,255,255)' }}>
                     {background.title}
                   </Typography>
                   <Typography
                     variant='caption'
-                    sx={{ color: 'rgba(255,255,255,0.6)' }}
+                    sx={{ color: 'rgb(255,255,255)' }}
                   >
                     {background.description}
                   </Typography>
