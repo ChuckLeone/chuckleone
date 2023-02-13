@@ -297,8 +297,8 @@ function TabPanel(props: TabPanelProps) {
 
 function a11yProps(index: number) {
   return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
+    id: `press-kit-tab-${index}`,
+    'aria-controls': `press-kit-tabpanel-${index}`,
   };
 }
 
@@ -390,47 +390,49 @@ const Music = () => {
   }, []);
 
   return (
-    <div
-      style={{
-        backgroundColor: '#1f1f1f',
-        minHeight: '100vh',
-        minWidth: '100%',
-      }}
-    >
-      <TopBar />
-      <Container>
-        <Grid container spacing={2}>
-          <Grid item sm={12} sx={{ marginTop: '10px' }}>
-            <Typography
-              variant='h5'
-              component='h2'
-              sx={{ color: 'white' }}
-              gutterBottom
-            >
-              Traversing the realms of Industrial, IDM, Darkwave and Ambient.
-            </Typography>
+    <main>
+      <div
+        style={{
+          backgroundColor: '#1f1f1f',
+          minHeight: '100vh',
+          minWidth: '100%',
+        }}
+      >
+        <TopBar />
+        <Container>
+          <Grid container spacing={2}>
+            <Grid item sm={12} sx={{ marginTop: '10px' }}>
+              <Typography
+                variant='h5'
+                component='h2'
+                sx={{ color: 'white' }}
+                gutterBottom
+              >
+                Traversing the realms of Industrial, IDM, Darkwave and Ambient.
+              </Typography>
 
-            <Typography
-              variant='body1'
-              sx={{ color: 'white', marginBottom: '16px' }}
-              gutterBottom
-            >
-              Combining elements of sound design, pushing the limits of
-              electronic music, twisting and manipulating sounds into rythmic
-              and cinematic soundscapes.
-            </Typography>
+              <Typography
+                variant='body1'
+                sx={{ color: 'white', marginBottom: '16px' }}
+                gutterBottom
+              >
+                Combining elements of sound design, pushing the limits of
+                electronic music, twisting and manipulating sounds into rythmic
+                and cinematic soundscapes.
+              </Typography>
+            </Grid>
+            <Grid item sm={12}>
+              <PressKitTabs />
+            </Grid>
           </Grid>
-          <Grid item sm={12}>
-            <PressKitTabs />
+          <Grid container spacing={2}>
+            <Grid item sm={12}>
+              <Footer />
+            </Grid>
           </Grid>
-        </Grid>
-        <Grid container spacing={2}>
-          <Grid item sm={12}>
-            <Footer />
-          </Grid>
-        </Grid>
-      </Container>
-    </div>
+        </Container>
+      </div>
+    </main>
   );
 };
 

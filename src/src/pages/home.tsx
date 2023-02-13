@@ -153,101 +153,108 @@ const Home = () => {
           }}
         >
           <TopBar />
-          <Container>
-            <Grid container spacing={2}>
-              <Grid
-                item
-                xs={12}
-                sm={12}
-                md={12}
-                lg={12}
-                sx={{ minHeight: '65vh', position: 'relative' }}
-              >
-                {background.type === 'video' && (
-                  <>
-                    <span
-                      style={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%, -50%)',
-                      }}
-                    >
-                      <Button
-                        variant='outlined'
-                        sx={{ height: '64px', width: '200px' }}
-                        onClick={handleClick}
-                        endIcon={<PlayCircleOutlineIcon />}
-                      >
-                        Watch Video
-                      </Button>
-                    </span>
-                  </>
-                )}
-              </Grid>
-
-              <Grid
-                item
-                xs={12}
-                sm={12}
-                md={6}
-                lg={6}
-                sx={{ textAlign: 'left' }}
-              >
-                <Typography
-                  variant='h4'
-                  sx={{ color: 'rgba(255,255,255,0.6)' }}
+          <main>
+            <Container>
+              <Grid container spacing={2}>
+                <Grid item xs={12} sm={12} md={12} lg={12}>
+                  <Typography variant='h2' className='sr-only'>
+                    Home
+                  </Typography>
+                </Grid>
+                <Grid
+                  item
+                  xs={12}
+                  sm={12}
+                  md={12}
+                  lg={12}
+                  sx={{ minHeight: '65vh', position: 'relative' }}
                 >
-                  {background.title}
-                </Typography>
-                <Typography
-                  variant='caption'
-                  sx={{ color: 'rgba(255,255,255,0.6)' }}
-                >
-                  {background.description}
-                </Typography>
-              </Grid>
-
-              <Grid
-                item
-                xs={12}
-                sm={12}
-                md={6}
-                lg={6}
-                sx={{ textAlign: 'right' }}
-              >
-                <Stack
-                  spacing={2}
-                  direction='column'
-                  sx={{
-                    display: 'flex',
-                    alignItems: 'center',
-                  }}
-                >
-                  <Pagination
-                    count={backgrounds.length}
-                    color='secondary'
-                    page={page}
-                    onChange={handleChange}
-                    renderItem={(item) => (
-                      <PaginationItem
-                        sx={{ color: '#fff' }}
-                        components={{
-                          previous: ArrowBackIosIcon,
-                          next: ArrowForwardIosIcon,
+                  {background.type === 'video' && (
+                    <>
+                      <span
+                        style={{
+                          position: 'absolute',
+                          top: '50%',
+                          left: '50%',
+                          transform: 'translate(-50%, -50%)',
                         }}
-                        {...item}
-                      />
-                    )}
-                  />
-                </Stack>
-              </Grid>
+                      >
+                        <Button
+                          variant='outlined'
+                          sx={{ height: '64px', width: '200px' }}
+                          onClick={handleClick}
+                          endIcon={<PlayCircleOutlineIcon />}
+                        >
+                          Watch Video
+                        </Button>
+                      </span>
+                    </>
+                  )}
+                </Grid>
 
-              <Grid item xs={12} sm={12} md={12} lg={12}>
-                <Footer />
+                <Grid
+                  item
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={6}
+                  sx={{ textAlign: 'left' }}
+                >
+                  <Typography
+                    variant='h3'
+                    sx={{ color: 'rgba(255,255,255,0.6)' }}
+                  >
+                    {background.title}
+                  </Typography>
+                  <Typography
+                    variant='caption'
+                    sx={{ color: 'rgba(255,255,255,0.6)' }}
+                  >
+                    {background.description}
+                  </Typography>
+                </Grid>
+
+                <Grid
+                  item
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={6}
+                  sx={{ textAlign: 'right' }}
+                >
+                  <Stack
+                    spacing={2}
+                    direction='column'
+                    sx={{
+                      display: 'flex',
+                      alignItems: 'center',
+                    }}
+                  >
+                    <Pagination
+                      count={backgrounds.length}
+                      color='secondary'
+                      page={page}
+                      onChange={handleChange}
+                      renderItem={(item) => (
+                        <PaginationItem
+                          sx={{ color: '#fff' }}
+                          components={{
+                            previous: ArrowBackIosIcon,
+                            next: ArrowForwardIosIcon,
+                          }}
+                          {...item}
+                        />
+                      )}
+                    />
+                  </Stack>
+                </Grid>
+
+                <Grid item xs={12} sm={12} md={12} lg={12}>
+                  <Footer />
+                </Grid>
               </Grid>
-            </Grid>
-          </Container>
+            </Container>
+          </main>
         </div>
       </div>
       <Dialog

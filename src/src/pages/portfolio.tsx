@@ -37,9 +37,9 @@ const MediaCards = () => {
       tags: [
         { id: 0, title: 'React' },
         { id: 1, title: 'Bootstrap' },
-        { id: 3, title: 'JavaScript' },
+        { id: 2, title: 'JavaScript' },
       ],
-      buttonText: 'More Info',
+      buttonText: 'View Portfolio',
     },
     {
       img: MonstersAndMachines,
@@ -51,7 +51,7 @@ const MediaCards = () => {
       tags: [
         { id: 0, title: 'ReactJS' },
         { id: 1, title: 'Material UI' },
-        { id: 3, title: 'JavaScript' },
+        { id: 2, title: 'JavaScript' },
       ],
       buttonText: 'Visit Website',
     },
@@ -65,9 +65,9 @@ const MediaCards = () => {
       tags: [
         { id: 0, title: 'HTML' },
         { id: 1, title: 'CSS' },
-        { id: 3, title: 'JavaScript' },
+        { id: 2, title: 'JavaScript' },
       ],
-      buttonText: 'More Info',
+      buttonText: 'View Portfolio',
     },
     {
       img: Gathr,
@@ -78,10 +78,10 @@ const MediaCards = () => {
       tags: [
         { id: 0, title: 'DESIGN GUIDE' },
         { id: 1, title: 'LOGO' },
-        { id: 3, title: 'APP DESIGN' },
+        { id: 2, title: 'APP DESIGN' },
         { id: 3, title: 'MOOD BOARDS' },
       ],
-      buttonText: 'More Info',
+      buttonText: 'View Portfolio',
     },
     {
       img: DataViz1,
@@ -105,20 +105,6 @@ const MediaCards = () => {
       tags: [{ id: 0, title: 'Photoshop' }],
       buttonText: 'Visit KatherineBichler.com',
     },
-    // {
-    //   img: MSH,
-    //   title: 'Material Supply Hub',
-    //   description: 'Logo, branding and Ionic Framework prototype',
-    //   details: '',
-    //   link: '/portfolio/details/msh',
-    //   tags: [
-    //     { id: 0, title: 'Photoshop' },
-    //     { id: 1, title: 'Logo' },
-    //     { id: 2, title: 'Branding' },
-    //     { id: 3, title: 'Mood Board' },
-    //   ],
-    //   buttonText: 'More Info',
-    // },
     {
       img: Eve,
       title: 'Cyborg - WIP',
@@ -181,7 +167,7 @@ const MediaCards = () => {
               component='img'
               height='300'
               image={`${item.img}?w=248&fit=crop&auto=format`}
-              alt={item.title}
+              alt={item.description}
             />
             <CardContent style={{ background: '#333' }}>
               <Typography
@@ -235,93 +221,106 @@ const Portfolio = () => {
       }}
     >
       <TopBar />
-      <Container>
-        <Box>
-          <Grid container spacing={2}>
-            <Grid item xs={12} sx={{ marginRight: '30px' }}>
-              <Typography
-                variant='h4'
-                component='h3'
-                sx={{ color: 'white', marginBottom: '16px' }}
-              >
-                Summary
-              </Typography>
-              <Typography
-                variant='body1'
-                sx={{ color: 'white', marginBottom: '20px' }}
-              >
-                Over two decades of experience designing and developing engaging
-                and innovative cross-platform software products that push the
-                envelope of user interface design. Goal oriented, excellent
-                communication skills, highly motivated, self-educating and
-                thrives working in an agile environment. Passionate about
-                design, development, emerging technologies, art and music.
-              </Typography>
+      <main>
+        <Container>
+          <Box>
+            <Grid container spacing={2}>
+              <Grid item xs={12} sm={12} md={12} lg={12}>
+                <Typography variant='h2' className='sr-only'>
+                  Portfolio
+                </Typography>
+              </Grid>
+              <Grid item xs={12} sx={{ marginRight: '30px' }}>
+                <Typography
+                  variant='h4'
+                  component='h3'
+                  sx={{ color: 'white', marginBottom: '16px' }}
+                >
+                  Summary
+                </Typography>
+                <Typography
+                  variant='body1'
+                  sx={{ color: 'white', marginBottom: '20px' }}
+                >
+                  Over two decades of experience designing and developing
+                  engaging and innovative cross-platform software products that
+                  push the envelope of user interface design. Goal oriented,
+                  excellent communication skills, highly motivated,
+                  self-educating and thrives working in an agile environment.
+                  Passionate about design, development, emerging technologies,
+                  art and music.
+                </Typography>
 
-              <Typography variant='body1' sx={{ color: 'white' }}>
-                Highly proficient in ADA compliant web app development using
-                ReactJS, TypeScript, Node.JS, npm, Material UI and other
-                technologies. Expert level skills using the Adobe Creative Suite
-                to deliver beautiful designs focusing on usability, layout,
-                typography, texture, composition and color. At present, working
-                in the higher education software industry focusing on ADA
-                compliance using StorybookJS, Axe, Wave, Lighthouse, NVDA and
-                other accessibility tools. Comfortable developing in Agile and
-                Kanban environments using various development, version control
-                and dependency management tools. Able to quickly solve problems
-                and provide creative solutions in a logical manner. Currently an
-                active member of the BuffaloJS and Buffalo Game Space groups -
-                contributing music assets and providing mentorship to students
-                during annual game jams. Continuously prototyping and developing
-                new physical and virtual products and experiences using Autodesk
-                Fusion 360, Unity 3D, Adobe Medium, Blender3D, Gravity Sketch
-                and Google Blocks.
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sx={{ marginTop: '10px', marginRight: '30px' }}>
-              <Typography
-                variant='h6'
-                component='h6'
-                sx={{ color: 'white' }}
-                gutterBottom
-              >
-                Skills
-              </Typography>
-              <div>
-                <Chip label='ReactJS' sx={{ margin: '8px' }} />
-                <Chip label='TypeScript' sx={{ margin: '8px' }} />
-                <Chip label='JavaScript' sx={{ margin: '8px' }} />
-                <Chip label='Material UI' sx={{ margin: '8px' }} />
-                <Chip label='.net' sx={{ margin: '8px' }} />
-                <Chip label='Adobe Creative Suite' sx={{ margin: '8px' }} />
-                <Chip label='Unity 3D' sx={{ margin: '8px' }} />
-                <Chip label='Blender' sx={{ margin: '8px' }} />
-                <Chip label='Autodesk Fusion 360' sx={{ margin: '8px' }} />
-              </div>
-            </Grid>
-
-            <Grid item xs={12} sx={{ marginTop: '30px' }}>
-              <Typography variant='h4' component='h4' sx={{ color: 'white' }}>
-                Latest Work
-              </Typography>
+                <Typography variant='body1' sx={{ color: 'white' }}>
+                  Highly proficient in ADA compliant web app development using
+                  ReactJS, TypeScript, Node.JS, npm, Material UI and other
+                  technologies. Expert level skills using the Adobe Creative
+                  Suite to deliver beautiful designs focusing on usability,
+                  layout, typography, texture, composition and color. At
+                  present, working in the higher education software industry
+                  focusing on ADA compliance using StorybookJS, Axe, Wave,
+                  Lighthouse, NVDA and other accessibility tools. Comfortable
+                  developing in Agile and Kanban environments using various
+                  development, version control and dependency management tools.
+                  Able to quickly solve problems and provide creative solutions
+                  in a logical manner. Currently an active member of the
+                  BuffaloJS and Buffalo Game Space groups - contributing music
+                  assets and providing mentorship to students during annual game
+                  jams. Continuously prototyping and developing new physical and
+                  virtual products and experiences using Autodesk Fusion 360,
+                  Unity 3D, Adobe Medium, Blender3D, Gravity Sketch and Google
+                  Blocks.
+                </Typography>
+              </Grid>
               <Grid
-                container
-                spacing={3}
-                sx={{ marginTop: '16px', margin: 'auto' }}
+                item
+                xs={12}
+                sx={{ marginTop: '10px', marginRight: '30px' }}
               >
-                <MediaCards />
+                <Typography
+                  variant='h6'
+                  component='h4'
+                  sx={{ color: 'white' }}
+                  gutterBottom
+                >
+                  Skills
+                </Typography>
+                <div>
+                  <Chip label='ReactJS' sx={{ margin: '8px' }} />
+                  <Chip label='TypeScript' sx={{ margin: '8px' }} />
+                  <Chip label='JavaScript' sx={{ margin: '8px' }} />
+                  <Chip label='Material UI' sx={{ margin: '8px' }} />
+                  <Chip label='.net' sx={{ margin: '8px' }} />
+                  <Chip label='Adobe Creative Suite' sx={{ margin: '8px' }} />
+                  <Chip label='Unity 3D' sx={{ margin: '8px' }} />
+                  <Chip label='Blender' sx={{ margin: '8px' }} />
+                  <Chip label='Autodesk Fusion 360' sx={{ margin: '8px' }} />
+                </div>
+              </Grid>
+
+              <Grid item xs={12} sx={{ marginTop: '30px' }}>
+                <Typography variant='h4' component='h5' sx={{ color: 'white' }}>
+                  Latest Work
+                </Typography>
+                <Grid
+                  container
+                  spacing={3}
+                  sx={{ marginTop: '16px', margin: 'auto' }}
+                >
+                  <MediaCards />
+                </Grid>
               </Grid>
             </Grid>
-          </Grid>
-        </Box>
-        <Box>
-          <Grid container spacing={2}>
-            <Grid item sm={12}>
-              <Footer />
+          </Box>
+          <Box>
+            <Grid container spacing={2}>
+              <Grid item sm={12}>
+                <Footer />
+              </Grid>
             </Grid>
-          </Grid>
-        </Box>
-      </Container>
+          </Box>
+        </Container>
+      </main>
     </div>
   );
 };

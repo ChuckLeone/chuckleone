@@ -38,20 +38,17 @@ h6 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
 .sr-only {
   display: none;
+  color: '#fff';
 }
 
 a:visited {
-  color: pink;
+  color: #90caf9;
 }
 
 a:link {
-  color: cornflowerblue;
+  color: rgb(158, 192, 255);
 }
 
 .navigation {

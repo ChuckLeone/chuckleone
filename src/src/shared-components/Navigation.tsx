@@ -9,7 +9,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 const Navigation = () => {
   const iconColor = grey['A400'];
   return (
-    <>
+    <nav>
       <Box
         sx={{
           display: 'flex',
@@ -125,7 +125,7 @@ const Navigation = () => {
           </ul>
         </Box>
       </Box>
-    </>
+    </nav>
   );
 };
 

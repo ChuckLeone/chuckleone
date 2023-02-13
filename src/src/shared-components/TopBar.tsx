@@ -6,7 +6,7 @@ import Navigation from './Navigation';
 const MyLogo = Logo;
 const TopBar = () => {
   return (
-    <>
+    <header>
       <Box
         sx={{
           display: 'flex',
@@ -19,7 +19,15 @@ const TopBar = () => {
         }}
       >
         <Box sx={{ textAlign: 'left', flex: 'auto' }}>
-          <a href='/'>
+          <a href='/' aria-label='return to home page'>
+            <Typography
+              variant='h5'
+              component='h1'
+              sx={{ marginLeft: 0 }}
+              className='sr-only'
+            >
+              CHUCK LEONE{' '}
+            </Typography>
             <div
               style={{
                 backgroundImage: `url(${MyLogo})`,
@@ -27,16 +35,7 @@ const TopBar = () => {
                 backgroundSize: 'contain',
                 height: '48px',
               }}
-            >
-              <Typography
-                variant='h5'
-                component='h1'
-                sx={{ marginLeft: 0 }}
-                className='sr-only'
-              >
-                CHUCK LEONE{' '}
-              </Typography>
-            </div>
+            ></div>
           </a>
         </Box>
         <Box
@@ -58,7 +57,7 @@ const TopBar = () => {
           <DrawerNavigation />
         </Box>
       </Box>
-    </>
+    </header>
   );
 };
 

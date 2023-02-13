@@ -12,7 +12,7 @@ const MediaCard = (props) => {
                 component='img'
                 height='300'
                 image={`${album.image}?w=248&fit=crop&auto=format`}
-                alt={album.title}
+                alt={album.description}
                 tags={album.tags}
               />
             </Card>
