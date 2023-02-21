@@ -1,7 +1,7 @@
 [
   {
     "id": "mr",
-    "title": "Cadence Chat Export - built in Vue",
+    "title": "Cadence Chat Export UI",
     "description": "UX Design | Vue | Frontend Development",
     "details": "This feature was designed to allow users of Cadence, a chat management tool to setup both manual and automated exports of chat leads and activity reports. The UI was built in Vue and connected to an API to toggle nightly automated exports on and off. In addition, a manaul export feature allowed the user to request an export which was emailed to them immediately.",
     "img1": "http://chuckleone.com/static/media/mr/Cadence-Chat-Export.png",
