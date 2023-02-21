@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import {
   Box,
   Button,
@@ -17,6 +17,7 @@ import BeneathTheSand from '../assets/cover-bts-thumb.jpg';
 import MonstersAndMachines from '../assets/mam-thumb.jpg';
 import Eve from '../assets/eve.jpg';
 import HPS from '../assets/hps-thumb.jpg';
+import MGH from '../assets/mgh-thumb.jpg';
 import DataViz1 from '../assets/data-viz1.jpg';
 import TargetEarth from '../assets/te-thumb.jpg';
 import LightWingHunter from '../assets/3d-lightwing-hunter.jpg';
@@ -24,7 +25,6 @@ import GalleryModal from '../shared-components/Modal';
 import Gathr from '../assets/gathr-thumb.jpg';
 import CadenceChatExport from '../assets/cadence-chat-thumb.jpg';
 import Samurai from '../assets/samurai.jpg';
-import { useState } from 'react';
 
 const MediaCards = () => {
   const itemData = [
@@ -56,6 +56,21 @@ const MediaCards = () => {
       buttonText: 'Visit Website',
     },
     {
+      img: MGH,
+      title: 'MyGovHub',
+      description: 'Web Site/Local Government Portal',
+      details:
+        'Resident portal/Web site for MyGoveHub Harris Local Government - a division of Harris Computer',
+      link: '/portfolio/details/mgh',
+      tags: [
+        { id: 0, title: 'HTML' },
+        { id: 1, title: 'CSS' },
+        { id: 2, title: 'JavaScript' },
+        { id: 3, title: 'UX Design' },
+      ],
+      buttonText: 'View Portfolio',
+    },
+    {
       img: HPS,
       title: 'Harris Print Solutions',
       description: 'Web Site',
@@ -66,6 +81,7 @@ const MediaCards = () => {
         { id: 0, title: 'HTML' },
         { id: 1, title: 'CSS' },
         { id: 2, title: 'JavaScript' },
+        { id: 3, title: 'UX Design' },
       ],
       buttonText: 'View Portfolio',
     },
@@ -76,10 +92,10 @@ const MediaCards = () => {
       details: 'Logo/brand identity and mobile app design',
       link: '/portfolio/details/gathr',
       tags: [
-        { id: 0, title: 'DESIGN GUIDE' },
-        { id: 1, title: 'LOGO' },
-        { id: 2, title: 'APP DESIGN' },
-        { id: 3, title: 'MOOD BOARDS' },
+        { id: 0, title: 'Design Guide' },
+        { id: 1, title: 'Logo' },
+        { id: 2, title: 'App Design' },
+        { id: 3, title: 'Mood Boards' },
       ],
       buttonText: 'View Portfolio',
     },
