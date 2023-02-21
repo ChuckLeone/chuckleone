@@ -37,7 +37,7 @@ const DetailsPage = () => {
               variant='body1'
               sx={{ color: 'white', marginLeft: 0, marginBottom: '16px' }}
             >
-              Portfolio Details:
+              {'< '} <a href='/portfolio'>Back to Portfolio</a>
             </Typography>
             <Typography
               variant='h4'
