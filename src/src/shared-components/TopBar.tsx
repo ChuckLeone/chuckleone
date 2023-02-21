@@ -38,15 +38,7 @@ const TopBar = () => {
             ></div>
           </a>
         </Box>
-        <Box
-          sx={{
-            textAlign: 'right',
-            flex: 'inherit',
-            display: { xs: 'none', sm: 'none', lg: 'block' },
-          }}
-        >
-          <Navigation />
-        </Box>
+
         <Box
           sx={{
             textAlign: 'right',
