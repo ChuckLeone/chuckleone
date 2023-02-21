@@ -1,7 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import Logo from '../assets/CHVCK.svg';
 import DrawerNavigation from './DrawerNavigation';
-import Navigation from './Navigation';
 
 const MyLogo = Logo;
 const TopBar = () => {
