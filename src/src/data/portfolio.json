@@ -1,9 +1,9 @@
 [
   {
     "id": "mr",
-    "title": "Cadence Chat Export",
-    "description": "Export feature built in React",
-    "details": "This feature was designed to allow users of Cadence, a chat management tool to setup both manual and automated exports of chat leads and activity reports. The UI was built in React and connected to an API to toggle nightly automated exports on and off. In addition, a manaul export feature allowed the user to request an export which was emailed to them immediately.",
+    "title": "Cadence Chat Export - built in Vue",
+    "description": "UX Design | Vue | Frontend Development",
+    "details": "This feature was designed to allow users of Cadence, a chat management tool to setup both manual and automated exports of chat leads and activity reports. The UI was built in Vue and connected to an API to toggle nightly automated exports on and off. In addition, a manaul export feature allowed the user to request an export which was emailed to them immediately.",
     "img1": "http://chuckleone.com/static/media/mr/Cadence-Chat-Export.png",
     "img2": "http://chuckleone.com/static/media/mr/Cadence-Chat-Export-modal1.png",
     "img3": "http://chuckleone.com/static/media/mr/Cadence-Chat-Export-modal2.png",
@@ -12,7 +12,7 @@
   {
     "id": "hps",
     "title": "Harris Print Solutions Web Site",
-    "description": "Web Site Development",
+    "description": "UX Design | Web Site Development",
     "details": "Harris Print Solutions, a division of Harris Computer needed a completely new design for their web site. I was tasked with designing and developing an entirely new web site with new layouts, forms and embedded multimedia files.",
     "img1": "http://chuckleone.com/static/media/hps/harrisprintsolutions.png",
     "img2": "http://chuckleone.com/static/media/hps/harrisprintsolutions-print.png",
@@ -22,7 +22,7 @@
   {
     "id": "gathr",
     "title": "Mobile App Design",
-    "description": "Logo/brand identity | Mobile app design",
+    "description": "Logo/brand identity | UX Design | Mobile app design",
     "details": "gathR was a mobile app concept that revolved around social connections. The product owner need a logo/brand identity and mobile app designs. I started with developing mood boards and concepts, finally delivering design guides to aid the mobile app developer.",
     "img1": "http://chuckleone.com/static/media/gathr/gathr-destiny.png",
     "img2": "http://chuckleone.com/static/media/gathr/design-guide-analog.png",
@@ -31,8 +31,8 @@
   },
   {
     "id": "msh",
-    "title": "Logo Design | Mood Board | Interactive Prototype",
-    "description": "Logo/brand identity and progressive app prototype",
+    "title": "Logo/brand identity and progressive app prototype",
+    "description": "Logo Design | Mood Board | Interactive Prototype",
     "details": "Mood board, logo design and interactive prototype written in Ionic Framework/Angular JS",
     "img1": "http://chuckleone.com/static/media/gathr/gathr-destiny.png",
     "img2": "http://chuckleone.com/static/media/gathr/design-guide-analog.png",
@@ -41,8 +41,8 @@
   },
   {
     "id": "mgh",
-    "title": "UX Design | Wireframe | Prototype | CSS | HTML | JavaScript | Angular",
-    "description": "Logo/brand identity and progressive app prototype",
+    "title": "Progressive Web Application",
+    "description": "UX Design | Wireframe | Prototype | CSS | HTML | JavaScript | Angular",
     "details": "Harris Local Government wanted a new landing page for the flagship product: MyGovHub - a customer portal for citizens to pay their taxes, utility bills and more. Written in Angular JS",
     "img1": "http://chuckleone.com/static/media/mgh/mgh-wireframe-home.jpg",
     "img2": "http://chuckleone.com/static/media/mgh/slide-mgh.png",

@@ -49,13 +49,13 @@ const DetailsPage = () => {
             <Typography
               variant='h6'
               component='h2'
-              sx={{ color: 'white', marginLeft: '4px' }}
+              sx={{ color: 'white', marginLeft: '4px', marginTop: '16px' }}
             >
               {portfolioItem.description}
             </Typography>
             <Typography
               variant='body1'
-              sx={{ color: 'white', marginLeft: '4px' }}
+              sx={{ color: 'white', marginLeft: '4px', marginTop: '16px' }}
             >
               {portfolioItem.details}
             </Typography>
