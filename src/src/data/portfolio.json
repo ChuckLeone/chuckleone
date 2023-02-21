@@ -12,7 +12,7 @@
   {
     "id": "hps",
     "title": "Harris Print Solutions Web Site",
-    "description": " Web Site Development",
+    "description": "Web Site Development",
     "details": "Harris Print Solutions, a division of Harris Computer needed a completely new design for their web site. I was tasked with designing and developing an entirely new web site with new layouts, forms and embedded multimedia files.",
     "img1": "http://chuckleone.com/static/media/hps/harrisprintsolutions.png",
     "img2": "http://chuckleone.com/static/media/hps/harrisprintsolutions-print.png",
@@ -22,7 +22,7 @@
   {
     "id": "gathr",
     "title": "Mobile App Design",
-    "description": "Logo/brand identity and mobile app design",
+    "description": "Logo/brand identity | Mobile app design",
     "details": "gathR was a mobile app concept that revolved around social connections. The product owner need a logo/brand identity and mobile app designs. I started with developing mood boards and concepts, finally delivering design guides to aid the mobile app developer.",
     "img1": "http://chuckleone.com/static/media/gathr/gathr-destiny.png",
     "img2": "http://chuckleone.com/static/media/gathr/design-guide-analog.png",
@@ -31,7 +31,7 @@
   },
   {
     "id": "msh",
-    "title": "Logo Design, Mood Board and Prototype",
+    "title": "Logo Design | Mood Board | Interactive Prototype",
     "description": "Logo/brand identity and progressive app prototype",
     "details": "Mood board, logo design and interactive prototype written in Ionic Framework/Angular JS",
     "img1": "http://chuckleone.com/static/media/gathr/gathr-destiny.png",
@@ -41,9 +41,9 @@
   },
   {
     "id": "mgh",
-    "title": "UX Design, Wireframe, Prototype, CSS, HTML, JavaScript",
+    "title": "UX Design | Wireframe | Prototype | CSS | HTML | JavaScript | Angular",
     "description": "Logo/brand identity and progressive app prototype",
-    "details": "Mood board, logo design and interactive prototype written in Ionic Framework/Angular JS",
+    "details": "Harris Local Government wanted a new landing page for the flagship product: MyGovHub - a customer portal for citizens to pay their taxes, utility bills and more. Written in Angular JS",
     "img1": "http://chuckleone.com/static/media/mgh/mgh-wireframe-home.jpg",
     "img2": "http://chuckleone.com/static/media/mgh/slide-mgh.png",
     "img3": "http://chuckleone.com/static/media/mgh/slide-mgh-usage-prototype.png",
