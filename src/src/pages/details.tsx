@@ -50,14 +50,14 @@ const DetailsPage = () => {
             </Typography>
             <Typography
               variant='h4'
-              component='h1'
+              component='h2'
               sx={{ color: 'white', marginLeft: 0 }}
             >
               {portfolioItem.title}
             </Typography>
             <Typography
               variant='h6'
-              component='h2'
+              component='h3'
               sx={{ color: 'white', marginLeft: '4px', marginTop: '16px' }}
             >
               {portfolioItem.description}
@@ -81,6 +81,11 @@ const DetailsPage = () => {
               </Button>
             )}
           </Grid>
+        </Grid>
+        <Grid item sm={12} md={12} sx={{ paddingTop: '16px' }}>
+          <Typography component='h4' variant='h5' sx={{ color: 'white' }}>
+            Wireframes, Concept Images and Final Product
+          </Typography>
         </Grid>
         <Grid item sm={12} md={12} sx={{ padding: '16px' }}>
           <img
