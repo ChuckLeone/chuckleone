@@ -2,6 +2,8 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import BackArrow from '@mui/icons-material/KeyboardArrowLeft';
+import ForwardArrow from '@mui/icons-material/KeyboardArrowRight';
 import TopBar from '../shared-components/TopBar';
 import Footer from '../shared-components/Footer';
 import Data from '../data/portfolio.json';
@@ -37,7 +39,14 @@ const DetailsPage = () => {
               variant='body1'
               sx={{ color: 'white', marginLeft: 0, marginBottom: '16px' }}
             >
-              {'< '} <a href='/portfolio'>Back to Portfolio</a>
+              <Button
+                component='a'
+                variant='link'
+                href='/portfolio'
+                startIcon={<BackArrow />}
+              >
+                Back to Portfolio
+              </Button>
             </Typography>
             <Typography
               variant='h4'
@@ -65,6 +74,8 @@ const DetailsPage = () => {
                 variant='link'
                 href={portfolioItem.link}
                 target='new'
+                endIcon={<ForwardArrow />}
+                style={{ marginTop: '16px' }}
               >
                 view live site
               </Button>
