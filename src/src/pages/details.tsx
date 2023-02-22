@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import TopBar from '../shared-components/TopBar';
 import Footer from '../shared-components/Footer';
 import Data from '../data/portfolio.json';
@@ -59,6 +59,16 @@ const DetailsPage = () => {
             >
               {portfolioItem.details}
             </Typography>
+            {portfolioItem.link && (
+              <Button
+                component='a'
+                variant='link'
+                href={portfolioItem.link}
+                target='new'
+              >
+                view live site
+              </Button>
+            )}
           </Grid>
         </Grid>
         <Grid item sm={12} md={12} sx={{ padding: '16px' }}>

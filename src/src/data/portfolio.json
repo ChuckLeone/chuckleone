@@ -43,7 +43,7 @@
     "id": "mgh",
     "title": "Progressive Web Application",
     "description": "UX Design | Wireframe | Prototype | CSS | HTML | JavaScript | Angular",
-    "details": "Harris Local Government wanted a new landing page for the flagship product: MyGovHub - a customer portal for citizens to pay their taxes, utility bills and more. Written in Angular JS",
+    "details": "Harris Local Government wanted a refreshed design for their flagship product: MyGovHub - a customer portal for citizens to pay their taxes, utility bills and more. A new landing page concept was developed starting with wireframe sketches which included a splash page with a user login, a create profile form and link to QuickPay allowing users to pay their invoices using their service address and account number, allowing them to submit a payment without creating an account. Working with the Product Manager, multiple 'mobile first' designs were conceived, prototyped and iterated upon until the final design was approved and development started. The final pages were fully responsive, written in AngularJS, HTML and CSS",
     "img1": "http://chuckleone.com/static/media/mgh/mgh-wireframe-home.jpg",
     "img2": "http://chuckleone.com/static/media/mgh/slide-mgh.png",
     "img3": "http://chuckleone.com/static/media/mgh/slide-mgh-usage-prototype.png",
