@@ -302,10 +302,16 @@ const Portfolio = () => {
                   Skills
                 </Typography>
                 <div>
-                  <Chip label='ReactJS' sx={{ margin: '8px' }} />
+                  <Chip label='UX Design' sx={{ margin: '8px' }} />
+                  <Chip label='Frontend Development' sx={{ margin: '8px' }} />
+                  <Chip label='React' sx={{ margin: '8px' }} />
                   <Chip label='TypeScript' sx={{ margin: '8px' }} />
+                  <Chip label='Vue' sx={{ margin: '8px' }} />
+                  <Chip label='Angular' sx={{ margin: '8px' }} />
                   <Chip label='JavaScript' sx={{ margin: '8px' }} />
                   <Chip label='Material UI' sx={{ margin: '8px' }} />
+                  <Chip label='CSS' sx={{ margin: '8px' }} />
+                  <Chip label='HTML' sx={{ margin: '8px' }} />
                   <Chip label='.net' sx={{ margin: '8px' }} />
                   <Chip label='Adobe Creative Suite' sx={{ margin: '8px' }} />
                   <Chip label='Unity 3D' sx={{ margin: '8px' }} />
