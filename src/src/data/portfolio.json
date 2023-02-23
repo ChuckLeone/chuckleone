@@ -37,7 +37,7 @@
     "img1": "http://chuckleone.com/static/media/gathr/gathr-destiny.png",
     "img2": "http://chuckleone.com/static/media/gathr/design-guide-analog.png",
     "img3": "http://chuckleone.com/static/media/gathr/gathr-new-dawn.png",
-    "imgAlt": "screenshot of gathR mobile app"
+    "imgAlt": "screenshot of MSH mobile app"
   },
   {
     "id": "mgh",
@@ -47,7 +47,16 @@
     "img1": "http://chuckleone.com/static/media/mgh/mgh-wireframe-home.jpg",
     "img2": "http://chuckleone.com/static/media/mgh/slide-mgh.png",
     "img3": "http://chuckleone.com/static/media/mgh/slide-mgh-usage-prototype.png",
-    "imgAlt": "screenshot of gathR mobile app",
+    "imgAlt": "screenshot of My Gov Hub mobile app",
     "link": "https://yorkvilleil.mygovhub.com/#/"
+  },
+  {
+    "id": "citybration",
+    "title": "Logo Design",
+    "description": "Graphic Design | Adobe Creative Suite",
+    "details": "This organization wanted a logo that captured the skyline and essence of the city of Buffalo, NY. Several hand drawn sketches were made and after a couple rounds of changes, the final logo seen below was delivered as an EPS, PNG and AI file.",
+    "img1": "http://chuckleone.com/static/media/citybration/citybration-sketches.jpg",
+    "img2": "http://chuckleone.com/static/media/citybration/citybration-final.jpg",
+    "imgAlt": "Citybration logo"
   }
 ]

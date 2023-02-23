@@ -25,6 +25,7 @@ import GalleryModal from '../shared-components/Modal';
 import Gathr from '../assets/gathr-thumb.jpg';
 import CadenceChatExport from '../assets/cadence-chat-thumb.jpg';
 import Samurai from '../assets/samurai.jpg';
+import Citybration from '../assets/citybration-thumb.jpg';
 
 const MediaCards = () => {
   const itemData = [
@@ -101,6 +102,18 @@ const MediaCards = () => {
         { id: 1, title: 'Logo' },
         { id: 2, title: 'App Design' },
         { id: 3, title: 'Mood Boards' },
+      ],
+      buttonText: 'View Portfolio',
+    },
+    {
+      img: Citybration,
+      title: 'Citybration Logo',
+      description: 'Logo Design',
+      details: 'Logo design',
+      link: '/portfolio/details/citybration',
+      tags: [
+        { id: 0, title: 'Logo' },
+        { id: 1, title: 'Sketch' },
       ],
       buttonText: 'View Portfolio',
     },
