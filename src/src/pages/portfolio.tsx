@@ -289,24 +289,19 @@ const Portfolio = () => {
                 </Typography>
 
                 <Typography variant='body1' sx={{ color: 'white' }}>
-                  Highly proficient in ADA compliant web app development using
-                  ReactJS, TypeScript, Node.JS, npm, Material UI and other
-                  technologies. Expert level skills using the Adobe Creative
-                  Suite to deliver beautiful designs focusing on usability,
-                  layout, typography, texture, composition and color. At
-                  present, working in the higher education software industry
-                  focusing on ADA compliance using StorybookJS, Axe, Wave,
-                  Lighthouse, NVDA and other accessibility tools. Comfortable
-                  developing in Agile and Kanban environments using various
-                  development, version control and dependency management tools.
+                  Highly proficient in WCAG/ADA compliant web app development
+                  using JavaScript, TypeScript and JavaScript frameworks such as
+                  React, Angular and Vue along with Material UI, Bootstrap, CSS,
+                  HTML, StorybookJS, Axe, WAVE, Lighthouse, NVDA, Cypress,
+                  Microsoft Azure and other tools. Expert User Experience Design
+                  skills including user research and personas, information
+                  architecture, visual communication, wireframing and
+                  prototyping using Figma, Sketch, Adobe XD and other tools.
                   Able to quickly solve problems and provide creative solutions
-                  in a logical manner. Currently an active member of the
-                  BuffaloJS and Buffalo Game Space groups - contributing music
-                  assets and providing mentorship to students during annual game
-                  jams. Continuously prototyping and developing new physical and
-                  virtual products and experiences using Autodesk Fusion 360,
-                  Unity 3D, Adobe Medium, Blender3D, Gravity Sketch and Google
-                  Blocks.
+                  in a logical manner. Continuously prototyping and developing
+                  new physical and virtual products and experiences using
+                  Autodesk Fusion 360, Unity 3D, Adobe Medium, Blender3D,
+                  Gravity Sketch and Google Blocks.
                 </Typography>
               </Grid>
               <Grid
@@ -343,7 +338,7 @@ const Portfolio = () => {
 
               <Grid item xs={12} sx={{ marginTop: '30px' }}>
                 <Typography variant='h4' component='h5' sx={{ color: 'white' }}>
-                  Latest Work
+                  Examples of Work
                 </Typography>
                 <Grid
                   container
