@@ -58,5 +58,15 @@
     "img1": "http://chuckleone.com/static/media/citybration/citybration-sketches.jpg",
     "img2": "http://chuckleone.com/static/media/citybration/citybration-final.jpg",
     "imgAlt": "Citybration logo"
+  },
+  {
+    "id": "mam",
+    "title": "Original line of 3D printed products",
+    "description": "Graphic Design | Adobe Creative Suite | Autodesk Fusion 360 | React",
+    "details": "As an electronic musician, I needed a product to make using my studio gear such as keyboards, MIDI controllers, drum machines and synthesizers easier to use at desk. I started by learning Fusion 360 and began designing a set of stands that could be easily and cheaply 3D printed, prototyped and tested. I continued to work on my design, iterating and improving on it with each version, testing the set with various devices I had in the studio. Once I had a design that I liked, I posted the results on Reddit and gathered feedback from the community. After a few more rounds of updates, I posted images and pricing on my etsy store and started selling them, gathering feedback from customers on how the product could be improved.",
+    "img1": "http://chuckleone.com/static/media/mam/product-col1.jpg",
+    "img2": "http://chuckleone.com/static/media/mam/product-col2.jpg",
+    "imgAlt": "Monsters + Machines Universal Stands",
+    "link": "https://monstersandmachines.com"
   }
 ]
