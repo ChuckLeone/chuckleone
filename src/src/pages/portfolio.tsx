@@ -199,48 +199,54 @@ const MediaCards = () => {
     <>
       {itemData.map((item) => (
         <Grid item key={item.img}>
-          <Card sx={{ maxWidth: 300, marginBottom: '8px' }}>
-            <CardMedia
-              component='img'
-              height='300'
-              image={`${item.img}?w=248&fit=crop&auto=format`}
-              alt={item.description}
-            />
-            <CardContent style={{ background: '#333' }}>
-              <Typography
-                gutterBottom
-                variant='h6'
-                component='div'
-                sx={{ color: 'white' }}
-              >
-                {item.title}
-              </Typography>
-              <Typography
-                variant='body2'
-                color='text.secondary'
-                sx={{ color: 'white' }}
-              >
-                {item.description}
-              </Typography>
-              <div style={{ paddingTop: '16px', margin: '0' }}>
-                {item.tags.map((tag) => (
-                  <Chip key={tag.id} label={tag.title} sx={{ margin: '8px' }} />
-                ))}
-              </div>
-            </CardContent>
-            <CardActions style={{ background: '#333' }}>
-              {!item.gallery && (
-                <Button variant='outlined' href={`${item.link}`}>
-                  {item.buttonText}
-                </Button>
-              )}
-              {item.gallery && (
-                <Button variant='outlined' onClick={() => handleClick(item)}>
-                  View Larger Image
-                </Button>
-              )}
-            </CardActions>
-          </Card>
+          <a href={`${item.link}`}>
+            <Card sx={{ maxWidth: 300, marginBottom: '8px' }}>
+              <CardMedia
+                component='img'
+                height='300'
+                image={`${item.img}?w=248&fit=crop&auto=format`}
+                alt={item.description}
+              />
+              <CardContent style={{ background: '#333' }}>
+                <Typography
+                  gutterBottom
+                  variant='h6'
+                  component='div'
+                  sx={{ color: 'white' }}
+                >
+                  {item.title}
+                </Typography>
+                <Typography
+                  variant='body2'
+                  color='text.secondary'
+                  sx={{ color: 'white' }}
+                >
+                  {item.description}
+                </Typography>
+                <div style={{ paddingTop: '16px', margin: '0' }}>
+                  {item.tags.map((tag) => (
+                    <Chip
+                      key={tag.id}
+                      label={tag.title}
+                      sx={{ margin: '8px' }}
+                    />
+                  ))}
+                </div>
+              </CardContent>
+              <CardActions style={{ background: '#333' }}>
+                {!item.gallery && (
+                  <Button variant='outlined' href={`${item.link}`}>
+                    {item.buttonText}
+                  </Button>
+                )}
+                {item.gallery && (
+                  <Button variant='outlined' onClick={() => handleClick(item)}>
+                    View Larger Image
+                  </Button>
+                )}
+              </CardActions>
+            </Card>
+          </a>
         </Grid>
       ))}
       <GalleryModal open={open} onClose={handleClose} item={galleryItem} />
