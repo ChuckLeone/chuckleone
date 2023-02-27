@@ -17,6 +17,9 @@ import CloseIcon from '@mui/icons-material/Close';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import VaporCanyon from '../assets/vapor-canyon.jpg';
 import BeneathTheSand from '../assets/beneath-the-sand-jacket.jpg';
+import PsyclonNine from '../assets/Poster-Psyclon-Nine.jpg';
+import CodeFallSulfur from '../assets/CodeFall-Sulfur.jpg';
+import MerchPreview from '../assets/merch-preview.jpg';
 import Samurai from '../assets/samurai.jpg';
 import CodeFall from '../assets/CodeFall.jpg';
 import Inception from '../assets/inception.jpg';
@@ -70,17 +73,37 @@ const Home = () => {
   const backgrounds = [
     {
       id: 0,
+      file: CodeFallSulfur,
+      title: 'Live @Mohawk Place',
+      description: '30 minute live set of all original music',
+      type: 'featured',
+      featuredText: 'Wednesday, March 1 - Live at Mohawk Place, Buffalo NY',
+      featuredLink:
+        'https://www.buffalosmohawkplace.com/events/psyclon-nine-clockwork-echo-our-frankenstein-corvins-breed-chv-ck/',
+      featuredLinkText: 'Click here for tickets and more information',
+      featuredImage: PsyclonNine,
+    },
+    {
+      id: 2,
+      file: CodeFall,
+      title: 'New merch',
+      description:
+        'T-shirts, patches, stickers and exclusive Monsters + Machines guitar pedal toppers.',
+      type: 'featured',
+      featuredText:
+        'New Merch for sale this Wednesday and the Psyclon Nine show!',
+      featuredLink:
+        'https://www.buffalosmohawkplace.com/events/psyclon-nine-clockwork-echo-our-frankenstein-corvins-breed-chv-ck/',
+      featuredLinkText: 'Click here for more information',
+      featuredImage: MerchPreview,
+    },
+    {
+      id: 2,
       file: Folding,
       title: 'Infinite Folding',
       description: 'Music Video - Staella iOS',
       type: 'video',
-    },
-    {
-      id: 1,
-      file: CodeFall,
-      title: 'Code Fall',
-      description: 'Poster/T-shirt/Desktop Wallpaper | Adobe Photoshop',
-      type: 'image',
+      featuredText: 'New Music Video',
     },
     {
       id: 5,
@@ -88,6 +111,7 @@ const Home = () => {
       title: 'Inception',
       description: 'Mandlebulb Fractal | Mandlebulb 3D + Adobe Photoshop',
       type: 'image',
+      featturedText: 'Explorations in Mandlebuld 3D fractal generation',
     },
     {
       id: 2,
@@ -95,6 +119,7 @@ const Home = () => {
       title: 'Vapor Dream',
       description: 'VR Experience | Adobe Photoshop + Unity 3D',
       type: 'image',
+      featuredText: '',
     },
     {
       id: 3,
@@ -102,6 +127,7 @@ const Home = () => {
       title: 'Samurai',
       description: '3D Model | Medium by Adobe',
       type: 'image',
+      featuredText: '',
     },
     {
       id: 4,
@@ -109,6 +135,7 @@ const Home = () => {
       title: 'Beneath the Sand',
       description: 'Book Cover/Dust Jack | Adobe Photoshop',
       type: 'image',
+      featuredText: '',
     },
   ];
   const [page, setPage] = useState(1);
@@ -191,6 +218,24 @@ const Home = () => {
                           Watch Video
                         </Button>
                       </span>
+                    </>
+                  )}
+                  {background.type === 'featured' && (
+                    <>
+                      <Typography variant='h5' component='h3'>
+                        {background.featuredText}
+                      </Typography>
+                      <a href={background.featuredLink} target='new'>
+                        {background.featuredLinkText}
+                      </a>
+                      <div style={{ textAlign: 'center', padding: '16px' }}>
+                        <img
+                          src={background.featuredImage}
+                          width='100%'
+                          alt='Psyclon Nine Tour Poster'
+                          style={{ maxHeight: '60vh', maxWidth: '60vw' }}
+                        />
+                      </div>
                     </>
                   )}
                 </Grid>
