@@ -26,6 +26,7 @@ import Gathr from '../assets/gathr-thumb.jpg';
 import CadenceChatExport from '../assets/cadence-chat-thumb.jpg';
 import Samurai from '../assets/samurai.jpg';
 import Citybration from '../assets/citybration-thumb.jpg';
+import Toshiba from '../assets/toshiba-thumb.jpg';
 
 const MediaCards = () => {
   const itemData = [
@@ -105,6 +106,18 @@ const MediaCards = () => {
         { id: 1, title: 'Logo' },
         { id: 2, title: 'App Design' },
         { id: 3, title: 'Mood Boards' },
+      ],
+      buttonText: 'View Portfolio',
+    },
+    {
+      img: Toshiba,
+      title: 'Toshiba Native Apps',
+      description: 'UX Design | Native App Design',
+      details: 'UX Design | Native App Design',
+      link: '/portfolio/details/toshiba',
+      tags: [
+        { id: 0, title: 'UX Design' },
+        { id: 1, title: 'Native App Design' },
       ],
       buttonText: 'View Portfolio',
     },

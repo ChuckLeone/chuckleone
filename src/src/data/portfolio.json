@@ -68,5 +68,14 @@
     "img2": "http://chuckleone.com/static/media/mam/product-col2.jpg",
     "imgAlt": "Monsters + Machines Universal Stands",
     "link": "https://monstersandmachines.com"
+  },
+  {
+    "id": "toshiba",
+    "title": "Toshiba App Design",
+    "description": "UX Design | Windows | Android | Mobile",
+    "details": "As a UX Designer at Synacor, Inc I was tasked with designing a series of user interfaces for a native applications for Toshiba that would ship with all Windows 8 tablets and laptops along with Toshiba Android OS tablets. The applications were NewsPlace, Deals and Offers, Trending Now and Today's Horoscopes. All applications needed to share assets, have a consistent look and feel and meet guidelines established by the Google Play Store, Microsoft App Store and Toshiba's branding guidelines. I worked closely with the Product Manager and the engineering team to develop a series of wireframes, concepts and designs, iterating over each round of changes until these designs were approved. The final deliverables included optomized icon files for each platform, store splash images and all graphical assets and requirements(color values, fonts, etc) for each application.",
+    "img1": "http://chuckleone.com/static/media/toshiba/win8-newsplace.jpg",
+    "img2": "http://chuckleone.com/static/media/toshiba/android-newsplace.jpg",
+    "imgAlt": "Toshiba native app screenshpts"
   }
 ]
