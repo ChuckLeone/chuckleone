@@ -17,8 +17,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import PlayCircleOutlineIcon from '@mui/icons-material/PlayCircleOutline';
 import VaporCanyon from '../assets/vapor-canyon.jpg';
 import BeneathTheSand from '../assets/beneath-the-sand-jacket.jpg';
-import PsyclonNine from '../assets/Poster-Psyclon-Nine.jpg';
-import CodeFallSulfur from '../assets/CodeFall-Sulfur.jpg';
 import MerchPreview from '../assets/merch-preview.jpg';
 import Samurai from '../assets/samurai.jpg';
 import CodeFall from '../assets/CodeFall.jpg';
@@ -78,9 +76,10 @@ const Home = () => {
       description:
         'T-shirts, patches, stickers and exclusive Monsters + Machines guitar pedal toppers.',
       type: 'featured',
-      featuredText: '',
-      featuredLink: '',
-      featuredLinkText: 'Click here for more information',
+      featuredText:
+        'Newly designed T-Shirts, stickers and patches coming to bandcamp',
+      featuredLink: 'http://chuckleone.bandcamp.com',
+      featuredLinkText: 'Click here to visit my bandcamp page',
       featuredImage: MerchPreview,
     },
     {
