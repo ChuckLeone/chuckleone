@@ -73,32 +73,18 @@ const Home = () => {
   const backgrounds = [
     {
       id: 0,
-      file: CodeFallSulfur,
-      title: 'Live @Mohawk Place',
-      description: '30 minute live set of all original music',
-      type: 'featured',
-      featuredText: 'Wednesday, March 1 - Live at Mohawk Place, Buffalo NY',
-      featuredLink:
-        'https://www.buffalosmohawkplace.com/events/psyclon-nine-clockwork-echo-our-frankenstein-corvins-breed-chv-ck/',
-      featuredLinkText: 'Click here for tickets and more information',
-      featuredImage: PsyclonNine,
-    },
-    {
-      id: 2,
       file: CodeFall,
       title: 'New merch',
       description:
         'T-shirts, patches, stickers and exclusive Monsters + Machines guitar pedal toppers.',
       type: 'featured',
-      featuredText:
-        'New Merch for sale this Wednesday and the Psyclon Nine show!',
-      featuredLink:
-        'https://www.buffalosmohawkplace.com/events/psyclon-nine-clockwork-echo-our-frankenstein-corvins-breed-chv-ck/',
+      featuredText: '',
+      featuredLink: '',
       featuredLinkText: 'Click here for more information',
       featuredImage: MerchPreview,
     },
     {
-      id: 2,
+      id: 1,
       file: Folding,
       title: 'Infinite Folding',
       description: 'Music Video - Staella iOS',
@@ -106,7 +92,7 @@ const Home = () => {
       featuredText: 'New Music Video',
     },
     {
-      id: 5,
+      id: 2,
       file: Inception,
       title: 'Inception',
       description: 'Mandlebulb Fractal | Mandlebulb 3D + Adobe Photoshop',
@@ -114,7 +100,7 @@ const Home = () => {
       featturedText: 'Explorations in Mandlebuld 3D fractal generation',
     },
     {
-      id: 2,
+      id: 4,
       file: VaporCanyon,
       title: 'Vapor Dream',
       description: 'VR Experience | Adobe Photoshop + Unity 3D',
@@ -122,7 +108,7 @@ const Home = () => {
       featuredText: '',
     },
     {
-      id: 3,
+      id: 5,
       file: Samurai,
       title: 'Samurai',
       description: '3D Model | Medium by Adobe',
@@ -130,7 +116,7 @@ const Home = () => {
       featuredText: '',
     },
     {
-      id: 4,
+      id: 3,
       file: BeneathTheSand,
       title: 'Beneath the Sand',
       description: 'Book Cover/Dust Jack | Adobe Photoshop',
