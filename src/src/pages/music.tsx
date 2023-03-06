@@ -135,36 +135,79 @@ function LivePanel() {
   return (
     <Grid container spacing={2}>
       <Grid item sm={12}>
-        <Typography component='h3' sx={{ color: 'white' }} variant='h5'>
+        <Typography component='h3' sx={{ color: 'white' }} variant='h4'>
           Upcoming Live Performances
         </Typography>
-        <Typography variant='h6' sx={{ color: 'white' }} gutterBottom>
-          Psyclon Nine w/Clockwork Echo, Our Frankenstein and Corvin's Breed
+        <Typography component='h4' sx={{ color: 'white' }} variant='h5'>
+          Stay tuned for upcoming events.
         </Typography>
-        <Typography variant='body1' sx={{ color: 'white' }} gutterBottom>
-          3/1/2023 - Mohawk Place, Buffalo NY
-        </Typography>
-        <Typography variant='body1' sx={{ color: 'white' }} gutterBottom>
-          Click{' '}
-          <a href='https://www.buffalosmohawkplace.com/' target='new'>
-            here
-          </a>{' '}
-          for more information and tickets
-        </Typography>
-
-        <div>
-          <img src={PsyclonNine} width='100%' alt='Psyclon Nine Tour Poster' />
-        </div>
       </Grid>
       <Grid item sm={12}>
         <Divider variant='fullWidth' sx={{ color: 'gray' }} />
       </Grid>
       <Grid item sm={12}>
-        <Typography component='h3' sx={{ color: 'white' }} variant='h5'>
+        <Typography component='h3' sx={{ color: 'white' }} variant='h4'>
           Past Performances
         </Typography>
-        <Typography variant='h6' sx={{ color: 'white' }} gutterBottom>
-          April 2, 2022 at Revolution Gallery Lounge, Buffalo NY
+      </Grid>
+      <Grid item sm={12}>
+        <Typography
+          component='h4'
+          variant='h5'
+          sx={{ color: 'white' }}
+          gutterBottom
+        >
+          Psyclon Nine w/Clockwork Echo, Our Frankenstein and Corvin's Breed
+        </Typography>
+        <Typography
+          variant='h6'
+          component='h5'
+          sx={{ color: 'white' }}
+          gutterBottom
+        >
+          March 1, 2023 - Mohawk Place, Buffalo NY
+        </Typography>
+        <Typography variant='body1' sx={{ color: 'white' }} gutterBottom>
+          30 minute live industrial set
+        </Typography>
+        <div
+          style={{
+            position: 'relative',
+            width: '100%',
+            paddingBottom: '56.25%',
+            height: '0',
+            marginTop: '16px',
+          }}
+        >
+          <iframe
+            style={{
+              position: 'absolute',
+              top: '0',
+              left: '0',
+              width: '100%',
+              height: '100%',
+            }}
+            width='100%'
+            height='100%'
+            src='https://www.youtube.com/embed/8-il8KLb1Y8?controls=0'
+            title='YouTube video player'
+            frameBorder='0'
+            allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            allowFullScreen
+          ></iframe>
+        </div>
+      </Grid>
+      <Grid item sm={12}>
+        <Typography
+          component='h4'
+          variant='h5'
+          sx={{ color: 'white' }}
+          gutterBottom
+        >
+          Revolution Gallery Lounge, Buffalo NY
+        </Typography>
+        <Typography sx={{ color: 'white' }} variant='h6' component='h5'>
+          April 2, 2022
         </Typography>
         <Typography variant='body1' sx={{ color: 'white' }} gutterBottom>
           One hour live industrial/IDM set.
@@ -221,6 +264,9 @@ function VideoPanel() {
             gutterBottom
           >
             Infinite Folding
+          </Typography>
+          <Typography variant='subtitle2' sx={{ color: 'white' }} gutterBottom>
+            Staella iOS
           </Typography>
           <div
             style={{
@@ -363,7 +409,7 @@ function PressKitTabs() {
           <Tab label='Bio' {...a11yProps(0)} />
           <Tab label='Discography' {...a11yProps(1)} />
           <Tab label='Live' {...a11yProps(2)} />
-          <Tab label='Video' {...a11yProps(3)} />
+          <Tab label='Music Videos' {...a11yProps(3)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
