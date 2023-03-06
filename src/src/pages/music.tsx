@@ -19,7 +19,6 @@ import TheReceptive from '../assets/album-cover-the-receptive.jpg';
 import Position from '../assets/album-cover-position.jpg';
 import BTEH from '../assets/album-cover-bteh..jpg';
 import Dreamstatic from '../assets/album-cover-dreamstatic.jpg';
-import PsyclonNine from '../assets/Poster-Psyclon-Nine.jpg';
 import BioPicture from '../assets/press-kit/profile.jpg';
 import Footer from '../shared-components/Footer';
 import Folding from '../assets/infinite-folding.gif';
