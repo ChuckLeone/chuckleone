@@ -148,6 +148,10 @@ a:hover {
   margin: -48px 0 0 -48px;
 }
 
+.css-10hburv-MuiTypography-root {
+  font-size: 0.75rem !important;
+}
+
 @media (max-width: 440px) and (orientation: portrait) {
   .video-thumb {
     min-width: 280px;

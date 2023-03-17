@@ -133,7 +133,7 @@ function BioPanel() {
 function LivePanel() {
   return (
     <Grid container spacing={2}>
-      <Grid item sm={12}>
+      <Grid item sm={12} xs={12}>
         <Typography component='h3' sx={{ color: 'white' }} variant='h4'>
           Upcoming Live Performances
         </Typography>
@@ -141,15 +141,15 @@ function LivePanel() {
           Stay tuned for upcoming events.
         </Typography>
       </Grid>
-      <Grid item sm={12}>
+      <Grid item sm={12} xs={12}>
         <Divider variant='fullWidth' sx={{ color: 'gray' }} />
       </Grid>
-      <Grid item sm={12}>
+      <Grid item sm={12} xs={12}>
         <Typography component='h3' sx={{ color: 'white' }} variant='h4'>
           Past Performances
         </Typography>
       </Grid>
-      <Grid item sm={12}>
+      <Grid item sm={12} xs={12}>
         <Typography
           component='h4'
           variant='h5'

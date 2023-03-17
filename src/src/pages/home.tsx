@@ -86,7 +86,7 @@ const Home = () => {
       id: 1,
       file: Folding,
       title: 'Infinite Folding',
-      description: 'Music Video - Staella iOS',
+      description: 'Music Video | Staella iOS',
       type: 'video',
       featuredText: 'New Music Video',
     },

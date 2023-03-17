@@ -21,6 +21,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailIcon from '@mui/icons-material/Email';
+import IconMandM from './IconMandM';
 
 type Anchor = 'right';
 const iconColor = grey['A100'];
@@ -172,6 +173,25 @@ const DrawerNavigation = () => {
                   />
                 </ListItemIcon>
                 <ListItemText primary='Bandcamp' className='drawer-item' />
+              </ListItemButton>
+            </ListItem>
+          </List>
+          <Divider sx={{ padding: '0' }} />
+          <List className='drawer'>
+            <ListItem>
+              <ListItemButton
+                component='a'
+                href='https://monstersandmachines.com'
+                target='new'
+              >
+                <ListItemIcon>
+                  <IconMandM />
+                </ListItemIcon>
+                <ListItemText
+                  primary='Monsters + Machines'
+                  className='drawer-item'
+                  style={{ fontSize: '0.75rem' }}
+                />
               </ListItemButton>
             </ListItem>
           </List>
